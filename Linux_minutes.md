@@ -256,23 +256,23 @@ chgrp   - change a file's group owner
     * `sudo vim /etc/systemd/system/vncserver@.service` add below item to run VNC as a System Service 
 
     ```bash
-[Unit]
-Description=Start TightVNC server at startup
-After=syslog.target network.target
-
-[Service]
-Type=forking
-User=user_name
-Group=user_grp
-WorkingDirectory=/home/user_name
-
-PIDFile=/home/user_name/.vnc/%H:%i.pid
-ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1
-ExecStart=/usr/bin/vncserver -depth 24 -geometry 1280x800 :%i
-ExecStop=/usr/bin/vncserver -kill :%i
-
-[Install]
-WantedBy=multi-user.target
+    [Unit]
+    Description=Start TightVNC server at startup
+    After=syslog.target network.target
+    
+    [Service]
+    Type=forking
+    User=user_name
+    Group=user_grp
+    WorkingDirectory=/home/user_name
+    
+    PIDFile=/home/user_name/.vnc/%H:%i.pid
+    ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1
+    ExecStart=/usr/bin/vncserver -depth 24 -geometry 1280x800 :%i
+    ExecStop=/usr/bin/vncserver -kill :%i
+    
+    [Install]
+    WantedBy=multi-user.target
     ```
 
     * `sudo systemctl daemon-reload` 
