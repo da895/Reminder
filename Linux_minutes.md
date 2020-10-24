@@ -65,11 +65,12 @@ Table of Contents
 
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
-The command to have Ubuntu fix unmet dependencies and broken packages is
-    `sudo apt-get install -f`
-    ```doc
-    -f, --fix-broken Fix; attempt to correct a system with broken dependencies in place. This option, when used with install/remove, can omit any packages to permit APT to deduce a likely solution. If packages are specified, these have to completely correct the problem. The option is sometimes necessary when running APT for the first time; APT itself does not allow broken package dependencies to exist on a system. It is possible that a system's dependency structure can be so corrupt as to require manual intervention (which usually means using dselect(1) or dpkg --remove to eliminate some of the offending packages)
-    ``` 
+The command to have Ubuntu fix unmet dependencies and broken packages is 
+
+`sudo apt-get install -f` 
+
+> -f, --fix-broken Fix; attempt to correct a system with broken dependencies in place. This option, when used with install/remove, can omit any packages to permit APT to deduce a likely solution. If packages are specified, these have to completely correct the problem. The option is sometimes necessary when running APT for the first time; APT itself does not allow broken package dependencies to exist on a system. It is possible that a system's dependency structure can be so corrupt as to require manual intervention (which usually means using dselect(1) or dpkg --remove to eliminate some of the offending packages)
+    
 ## [How to Install Specific Version of Package using apt-get ](https://linoxide.com/linux-command/install-specific-version-package-apt-get/)  
 
 * Check the available versions of package 
@@ -206,12 +207,18 @@ chgrp   - change a file's group owner
      * `-W` : a warning time period before password expiration
  - minimum password length :  `password [success=1 default=ignore] pam_unix.so obscure sha512 minlen=8` within `/etc/pam.d/common-password`
  - SSH Access by Disabled Users 
+ 
 Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
+    
 Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
 Restrict SSH access to only user accounts that should have it. eg, you may create a group called "sshlogin" and add the group name as the value associated with `AllowGroups` variable located in the file `/etc/ssh/sshd_config` 
-`AllowGroups sshlogin`
+
+`AllowGroups sshlogin` 
+
 Then add your permitted SSH users to the group "sshlogin", and restart the SSH service. 
-`sudo adduser username sshlogin` 
+    
+`sudo adduser username sshlogin`
+
 `sudo systemctl restart sshd.service`
 
 ## [Add proxy for apt](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-the-proxy-for-apt-for-ubuntu-18-04/) [and](https://askubuntu.com/questions/35223/syntax-for-socks-proxy-in-apt-conf/550026) 
@@ -615,7 +622,7 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
 
 ## check the Linux OS
 * method 1 
-       ```
+```
       ## if system is Redhat
     OS=`cat /etc/redhat-release | awk {'print $1}'`
     if [ "$OS" != "CentOS" ] ; then
@@ -628,17 +635,22 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
     
         exit;
     fi
-       ```
+
+```
 * method 2 
-        ```
+```
         cat /proc/version
 
         and Grep for words "Red" and "CentOS" you can event get the version from the same.
-        ```
+```
 * method 3 
-      `cat /etc/os-release  | grep VERSION_ID | sed -n 's/.*"\(.*\)"/\1/p'`
+
+`cat /etc/os-release  | grep VERSION_ID | sed -n 's/.*"\(.*\)"/\1/p'`
+
 * method 4 
-      `cat /etc/issue`
+
+`cat /etc/issue`
+
 
 ## [How to find what other machines are connected to the local network](https://unix.stackexchange.com/questions/8118/how-to-find-what-other-machines-are-connected-to-the-local-network)
 
