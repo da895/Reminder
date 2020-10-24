@@ -1,6 +1,6 @@
 # Minutes about Linux Envariable
 
-## Table of Contents
+Table of Contents
 =================
 
 <!-- vim-markdown-toc GFM -->
@@ -65,7 +65,7 @@
 
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
-    The command to have Ubuntu fix unmet dependencies and broken packages is  
+The command to have Ubuntu fix unmet dependencies and broken packages is
     `sudo apt-get install -f`
     ```doc
     -f, --fix-broken Fix; attempt to correct a system with broken dependencies in place. This option, when used with install/remove, can omit any packages to permit APT to deduce a likely solution. If packages are specified, these have to completely correct the problem. The option is sometimes necessary when running APT for the first time; APT itself does not allow broken package dependencies to exist on a system. It is possible that a system's dependency structure can be so corrupt as to require manual intervention (which usually means using dselect(1) or dpkg --remove to eliminate some of the offending packages)
@@ -122,7 +122,7 @@
     * Must assign execute permission for your shell script as `sudo chmod +x xxx.sh`
 
 2. add autostart script
-    
+
     All autostart scripts place at `/etc/init.d/`, you can manage them by `update-rc.d`.
 
         cd /etc/init.d
@@ -205,12 +205,12 @@ chgrp   - change a file's group owner
      * `-I` : inactivity period after password expiration
      * `-W` : a warning time period before password expiration
  - minimum password length :  `password [success=1 default=ignore] pam_unix.so obscure sha512 minlen=8` within `/etc/pam.d/common-password`
- - SSH Access by Disabled Users
- Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
- Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
- Restrict SSH access to only user accounts that should have it. eg, you may create a group called "sshlogin" and add the group name as the value associated with `AllowGroups` variable located in the file `/etc/ssh/sshd_config`
+ - SSH Access by Disabled Users 
+    Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
+    Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
+    Restrict SSH access to only user accounts that should have it. eg, you may create a group called "sshlogin" and add the group name as the value associated with `AllowGroups` variable located in the file `/etc/ssh/sshd_config` 
  `AllowGroups sshlogin`
- Then add your permitted SSH users to the group "sshlogin", and restart the SSH service.
+    Then add your permitted SSH users to the group "sshlogin", and restart the SSH service. 
  `sudo adduser username sshlogin`
  `sudo systemctl restart sshd.service`
 
@@ -333,7 +333,7 @@ and then apply the property using
     Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch
 
 - [Setup MSys2 + Git for Windows ](https://zhuanlan.zhihu.com/p/33751738)
-    * `pacman -Sy` test the resposity available
+    * `pacman -Sy` test the repository available
     * `https://packages.msys2.org`
     * autorebase.bat after update pacman
     * `pacman -Su` update software
