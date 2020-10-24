@@ -124,25 +124,25 @@
     
     All autostart scripts place at `/etc/init.d/`, you can manage them by `update-rc.d`.
 
-        >    cd /etc/init.d
-        >    sudo vim local.sh
-        >```sh
-        >#! /bin/sh
-        ># command content
-        >ssllocal -c /home/ubuntu/sxx.json
-        >
-        >exit 0
-        >```
-        >
-        >sudo update-rc.d local.sh defaults 90  
-        >
-        >sudo update-rc.d -f ss_local.sh remove
-        >
-        >sudo sysv-rc-conf
-        >
-        >update-rc.d -f mysql remove
-        >
-        >sudo service --status-all
+        cd /etc/init.d
+        sudo vim local.sh
+        ```sh
+        #! /bin/sh
+        # command content
+        ssllocal -c /home/ubuntu/sxx.json
+        
+        exit 0
+        ```
+        
+        sudo update-rc.d local.sh defaults 90  
+        
+        sudo update-rc.d -f ss_local.sh remove
+        
+        sudo sysv-rc-conf
+        
+        update-rc.d -f mysql remove
+        
+        sudo service --status-all
 
 3. __Recommend to use Method 2__
 
@@ -236,7 +236,8 @@ chgrp   - change a file's group owner
     How to setup host
 
 ## [How to Install and Configuare VNC on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04)
-   - remote:
+
+- remote:
     * `sudo apt update` 
     * `sudo apt install xfce4 xfce4-goodies`
     * `sudo apt install tightvncserver`
@@ -281,7 +282,7 @@ WantedBy=multi-user.target
     * `sudo systemctl status vncserver@1`
 
 
-   - local: 
+- local: 
     * `sudo apt install vncviewer` 
     * `ssh -L 5901:127.0.0.1:5901 -C -N -l user_name your_server_ip` create an SSH connection on local computer that securely forwards to the `localhost` connection for VNC
 
@@ -330,8 +331,8 @@ and then apply the property using
     * /etc/pacman.d/mirrorlist.msys
     Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch
 
-- [如何优雅地配置 Windows 环境下的 MSys2 + Git 开发环境](https://zhuanlan.zhihu.com/p/33751738)
-    * `pacman -Sy` 测试软件源是否可用
+- [Setup MSys2 + Git for Windows ](https://zhuanlan.zhihu.com/p/33751738)
+    * `pacman -Sy` test the resposity available
     * `https://packages.msys2.org`
     * autorebase.bat after update pacman
     * `pacman -Su` update software
@@ -353,8 +354,8 @@ alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
 alias sc='source ~/.bashrc'
 alias du1='du -h --max-depth=1'
-alias RR='ssh -p27635 tony@176.122.159.179'
-alias rsync="rsync -avz -e 'ssh -p 27635'"
+alias RR='ssh -pIO username@xxx'
+alias rsync="rsync -avz -e 'ssh -p 22'"
     ```
 
 ## [vim Markdown](https://github.com/plasticboy/vim-markdown)
