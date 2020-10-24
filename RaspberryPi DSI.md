@@ -1,20 +1,20 @@
-<!--ts-->
 
 Table of Contents
 =================
 
-   * [<a href="https://www.waveshare.com/wiki/4.3inch_DSI_LCD" rel="nofollow">4.3inches DSI LCD from Waveshare</a>](#43inches-dsi-lcd-from-waveshare)
-      * [Introduction](#introduction)
-      * [Features](#features)
-      * [Hardware connection](#hardware-connection)
-      * [Software setting](#software-setting)
-      * [Rotation](#rotation)
-      * [Install virtual keyboard](#install-virtual-keyboard)
-   * [DSI Driver](#dsi-driver)
-   * [<a href="https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md" rel="nofollow">Raspberry Pi hardware</a>](#raspberry-pi-hardware)
+<!-- vim-markdown-toc GFM -->
 
+* [4.3inches DSI LCD from Waveshare](#43inches-dsi-lcd-from-waveshare)
+        * [Introduction](#introduction)
+        * [Features](#features)
+        * [Hardware connection](#hardware-connection)
+        * [Software setting](#software-setting)
+        * [Rotation](#rotation)
+        * [Install virtual keyboard](#install-virtual-keyboard)
+* [DSI Driver](#dsi-driver)
+* [Raspberry Pi hardware](#raspberry-pi-hardware)
 
-<!--te-->
+<!-- vim-markdown-toc -->
 
 # [4.3inches DSI LCD from Waveshare](https://www.waveshare.com/wiki/4.3inch_DSI_LCD)
 
@@ -97,9 +97,9 @@ After installing, you can click Accessories -> Keyboard to open the keyboard.
 
 - [Driver IC of ILI9881C](http://www.internetsomething.com/lcd/ILI9881C-3lane-mipi-gramless.pdf)
 
-- [RaspberryPi Linux Driver for ILI9881c](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-ilitek-ili9881c.c)
+- [RaspberryPi Linux Driver for ILI9881c](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-ilitek-ili9881c.c) 
 
-    [Local Documents](/misc/ILI9881C-3lane-mipi-gramless.pdf)
+    - [Local Documents](/misc/ILI9881C-3lane-mipi-gramless.pdf)
 
 - [Device Trees, overlays, and parameters of RaspberryPI](https://www.raspberrypi.org/documentation/configuration/device-tree.md)
 
