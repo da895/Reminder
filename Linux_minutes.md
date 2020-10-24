@@ -149,18 +149,18 @@ chgrp   - change a file's group owner
  - minimum password length :  `password [success=1 default=ignore] pam_unix.so obscure sha512 minlen=8` within `/etc/pam.d/common-password`
  - SSH Access by Disabled Users 
  
-    Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
+Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
 
-    Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
+Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
 
-    Restrict SSH access to only user accounts that should have it. eg, you may create a group called "sshlogin" and add the group name as the value associated with `AllowGroups` variable located in the file `/etc/ssh/sshd_config` 
+Restrict SSH access to only user accounts that should have it. eg, you may create a group called "sshlogin" and add the group name as the value associated with `AllowGroups` variable located in the file `/etc/ssh/sshd_config` 
 
- `AllowGroups sshlogin`
+`AllowGroups sshlogin`
 
-    Then add your permitted SSH users to the group "sshlogin", and restart the SSH service. 
+Then add your permitted SSH users to the group "sshlogin", and restart the SSH service. 
 
- `sudo adduser username sshlogin`
- `sudo systemctl restart sshd.service`
+`sudo adduser username sshlogin`
+`sudo systemctl restart sshd.service`
 
 ## [Add proxy for apt](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-the-proxy-for-apt-for-ubuntu-18-04/) [and](https://askubuntu.com/questions/35223/syntax-for-socks-proxy-in-apt-conf/550026) 
  - socks5 proxy:  `Acquire::socks::proxy "socks5://server:port";` within `/etc/apt/apt.conf.d/12proxy`
