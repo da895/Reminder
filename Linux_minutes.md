@@ -150,10 +150,15 @@ chgrp   - change a file's group owner
  - SSH Access by Disabled Users 
  
     Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
+
     Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
+
     Restrict SSH access to only user accounts that should have it. eg, you may create a group called "sshlogin" and add the group name as the value associated with `AllowGroups` variable located in the file `/etc/ssh/sshd_config` 
+
  `AllowGroups sshlogin`
+
     Then add your permitted SSH users to the group "sshlogin", and restart the SSH service. 
+
  `sudo adduser username sshlogin`
  `sudo systemctl restart sshd.service`
 
