@@ -3,6 +3,64 @@
 Table of Contents
 =================
 
+<!-- vim-markdown-toc GFM -->
+
+* [[How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)](#how-do-i-resolve-the-following-packages-have-unmet-dependencieshttpsstackoverflowcomquestions26571326how-do-i-resolve-the-following-packages-have-unmet-dependencies)
+* [How to Install Specific Version of Package using apt-get ](#how-to-install-specific-version-of-package-using-apt-get-)
+* [how to check glic version on linux](#how-to-check-glic-version-on-linux)
+* [ubuntu autostart for your own script](#ubuntu-autostart-for-your-own-script)
+* [linux generate UUID](#linux-generate-uuid)
+* [change the __File Permission__ as below](#change-the-__file-permission__-as-below)
+* [SSH Passworldless Login Using SSH  Keygen in 5 Easy Steps](#ssh-passworldless-login-using-ssh--keygen-in-5-easy-steps)
+* [Ubuntu User Management](#ubuntu-user-management)
+        * [Where is root?](#where-is-root)
+        * [Adding and Deleting Users](#adding-and-deleting-users)
+        * [Use Profile Security](#use-profile-security)
+        * [Password Policy](#password-policy)
+* [Add proxy for apt and](#add-proxy-for-apt-and)
+* [List repositories on Linux](#list-repositories-on-linux)
+* [sprov blog](#sprov-blog)
+* [Four Spaces](#four-spaces)
+* [Jerry Qu Blog](#jerry-qu-blog)
+* [How to Install and Configuare VNC on Ubuntu 18.04](#how-to-install-and-configuare-vnc-on-ubuntu-1804)
+* [Fix Ubuntu Chinese issue](#fix-ubuntu-chinese-issue)
+* [rsync](#rsync)
+* [SVN:externals](#svnexternals)
+* [MSYS2](#msys2)
+* [vim Markdown](#vim-markdown)
+* [markdown convert to pdf within command line](#markdown-convert-to-pdf-within-command-line)
+* [How to connect to Cisco AnyConnect VPN via GUI in Ubuntu 18.04](#how-to-connect-to-cisco-anyconnect-vpn-via-gui-in-ubuntu-1804)
+* [Connecting to Cisco VPN from Ubuntu 18.04 without a Group Password](#connecting-to-cisco-vpn-from-ubuntu-1804-without-a-group-password)
+* [linux samba](#linux-samba)
+* [How do I boot directly to tty1 in ubuntu?](#how-do-i-boot-directly-to-tty1-in-ubuntu)
+* [Make a Bash alias that takes a parameter](#make-a-bash-alias-that-takes-a-parameter)
+* [How to unzip a multipart (spanned) ZIP on Linux](#how-to-unzip-a-multipart-spanned-zip-on-linux)
+* [NFS](#nfs)
+* [Check Perl Library](#check-perl-library)
+* [install perl lib via local::lib](#install-perl-lib-via-locallib)
+* [9 simple ways to find the PID of a Program Running on Linux](#9-simple-ways-to-find-the-pid-of-a-program-running-on-linux)
+* [High Performance & Multi-threaded SCP Using RSYNC](#high-performance--multi-threaded-scp-using-rsync)
+* [copy files and directories recursively with tar](#copy-files-and-directories-recursively-with-tar)
+* [DataRecovery](#datarecovery)
+* [check the Linux OS](#check-the-linux-os)
+* [How to find what other machines are connected to the local network](#how-to-find-what-other-machines-are-connected-to-the-local-network)
+* [how can you find and replace text in a file using the Windows command_line env](#how-can-you-find-and-replace-text-in-a-file-using-the-windows-command_line-env)
+* [Command Line Reference](#command-line-reference)
+* [How to install RPM file on Linux](#how-to-install-rpm-file-on-linux)
+* [RPM Package](#rpm-package)
+* [How to download a RPM Package with all dependencies in CentOS](#how-to-download-a-rpm-package-with-all-dependencies-in-centos)
+* [Need to set up yum repository for locally-mounted DVD on RHEL](#need-to-set-up-yum-repository-for-locally-mounted-dvd-on-rhel)
+* [How to setup local yum reposity on CentOS 7](#how-to-setup-local-yum-reposity-on-centos-7)
+* [How to setup yum reposity using locally mounted DVD](#how-to-setup-yum-reposity-using-locally-mounted-dvd)
+* [Create ISO from DVD](#create-iso-from-dvd)
+* [Disabling the subscription mamager repository RHEL](#disabling-the-subscription-mamager-repository-rhel)
+* [enable or disabling a repository using RHEL subscription Management](#enable-or-disabling-a-repository-using-rhel-subscription-management)
+* [Manageing repositories where can i find a list of repositories](#manageing-repositories-where-can-i-find-a-list-of-repositories)
+* [use centos repo for RHEL](#use-centos-repo-for-rhel)
+* [linux list process by user name](#linux-list-process-by-user-name)
+* [fix the pip error with Cannot fetch index base URL http://pypi.python.org/simple/ ](#fix-the-pip-error-with-cannot-fetch-index-base-url-httppypipythonorgsimple-)
+
+<!-- vim-markdown-toc -->
 
 
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
@@ -148,18 +206,12 @@ chgrp   - change a file's group owner
      * `-W` : a warning time period before password expiration
  - minimum password length :  `password [success=1 default=ignore] pam_unix.so obscure sha512 minlen=8` within `/etc/pam.d/common-password`
  - SSH Access by Disabled Users 
- 
 Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
-
 Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
-
 Restrict SSH access to only user accounts that should have it. eg, you may create a group called "sshlogin" and add the group name as the value associated with `AllowGroups` variable located in the file `/etc/ssh/sshd_config` 
-
 `AllowGroups sshlogin`
-
 Then add your permitted SSH users to the group "sshlogin", and restart the SSH service. 
-
-`sudo adduser username sshlogin`
+`sudo adduser username sshlogin` 
 `sudo systemctl restart sshd.service`
 
 ## [Add proxy for apt](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-the-proxy-for-apt-for-ubuntu-18-04/) [and](https://askubuntu.com/questions/35223/syntax-for-socks-proxy-in-apt-conf/550026) 
