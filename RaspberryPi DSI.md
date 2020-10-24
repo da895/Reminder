@@ -99,6 +99,8 @@ After installing, you can click Accessories -> Keyboard to open the keyboard.
 
 - [RaspberryPi Linux Driver for ILI9881c](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-ilitek-ili9881c.c)
 
+    [Local Documents](/misc/ILI9881C-3lane-mipi-gramless.pdf)
+
 - [Device Trees, overlays, and parameters of RaspberryPI](https://www.raspberrypi.org/documentation/configuration/device-tree.md)
 
 # [Raspberry Pi hardware](https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md)
