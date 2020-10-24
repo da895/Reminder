@@ -5,12 +5,12 @@ Table of Contents
 <!-- vim-markdown-toc GFM -->
 
 * [4.3inches DSI LCD from Waveshare](#43inches-dsi-lcd-from-waveshare)
-        * [Introduction](#introduction)
-        * [Features](#features)
-        * [Hardware connection](#hardware-connection)
-        * [Software setting](#software-setting)
-        * [Rotation](#rotation)
-        * [Install virtual keyboard](#install-virtual-keyboard)
+   * [Introduction](#introduction)
+   * [Features](#features)
+   * [Hardware connection](#hardware-connection)
+   * [Software setting](#software-setting)
+   * [Rotation](#rotation)
+   * [Install virtual keyboard](#install-virtual-keyboard)
 * [DSI Driver](#dsi-driver)
 * [Raspberry Pi hardware](#raspberry-pi-hardware)
 
