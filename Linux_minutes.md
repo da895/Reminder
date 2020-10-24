@@ -62,6 +62,7 @@
 
 <!-- vim-markdown-toc -->
 
+
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
     The command to have Ubuntu fix unmet dependencies and broken packages is  
@@ -344,7 +345,7 @@ and then apply the property using
 
 - [MSYS2 install and configuration ](https://www.cnblogs.com/fengyc/p/5156117.html)
 
-    ```bash
+```bash
 export LANG="en_US.utf8"
 alias ls='ls -hF --color=tty'                 # classify files in colour
 alias dir='ls --color=auto --format=vertical'
@@ -356,7 +357,7 @@ alias sc='source ~/.bashrc'
 alias du1='du -h --max-depth=1'
 alias RR='ssh -pIO username@xxx'
 alias rsync="rsync -avz -e 'ssh -p 22'"
-    ```
+```
 
 ## [vim Markdown](https://github.com/plasticboy/vim-markdown)
 
@@ -613,7 +614,7 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
 
 
 ## check the Linux OS
-    * method 1
+* method 1
        ```
       ## if system is Redhat
     OS=`cat /etc/redhat-release | awk {'print $1}'`
@@ -628,27 +629,27 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
         exit;
     fi
        ```
-    * method 2 
+* method 2 
         ```
         cat /proc/version
 
         and Grep for words "Red" and "CentOS" you can event get the version from the same.
         ```
-    * method 3
+* method 3
       `cat /etc/os-release  | grep VERSION_ID | sed -n 's/.*"\(.*\)"/\1/p'`
-    * method 4
+* method 4
       `cat /etc/issue`
 
 ## [How to find what other machines are connected to the local network](https://unix.stackexchange.com/questions/8118/how-to-find-what-other-machines-are-connected-to-the-local-network)
 
-    * `arp`
-    * `ip neigh`
-    * install `nmap` and run `nmap -sP 192.168.1.*`
+* `arp`
+* `ip neigh`
+* install `nmap` and run `nmap -sP 192.168.1.*`
 
 ## [how can you find and replace text in a file using the Windows command_line env](https://stackoverflow.com/questions/60034/how-can-you-find-and-replace-text-in-a-file-using-the-windows-command-line-envir)
 
  
- 1. `powershell -Command "(gc myFile.txt) -replace 'foo', 'bar' | Out-File -encoding ASCII myFile.txt"`
+1. `powershell -Command "(gc myFile.txt) -replace 'foo', 'bar' | Out-File -encoding ASCII myFile.txt"`
 
   *  powershell starts up powershell.exe, which is included in Windows 7
   *  -Command "... " is a command line arg for powershell.exe containing the command to run
@@ -658,7 +659,7 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
   *  -encoding ASCII prevents transcribing the output file to unicode, as the comments point out
 
 
- 2.  `type test.txt | powershell -Command "$input | ForEach-Object { $_ -replace \"foo\", \"bar\" }" > outputFile.txt`
+2.  `type test.txt | powershell -Command "$input | ForEach-Object { $_ -replace \"foo\", \"bar\" }" > outputFile.txt`
 
 ## [Command Line Reference](https://ss64.com)
 
@@ -735,11 +736,11 @@ You can use repo-file from CentOS, but need to prepare it:
 
 ## [linux list process by user name](https://www.cyberciti.biz/faq/linux-list-processes-by-user-names-euid-and-ruid/)
 
-  1. `top -u {userName}`
-  2. `pgrep -u {userName} {processName}`
-  3. `ps -u {userName}`
-  4. `ps -elF`
-  5. `pstree -aph`
+1. `top -u {userName}`
+2. `pgrep -u {userName} {processName}`
+3. `ps -u {userName}`
+4. `ps -elF`
+5. `pstree -aph`
 
 ## [fix the pip error with Cannot fetch index base URL http://pypi.python.org/simple/ ](https://www.cnblogs.com/jonnyan/p/9181031.html)
 
