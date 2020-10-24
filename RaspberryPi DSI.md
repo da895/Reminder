@@ -3,7 +3,7 @@
 Table of Contents
 =================
 
-   * [<a href="https://www.waveshare.com/wiki/4.3inch_DSI_LCD" rel="nofollow">4.3inches DSI LCD from Waveshare</a>](#43inches-dsi-lcd-from-waveshare)
+      * [<a href="https://www.waveshare.com/wiki/4.3inch_DSI_LCD" rel="nofollow">4.3inches DSI LCD from Waveshare</a>](#43inches-dsi-lcd-from-waveshare)
       * [Introduction](#introduction)
       * [Features](#features)
       * [Hardware connection](#hardware-connection)
@@ -11,6 +11,8 @@ Table of Contents
       * [Rotation](#rotation)
       * [Install virtual keyboard](#install-virtual-keyboard)
    * [DSI Driver](#dsi-driver)
+   * [<a href="https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md" rel="nofollow">Raspberry Pi hardware</a>](#raspberry-pi-hardware)
+
 
 <!--te-->
 
