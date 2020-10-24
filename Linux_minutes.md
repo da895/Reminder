@@ -614,7 +614,7 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
 
 
 ## check the Linux OS
-* method 1
+* method 1 
        ```
       ## if system is Redhat
     OS=`cat /etc/redhat-release | awk {'print $1}'`
@@ -635,15 +635,15 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
 
         and Grep for words "Red" and "CentOS" you can event get the version from the same.
         ```
-* method 3
+* method 3 
       `cat /etc/os-release  | grep VERSION_ID | sed -n 's/.*"\(.*\)"/\1/p'`
-* method 4
+* method 4 
       `cat /etc/issue`
 
 ## [How to find what other machines are connected to the local network](https://unix.stackexchange.com/questions/8118/how-to-find-what-other-machines-are-connected-to-the-local-network)
 
-* `arp`
-* `ip neigh`
+* `arp` 
+* `ip neigh` 
 * install `nmap` and run `nmap -sP 192.168.1.*`
 
 ## [how can you find and replace text in a file using the Windows command_line env](https://stackoverflow.com/questions/60034/how-can-you-find-and-replace-text-in-a-file-using-the-windows-command-line-envir)
@@ -665,7 +665,7 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
 
 ## [How to install RPM file on Linux](https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux)
 
-* `sudo rpm -i xxx.rpm`     
+* `sudo rpm -i xxx.rpm` 
 * `sudo yum localinstall xxx.rpm`
 * `sudo rpm -e xxx.rpm`   remove RPM package
 * `sudo rpm -qpR xxx.rpm` check dependencies
