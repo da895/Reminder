@@ -18,6 +18,8 @@ Table of Contents
 
 # [4.3inches DSI LCD from Waveshare](https://www.waveshare.com/wiki/4.3inch_DSI_LCD)
 
+![IMAGE WHAT](/misc/WaveShare_DSI_4p3inches_panel_Exterior-Size.jpg)
+
 ## Introduction
 
 4.3inch Capacitive Touch Display for Raspberry Pi, 800×480, IPS Wide Angle, MIPI DSI Interface
