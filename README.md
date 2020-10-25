@@ -1,6 +1,8 @@
 # Reminder
 Collection for Misc information 
 
+- [Oxford Discover](https://elt.oup.com/catalogue/items/global/young_learners/oxford_discover_second_edition/?cc=cn&selLanguage=zh&mode=hub)
+
 - [The basics of scripting in pcbnew](https://kicad.mmccoo.com/2017/02/01/the-basics-of-scripting-in-pcbnew/)
 
 - [Github MarkDown](https://guides.github.com/features/mastering-markdown/)
