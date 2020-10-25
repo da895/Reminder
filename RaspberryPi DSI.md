@@ -99,7 +99,11 @@ After installing, you can click Accessories -> Keyboard to open the keyboard.
 
 - [RaspberryPi Linux Driver for ILI9881c](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-ilitek-ili9881c.c) 
 
-    - [Local Documents](/misc/ILI9881C-3lane-mipi-gramless.pdf)
+  - [Local Documents](/misc/ILI9881C-3lane-mipi-gramless.pdf)
+    
+- [RaspberryPi Linux Driver for OTM8009A](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-orisetech-otm8009a.c)
+  
+  - [Local Documents](/misc/OTM8009A.pdf) http://www.orientdisplay.com/pdf/OTM8009A.pdf
 
 - [Device Trees, overlays, and parameters of RaspberryPI](https://www.raspberrypi.org/documentation/configuration/device-tree.md)
 
