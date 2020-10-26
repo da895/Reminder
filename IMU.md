@@ -1,3 +1,17 @@
+# IMU
+
+Table of Contexts
+=================
+<!-- vim-markdown-toc GFM -->
+
+* [Vendor](#vendor)
+* [6-Axis OIS IMUs: InvenSense IMU in iPhone 7 Plus and STMicroelectronics LSM6DSM](#6-axis-ois-imus-invensense-imu-in-iphone-7-plus-and-stmicroelectronics-lsm6dsm)
+* [2‐Axis Gyroscopes for Optical Image Stabilization: STMicroelectronics L2G2IS and InvenSense IDG‐2030](#2axis-gyroscopes-for-optical-image-stabilization-stmicroelectronics-l2g2is-and-invensense-idg2030)
+* [InvenSense ICM-30630 Tri-Core 6-Axis Sensor Hub](#invensense-icm-30630-tri-core-6-axis-sensor-hub)
+* [BOSCH Sensortec BMF055 Cortex M0+ 9-Axis Sensor Hub in SiP](#bosch-sensortec-bmf055-cortex-m0-9-axis-sensor-hub-in-sip)
+
+<!-- vim-markdown-toc -->
+
 ## Vendor
 
 * [ADI](https://www.analog.com/cn/parametricsearch/11172#/) 
