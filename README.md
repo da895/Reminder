@@ -26,3 +26,19 @@ Collection for Misc information
 > MRAM can resist high radiation, can operate in extreme temperature conditions, and can be tamper resistant. This makes MRAM suitable for automotive, industrial, military and space applications, and these are important segments for MRAM developers.
 
 > Many companies are also developing and starting to produce MRAM chips, including IBM and Samsung, Toshiba, Everspin, Avalanche Technologies, Spin Transfer Technologies and Crocus.
+
+- [GateWave Northern](https://www.gatewave.com)
+
+> **Socket and Connector Signal Integrity**
+
+> That's what we do at **GateWave Northern**.
+
+> For you and your customer we help design the best socket and the best PCB interface.
+
+> We do that via measurement and 3D FEA analysis.
+
+> Plus: Our consultation in component and system design including thermal and electrical finite element analysis resolves crucial development issues.
+
+
+	[Why PCB optimization is necessary](https://www.gatewave.com/pdfs/PCB%20Interface%20Optimization.pdf) [Local Document](/misc/PCB Interface Optimization.pdf)
+
