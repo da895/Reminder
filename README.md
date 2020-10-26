@@ -40,5 +40,7 @@ Collection for Misc information
 > Plus: Our consultation in component and system design including thermal and electrical finite element analysis resolves crucial development issues.
 
 
-	[Why PCB optimization is necessary](https://www.gatewave.com/pdfs/PCB%20Interface%20Optimization.pdf) [Local Document](/misc/PCB Interface Optimization.pdf)
+* [Why PCB optimization is necessary](https://www.gatewave.com/pdfs/PCB%20Interface%20Optimization.pdf) 
+
+     [Local Document](/misc/PCB%20Interface%20Optimization.pdf)
 
