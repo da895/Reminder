@@ -1,0 +1,1 @@
+OBJS:=sub.c

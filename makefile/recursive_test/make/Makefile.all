@@ -1,0 +1,25 @@
+
+TOPDIR:=$(CURDIR)
+dir_tmp:=$(TOPDIR)/dir.tmp
+export TOPDIR dir_tmp
+
+all: build_dag dump
+
+build_dag:
+	make -C make -f Makefile
+	./make/dir_process.sh
+
+hier:=$(shell cat $(dir_tmp))
+hier:=$(hier:$(TOPDIR)/%=%)
+AOBJS:=$(filter %.c, $(hier))
+AOBJS+=$(filter %.s, $(hier))
+AOBJS+=$(filter %.S, $(hier))
+ADIRS:=$(filter-out $(AOBJS),$(hier))
+ADIRS:=$(addprefix -I,$(ADIRS))
+
+dump: 
+	@echo "hier:$(hier)"
+	@echo "AOBJS:$(AOBJS)"
+	@echo "ADIRS:$(ADIRS)"
+
+.PHONY: build_dag dump

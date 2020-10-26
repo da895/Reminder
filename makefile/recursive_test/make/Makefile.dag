@@ -1,0 +1,53 @@
+
+_BUILD:
+
+OBJS:=
+SUBDIRS:=
+
+-include Makefile
+
+is_top:=$(findstring $(TOPDIR),$(SUBDIRS))
+#is_top:=$(SUBDIRS:$(TOPDIR)/%=%)
+
+ifeq ($(strip $(is_top)),)
+#SUBDIR_PATH:=$(SUBDIRS:%=$(CURDIR)/%)
+#SUBDIR_PATH1:=$(SUBDIRS:%=$(CURDIR)/%)
+#ifeq ($(strip $(SUBDIR_PATH)),)
+#SUBDIR_PATH:=$(CURDIR)
+#endif
+SUBDIR_PATH:=
+else
+SUBDIR_PATH:=$(SUBDIRS)
+endif
+#SUBDIR_PATH:=$(foreach dr,$(SUBDIR_PATH),"$(dr)")
+
+
+ifneq ($(strip $(OBJS)),)
+  OBJS_PATH:=$(OBJS:%=$(CURDIR)/%)
+  SUBDIR_PATH += $(OBJS_PATH)
+  SUBDIR_PATH += $(CURDIR)
+  SUBDIR_PATH:=$(foreach dr,$(SUBDIR_PATH),"$(dr)\\n")
+endif
+
+dump:
+	@echo ">CPATH:$(CURDIR)"
+	@echo ">is_top:$(is_top)"
+	@echo ">SUB:$(SUBDIRS)"
+	@echo ">PATH:$(SUBDIR_PATH)"
+
+_BUILD: $(OBJS) $(SUBDIRS) 
+	@echo "CPATH:$(CURDIR)"
+	@echo "is_top:$(is_top)"
+	@echo "SUB:$(SUBDIRS)"
+	@echo "PATH1:$(SUBDIR_PATH1)"
+	@echo "PATH:$(SUBDIR_PATH)"
+ifeq ($(strip $(is_top)),)
+	@echo $(SUBDIR_PATH)  >> $(dir_tmp)
+endif
+
+$(SUBDIRS):
+	@echo "TOPDIR:$(TOPDIR)"
+	@echo "CURDIR:$(CURDIR)"
+	$(MAKE) -C $@ -f  $(TOPDIR)/make/Makefile.dag
+
+.PHONY: $(SUBDIRS) dump $(OBJS)
