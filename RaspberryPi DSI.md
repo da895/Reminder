@@ -5,14 +5,19 @@ Table of Contents
 <!-- vim-markdown-toc GFM -->
 
 * [4.3inches DSI LCD from Waveshare](#43inches-dsi-lcd-from-waveshare)
-   * [Introduction](#introduction)
-   * [Features](#features)
-   * [Hardware connection](#hardware-connection)
-   * [Software setting](#software-setting)
-   * [Rotation](#rotation)
-   * [Install virtual keyboard](#install-virtual-keyboard)
+        * [Introduction](#introduction)
+        * [Features](#features)
+        * [Hardware connection](#hardware-connection)
+        * [Software setting](#software-setting)
+        * [Rotation](#rotation)
+        * [Install virtual keyboard](#install-virtual-keyboard)
 * [DSI Driver](#dsi-driver)
 * [Raspberry Pi hardware](#raspberry-pi-hardware)
+* [Raspberry Pi  Pinout](#raspberry-pi--pinout)
+* [Topic of Raspberry Pi display](#topic-of-raspberry-pi-display)
+* [Raspberry Pi  Display connector reference1](#raspberry-pi--display-connector-reference1)
+* [P/N of SFW15R-2STE1LF for Display connector](#pn-of-sfw15r-2ste1lf-for-display-connector)
+* [P/N of 1-1734248-5 according to Raspberry schematic](#pn-of-1-1734248-5-according-to-raspberry-schematic)
 
 <!-- vim-markdown-toc -->
 
@@ -95,15 +100,18 @@ After installing, you can click Accessories -> Keyboard to open the keyboard.
 
 - [CM3+ with custom display problems](https://www.raspberrypi.org/forums/viewtopic.php?f=98&t=240389#p1467185)
 
-- [Driver IC of ILI9881C](http://www.internetsomething.com/lcd/ILI9881C-3lane-mipi-gramless.pdf)
+- **ICN6211**
+  - [drm/bridge: Add Chipone ICN6211 MIPI-DSI/RGB convertor bridge](https://lore.kernel.org/patchwork/patch/1051091/)
+  - [drm/panel: Add Bananapi S070WV20-CT16 ICN6211 MIPI-DSI to RGB bridge](https://patchwork.freedesktop.org/patch/334089/?series=60847&rev=2)
 
-- [RaspberryPi Linux Driver for ILI9881c](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-ilitek-ili9881c.c) 
+- **ILI9881C**
+    - [Driver IC of ILI9881C](http://www.internetsomething.com/lcd/ILI9881C-3lane-mipi-gramless.pdf)
+    - [RaspberryPi Linux Driver for ILI9881c](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-ilitek-ili9881c.c) 
+      - [Local Documents](/misc/ILI9881C-3lane-mipi-gramless.pdf)
 
-  - [Local Documents](/misc/ILI9881C-3lane-mipi-gramless.pdf)
-    
-- [RaspberryPi Linux Driver for OTM8009A](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-orisetech-otm8009a.c)
-  
-  - [Local Documents](/misc/OTM8009A.pdf) http://www.orientdisplay.com/pdf/OTM8009A.pdf
+- **OTM8009A**
+    - [RaspberryPi Linux Driver for OTM8009A](https://github.com/raspberrypi/linux/blob/rpi-4.20.y/drivers/gpu/drm/panel/panel-orisetech-otm8009a.c)
+      - [Local Documents](/misc/OTM8009A.pdf) http://www.orientdisplay.com/pdf/OTM8009A.pdf
 
 - [Device Trees, overlays, and parameters of RaspberryPI](https://www.raspberrypi.org/documentation/configuration/device-tree.md)
 
