@@ -109,4 +109,14 @@ After installing, you can click Accessories -> Keyboard to open the keyboard.
 
 # [Raspberry Pi hardware](https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md)
 
+# [Raspberry Pi  Pinout](https://pinout.xyz/pinout/i2c#)
+
+# [Topic of Raspberry Pi display](https://www.raspberrypi.org/forums/viewtopic.php?t=74656)
+
+# [Raspberry Pi  Display connector reference1](https://github.com/da895/documentation/blob/master/hardware/computemodule/schematics/rpi_SCH_CMCDA_1p1.pdf)
+
+# [P/N of SFW15R-2STE1LF for Display connector](https://www.digikey.co.uk/product-detail/en/amphenol-fci/SFW15R-2STE1LF/609-1906-1-ND/1003189)
+
+# [P/N of 1-1734248-5 according to Raspberry schematic](/misc/1-1734248-5.pdf)
+
   
