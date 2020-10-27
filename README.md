@@ -9,6 +9,8 @@ Collection for Misc information
 
 - [TOC for MarkDown](https://github.com/ekalinin/github-markdown-toc)
 
+- [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)
+
 - [Writing on GitHub](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github)
 
 - [High-temperature operating life(HTOL)](https://en.wikipedia.org/wiki/High-temperature_operating_life)
