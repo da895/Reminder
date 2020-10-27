@@ -11,8 +11,9 @@ Table of Contents
 <!-- vim-markdown-toc -->
 
 ## Measuring Current and Current Sharing of DC-DC Converts
-   [URL](http://cdn.teledynelecroy.com/files/whitepapers/designcon-2018-measuring-current-and-sharing.pdf)
-   [Local Documents](/misc/designcon-2018-measuring-current-and-sharing.pdf)
+[URL](http://cdn.teledynelecroy.com/files/whitepapers/designcon-2018-measuring-current-and-sharing.pdf)
+
+[Local Documents](/misc/designcon-2018-measuring-current-and-sharing.pdf)
 
 ## Tech Web from ROHM
-    [URL](https://techweb.rohm.com/knowledge/category/dcdc)
+[URL](https://techweb.rohm.com/knowledge/category/dcdc)
