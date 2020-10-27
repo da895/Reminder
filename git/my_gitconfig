@@ -1,0 +1,11 @@
+[user]
+	email = xxx@xxxx
+	name = xxx
+[alias]
+	co = checkout
+	br = branch
+	ci = commit -a -m
+	st = status -s
+	unstag = reset HEAD --
+	last = log -1 HEAD
+	psh = push origin master
