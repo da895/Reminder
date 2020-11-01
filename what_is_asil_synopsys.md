@@ -1,19 +1,6 @@
----
-description: |
-    ASIL refers to Automotive Safety Integrity Level. It is a risk
-    classification system defined by the ISO 26262 standard for the
-    functional safety of road vehicles. Learn more. 
-keywords: ASIL
-last-modified: '2020-9-02 11:16:06 AM'
-title: |
-    What is ASIL (Automotive Safety Integrity Level)? – Overview | Synopsys
-    Automotive
-    What is ASIL (Automotive Safety Integrity Level)? – Overview | Synopsys
-    Automotive 
-viewport: 'width=device-width, initial-scale=1.0'
----
+#    What is ASIL (Automotive Safety Integrity Level)? – Overview | Synopsys
 
-What is ASIL? {#what-is-asil .page-title}
+What is ASIL? 
 =============
 
 
@@ -39,10 +26,10 @@ grade. Head lights and brake lights generally would be ASIL-B while
 cruise control would generally be ASIL-C.
 
 
-![ASIL Classifications](/misc/asil-classifications.jpg.imgw.850.x.jpg){.img-responsive}
+![ASIL Classifications](/misc/asil-classifications.jpg.imgw.850.x.jpg)
 
 
-[ How do ASILs work? ]{.text-size-normal style="color: #5A2A82;"} {#how-do-asils-work .title}
+[ How do ASILs work? ] 
 -----------------------------------------------------------------
 
 ASILs are established by performing hazard analysis and risk assessment.
@@ -65,7 +52,7 @@ determine the required ASIL. For example, a combination of the highest
 hazards (S3 + E4 + C3) would result in an ASIL D classification. 
 
 
-[What are the challenges of ASILs?]{.text-size-normal style="color: #5A2A82;"} {#what-are-the-challenges-of-asils .title}
+[What are the challenges of ASILs?] 
 ------------------------------------------------------------------------------
 
 
@@ -87,13 +74,7 @@ empty stretch of road in the Australian Outback?
 Simply put, ASIL classification depends on context and interpretation. 
 
 
-![Audi Customer Innovation](/misc/audi-logo-rings-text-dark-gray.svg.imgo.svg){.img-responsive
-.svg-padding-md}
-
------------------------------------------------------------------------------------------------
-
-
-[How are ASILs evolving?]{.text-size-normal style="color: #5A2A82;"} {#how-are-asils-evolving .title}
+[How are ASILs evolving?] 
 --------------------------------------------------------------------
 
 Given the guesswork involved in determining ASILS, the [Society of
@@ -111,7 +92,7 @@ driver means that Controllability will always be C3, the extreme of
 (probability) will no doubt require re-examination as well.
 
 
-[What are the benefits of ASILs?]{.text-size-normal style="color: #5A2A82;"} {#what-are-the-benefits-of-asils .title}
+[What are the benefits of ASILs?] 
 ----------------------------------------------------------------------------
 
 ISO 26262 is a goal-based standard that’s all about “preventing harm.”
@@ -128,7 +109,7 @@ Key benefits include:
     the final product 
 
 
-[How does Synopsys help you meet ASIL requirements?]{.text-size-normal style="color: #5A2A82;"} {#how-does-synopsys-help-you-meet-asil-requirements .title}
+[How does Synopsys help you meet ASIL requirements?] 
 -----------------------------------------------------------------------------------------------
 
 The Synopsys [DesignWare IP](https://www.synopsys.com/designware-ip/ip-market-segments/automotive.html)
