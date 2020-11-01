@@ -1,7 +1,22 @@
 #    What is ASIL (Automotive Safety Integrity Level)? – Overview | Synopsys
 
+
+Table of Contents
+=================
+<!-- vim-markdown-toc GFM -->
+
+* [What is ASIL?](#what-is-asil)
+* [How do ASILs work?](#how-do-asils-work)
+* [What are the challenges of ASILs?](#what-are-the-challenges-of-asils)
+* [How are ASILs evolving?](#how-are-asils-evolving)
+* [What are the benefits of ASILs?](#what-are-the-benefits-of-asils)
+* [How does Synopsys help you meet ASIL requirements?](#how-does-synopsys-help-you-meet-asil-requirements)
+
+<!-- vim-markdown-toc -->
+
+
 What is ASIL? 
-=============
+-----------------------------------------------------------------
 
 
 ASIL refers to Automotive Safety Integrity Level. It is a risk
@@ -29,7 +44,7 @@ cruise control would generally be ASIL-C.
 ![ASIL Classifications](/misc/asil-classifications.jpg.imgw.850.x.jpg)
 
 
-[ How do ASILs work? ] 
+How do ASILs work? 
 -----------------------------------------------------------------
 
 ASILs are established by performing hazard analysis and risk assessment.
@@ -52,7 +67,7 @@ determine the required ASIL. For example, a combination of the highest
 hazards (S3 + E4 + C3) would result in an ASIL D classification. 
 
 
-[What are the challenges of ASILs?] 
+What are the challenges of ASILs? 
 ------------------------------------------------------------------------------
 
 
@@ -74,7 +89,7 @@ empty stretch of road in the Australian Outback?
 Simply put, ASIL classification depends on context and interpretation. 
 
 
-[How are ASILs evolving?] 
+How are ASILs evolving? 
 --------------------------------------------------------------------
 
 Given the guesswork involved in determining ASILS, the [Society of
@@ -92,7 +107,7 @@ driver means that Controllability will always be C3, the extreme of
 (probability) will no doubt require re-examination as well.
 
 
-[What are the benefits of ASILs?] 
+What are the benefits of ASILs?
 ----------------------------------------------------------------------------
 
 ISO 26262 is a goal-based standard that’s all about “preventing harm.”
@@ -109,7 +124,7 @@ Key benefits include:
     the final product 
 
 
-[How does Synopsys help you meet ASIL requirements?] 
+How does Synopsys help you meet ASIL requirements? 
 -----------------------------------------------------------------------------------------------
 
 The Synopsys [DesignWare IP](https://www.synopsys.com/designware-ip/ip-market-segments/automotive.html)
