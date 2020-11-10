@@ -11,6 +11,8 @@ Collection for Misc information
 
 - [Adding Spice To Your Workbench](https://hackaday.com/2016/02/26/adding-spice-to-your-workbench/)
 
+- [The Scientist and Engineer's Guide to Digital Signal Processing -- How the FFT works](http://www.dspguide.com/ch12/2.htm)
+
 - [Github MarkDown](https://guides.github.com/features/mastering-markdown/)
 
 - [TOC for MarkDown](https://github.com/ekalinin/github-markdown-toc)
