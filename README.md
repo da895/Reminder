@@ -11,7 +11,13 @@ Collection for Misc information
 
 - [Adding Spice To Your Workbench](https://hackaday.com/2016/02/26/adding-spice-to-your-workbench/)
 
-- [The Scientist and Engineer's Guide to Digital Signal Processing -- How the FFT works](http://www.dspguide.com/ch12/2.htm)
+- **FFT**
+  * [The Scientist and Engineer's Guide to Digital Signal Processing -- How the FFT works](http://www.dspguide.com/ch12/2.htm)
+  * [Understanding the Fourier Transform by example](https://www.ritchievink.com/blog/2017/04/23/understanding-the-fourier-transform-by-example/)
+  * [Lect11 Fast Fourier Transform (FFT)](http://dsec.pku.edu.cn/~tieli/notes/num_meth/lect11.pdf)
+  * [The Fast Fourier Transform UCSB math](https://web.math.ucsb.edu/~dls/Expository/2014-10-FFT.pdf)
+  * [Fourier Transforms and the Fast Fourier Transform (FFT) Algorithm](http://www.cs.cmu.edu/afs/andrew/scs/cs/15-463/2001/pub/www/notes/fourier/fourier.pdf)
+  * [Lecture 7 - The Discrete Fourier Transform](http://www.robots.ox.ac.uk/~sjrob/Teaching/SP/l7.pdf)
 
 - [Github MarkDown](https://guides.github.com/features/mastering-markdown/)
 
