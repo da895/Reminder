@@ -9,7 +9,13 @@ Collection for Misc information
 
 - [The basics of scripting in pcbnew](https://kicad.mmccoo.com/2017/02/01/the-basics-of-scripting-in-pcbnew/)
 
-- [Adding Spice To Your Workbench](https://hackaday.com/2016/02/26/adding-spice-to-your-workbench/)
+- **SPICE**
+  * **LTSPCIE**
+    * [Get_start_guide-ltspice](https://www.analog.com/media/en/simulation-models/spice-models/LTspiceGettingStartedGuide.pdf?modelType=spice-models)
+    * [hotkeys-ltspice](https://www.analog.com/media/en/simulation-models/spice-models/LTspice_ShortcutFlyer.pdf?modelType=spice-models)
+    * [simulating-power-planes-with-ltspice](https://www.analog.com/en/technical-articles/simulating-power-planes-with-ltspice.html)
+    
+  * [Adding Spice To Your Workbench](https://hackaday.com/2016/02/26/adding-spice-to-your-workbench/)
 
 - **FFT**
   * [The Scientist and Engineer's Guide to Digital Signal Processing -- How the FFT works](http://www.dspguide.com/ch12/2.htm)
