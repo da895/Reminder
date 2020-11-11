@@ -100,9 +100,13 @@ After installing, you can click Accessories -> Keyboard to open the keyboard.
 
 - [CM3+ with custom display problems](https://www.raspberrypi.org/forums/viewtopic.php?f=98&t=240389#p1467185)
 
+- [Demystifying Linux MIPI-DSI Subsystem](https://elinux.org/images/7/73/Jagan_Teki_-_Demystifying_Linux_MIPI-DSI_Subsystem.pdf) 
+  - [Local Documents](/misc/Jagan_Teki_-_Demystifying_Linux_MIPI-DSI_Subsystem.pdf)
+
 - **ICN6211**
   - [drm/bridge: Add Chipone ICN6211 MIPI-DSI/RGB convertor bridge](https://lore.kernel.org/patchwork/patch/1051091/)
   - [drm/panel: Add Bananapi S070WV20-CT16 ICN6211 MIPI-DSI to RGB bridge](https://patchwork.freedesktop.org/patch/334089/?series=60847&rev=2)
+
 
 - **ILI9881C**
     - [Driver IC of ILI9881C](http://www.internetsomething.com/lcd/ILI9881C-3lane-mipi-gramless.pdf)
