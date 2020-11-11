@@ -15,6 +15,7 @@ Collection for Misc information
     * [hotkeys-ltspice](https://www.analog.com/media/en/simulation-models/spice-models/LTspice_ShortcutFlyer.pdf?modelType=spice-models)
     * [simulating-power-planes-with-ltspice](https://www.analog.com/en/technical-articles/simulating-power-planes-with-ltspice.html)
     
+  * [SPICE Overview](https://github.com/da895/Reminder/blob/main/SPICE_overview.md)
   * [Adding Spice To Your Workbench](https://hackaday.com/2016/02/26/adding-spice-to-your-workbench/)
 
 - **FFT**
