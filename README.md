@@ -16,6 +16,7 @@ Collection for Misc information
     * [simulating-power-planes-with-ltspice](https://www.analog.com/en/technical-articles/simulating-power-planes-with-ltspice.html)
     
   * [SPICE Overview](https://github.com/da895/Reminder/blob/main/SPICE_overview.md)
+  * [spectrum](http://www.spectrum-soft.com/index.shtm)
   * [Adding Spice To Your Workbench](https://hackaday.com/2016/02/26/adding-spice-to-your-workbench/)
 
 - **FFT**
