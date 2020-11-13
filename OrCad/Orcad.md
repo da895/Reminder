@@ -1,11 +1,47 @@
 
 # Orcad
 
+- TODO
+
+  - [] CIS database
+  - [] DRC template
+  - [] BOM flow
+
+- DRC Template
+    [What's Good About Capture’s Design Rule Checks? 16.6 Has Several New Enhancements!](https://www.flowcad.ch/fr/newsarea/what-s-good-about-capture-s-design-rule-checks.html?idcat=34&changelang=7)
+    All TCL code for the DRCs above is available in <$CDSROOT>\tools\capture\tclscripts\capDRC.
+
 - **CIS** : Component Information System
 
 -  BOM  Variant Data
 
 - [How to display Object Properties on schematics?](https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/2928/how-to-display-object-properties-on-schematics)
+
+```
+procedure(CCSPropDisplay(cellname propName)
+let( (cv prop)
+cv = geGetWindowCellView()
+foreach(inst cv~>instances
+if(inst~>cellName == cellname
+then
+if(prop=dbFindProp(inst propName)
+then
+;;check for existence of assocTextDisplay
+unless(prop~>assocTextDisplays
+dbCreateTextDisplay(prop inst list("device" "annotate")
+list("justify" "orient")
+list(xCoord(lowerLeft(inst~>bBox)) yCoord(upperRight(inst~>bBox)))
+"centerCenter" "R0" "stick" 0.0625)
+printf("\nCreated textDisplay Object")
+)
+prop~>assocTextDisplays~>isVisible =t
+)
+) ;if
+; dbSave(cv)
+) ;foreach
+) ;let
+) ;proc
+```
 
 - [Capture INI Manager](https://www.orcad.com/cn/node/5601)
 
