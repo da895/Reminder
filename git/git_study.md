@@ -55,6 +55,33 @@ And then , push changes to remote repo
 	psh = push origin master
   ```
 
+## [Removing a file added in the most recent unpushed commit](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/removing-files-from-a-repositorys-history)
+
+
+1. Open Terminal.
+2. Change the current working directory to your local repository.
+3. To remove the file, enter `git rm --cached`:
+```
+    $ git rm --cached giant_file
+    # Stage our giant file for removal, but leave it on disk
+```
+4. Commit this change using --amend -CHEAD:
+```
+    $ git commit --amend -CHEAD
+    # Amend the previous commit with your change
+    # Simply making a new commit won't work, as you need
+    # to remove the file from the unpushed history as well
+```
+5. Push your commits to GitHub:
+```
+    $ git push
+    # Push our rewritten, smaller commit
+```
+
+## [Removing sensitive data from a repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
+
+`git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch fixtures/11_user_answer.json' HEAD`
+
 ## Reference
 - [Git for beginners: The definitive practical guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
 

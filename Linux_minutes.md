@@ -492,6 +492,16 @@ alias foo='__foo() { unset -f $0; echo "arg1 for foo=$1"; }; __foo()'
 
 `unar first_file`
 
+1. **to create a split zip archive** you could do the following (the "-r" is the "recursive" switch to include subdirectories of the directory):
+`zip -r -s 10m archive.zip directory/`
+
+2. **To unzip the file** 
+
+  * you first "unsplit" the ZIP file using the "-s 0" switch:
+`zip -s 0 archive.zip --out unsplit.zip`
+  * then you unzip the unsplit file:
+`unzip unsplit.zip`
+
 ## [NFS](https://help.ubuntu.com/lts/serverguide/network-file-system.html)
 
 - Server: 
