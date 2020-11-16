@@ -3,6 +3,12 @@
 
 - **CIS** : Component Information System
 
+- **ICA** : CIS internet component assistant
+  
+  Allows you to access new components over the Internet by providing a web link to the ICselector database and to the OrCAD component data server (CDS).
+
+
+
 - [Capture INI Manager](https://www.orcad.com/cn/node/5601)
 
 - [Capture.ini configuration and Show Footprint in Capture](https://community.cadence.com/cadence_technology_forums/f/pcb-design/33552/capture-ini-configuration-and-show-footprint-in-capture)
