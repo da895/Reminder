@@ -366,6 +366,43 @@ alias RR='ssh -pIO username@xxx'
 alias rsync="rsync -avz -e 'ssh -p 22'"
 ```
 
+- [MSYS2 key is unkown](https://www.msys2.org/news/#2020-06-29-new-packages)
+
+```
+$ curl -O http://repo.msys2.org/msys/x86_64/msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz
+$ curl -O http://repo.msys2.org/msys/x86_64/msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz.sig
+
+$ pacman-key --verify msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz.sig
+==> Checking msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz.sig... (detached)
+gpg: Signature made Mon Jun 29 07:36:14 2020 CEST
+gpg:                using DSA key AD351C50AE085775EB59333B5F92EFC1A47D45A1
+gpg: Good signature from "Alexey Pavlov (Alexpux) <alexpux@gmail.com>" [full]
+
+# pacman -U msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz
+
+```
+If you can't even import the key and the above command fails like this:
+```
+error: msys: key "4A6129F4E4B84AE46ED7F635628F528CF3053E04" is unknown
+:: Import PGP key 4A6129F4E4B84AE46ED7F635628F528CF3053E04? [Y/n]
+[...]
+error: database 'msys' is not valid (invalid or corrupted database (PGP signature))
+loading packages...
+error: failed to prepare transaction (invalid or corrupted database)
+```
+... you have to convince pacman to not care about those databases for a while, for example like this:
+```
+# pacman -U --config <(echo) msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz
+
+```
+If you still see signature errors, resetting your pacman key store might help:
+```
+# rm -r /etc/pacman.d/gnupg/
+# pacman-key --init
+# pacman-key --populate msys2
+
+```
+
 ## [vim Markdown](https://github.com/plasticboy/vim-markdown)
 
 - Vundle
