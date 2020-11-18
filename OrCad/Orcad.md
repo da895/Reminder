@@ -19,6 +19,10 @@
 
 - [Orcad TCL](https://zwindr.blogspot.com/2017/09/circuit-orcad-tcl.html)
 
+- [OrCAD Capture TCL](https://community.cadence.com/cadence_technology_forums/f/pcb-design/20865/orcad-capture-tcl)
+
+- [TCL to change user properties](https://community.cadence.com/cadence_technology_forums/f/pcb-design/37542/tcl-to-change-user-properties)
+
 
 - [How to display Object Properties on schematics?](https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/2928/how-to-display-object-properties-on-schematics)
 
