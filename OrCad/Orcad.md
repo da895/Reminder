@@ -17,6 +17,9 @@
 
   Allows you to access new components over the Internet by providing a web link to the ICselector database and to the OrCAD component data server (CDS).
 
+- [Orcad TCL](https://zwindr.blogspot.com/2017/09/circuit-orcad-tcl.html)
+
+
 - [How to display Object Properties on schematics?](https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/2928/how-to-display-object-properties-on-schematics)
 
 ```
