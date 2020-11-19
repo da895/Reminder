@@ -9,6 +9,11 @@ Collection for Misc information
 
 - [The basics of scripting in pcbnew](https://kicad.mmccoo.com/2017/02/01/the-basics-of-scripting-in-pcbnew/)
 
+- **TCL**
+  * [Tcl Developer Xchange](https://www.tcl.tk/software/tcltk/download84.html)
+  * [Tcl Tutorial](https://wiki.tcl-lang.org/page/Tcl+Tutorial+Lesson+0)
+  * [Tcl manual](https://www.tcl.tk/man/tcl8.5/TclCmd/contents.htm)
+
 - **SPICE**
   * **LTSPCIE**
     * [Get_start_guide-ltspice](https://www.analog.com/media/en/simulation-models/spice-models/LTspiceGettingStartedGuide.pdf?modelType=spice-models)
