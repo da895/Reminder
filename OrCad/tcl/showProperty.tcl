@@ -27,8 +27,11 @@ proc ::capGUIUtils::capShowProperty {} {
     
     set lSelObjs [GetSelectedObjects]
     set lInst [lindex $lSelObjs 0] 
+    puts "\nbelow is UserProp\n"
     ::capGUIUtils::showUserPropsIter $lInst
+    puts "\nbelow is DisplayProp\n"
     ::capGUIUtils::showDisplayProps $lInst
+    puts "\nbelow is EffecitveProp\n"
     ::capGUIUtils::showEffectiveProps $lInst
 }
  
