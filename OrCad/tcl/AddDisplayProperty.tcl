@@ -4,10 +4,6 @@ proc ConvertUserToDoc { pPage pUser } {
   return $lDoc
 } 
 
-proc squre {} {
-  puts "ttt"
-}
-  
 proc AddDisplayProperty {} { 
   # Get the selected objects 
   set lSelObjs1 [GetSelectedObjects] 
