@@ -7,11 +7,16 @@
   - [] DRC template
   - [] BOM flow
 
+- Disable Start Page
+  `SetOptionBool EnableStartPage 0`
+
+- [Instance and Occurrence Modes of Design Annotation using OrCAD Capture](https://community.cadence.com/cadence_blogs_8/b/pcb/posts/customer-support-recommended-understanding-instance-and-occurrence-modes-of-design-annotation-using-allegro-design-entry-cis)
+
 - DRC Template
     [What's Good About Capture’s Design Rule Checks? 16.6 Has Several New Enhancements!](https://www.flowcad.ch/fr/newsarea/what-s-good-about-capture-s-design-rule-checks.html?idcat=34&changelang=7)
     All TCL code for the DRCs above is available in <$CDSROOT>\tools\capture\tclscripts\capDRC.
 
-- **CIS** : Component Information System
+- **_CIS_** : Component Information System
 
 - **ICA** : CIS internet component assistant
 
