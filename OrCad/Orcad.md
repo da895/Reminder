@@ -12,6 +12,10 @@
 
 - [Instance and Occurrence Modes of Design Annotation using OrCAD Capture](https://community.cadence.com/cadence_blogs_8/b/pcb/posts/customer-support-recommended-understanding-instance-and-occurrence-modes-of-design-annotation-using-allegro-design-entry-cis)
 
+- [Orcad Capture PDF Export utility and PDF Creator problems](https://community.cadence.com/cadence_technology_forums/f/pcb-design/34585/orcad-capture-pdf-export-utility-and-pdf-creator-problems)
+
+- [Ghostscript Download URL](https://www.ghostscript.com/download/gsdnld.html)
+
 - DRC Template
     [What's Good About Capture’s Design Rule Checks? 16.6 Has Several New Enhancements!](https://www.flowcad.ch/fr/newsarea/what-s-good-about-capture-s-design-rule-checks.html?idcat=34&changelang=7)
     All TCL code for the DRCs above is available in <$CDSROOT>\tools\capture\tclscripts\capDRC.
