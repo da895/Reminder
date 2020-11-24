@@ -75,6 +75,34 @@ proc ::capPdfUtil::populateDefaultPSToPDFConverterList { } {
 	}
 }
 
+proc ::capPdfUtil::isTargetProp { pPropName } {
+	
+	set lTargetPropList {
+		"Mount"
+		"PCB Footprint"
+		"Part Number"
+		"Value"
+		"Reference"
+		"Mfr_name"
+		"Mfr_Part_Num"
+		"Tolerance"
+		"Voltage"
+	}
+	
+	set lSearchIndex1 [lsearch $lTargetPropList $pPropName]
+	if {$lSearchIndex1 != -1} {
+		
+		unset lSearchIndex1
+		unset lTargetPropList
+		
+		return 1
+	}
+	
+	unset lSearchIndex1
+	unset lTargetPropList
+	return 0	
+}
+
 proc ::capPdfUtil::isFilteredProp { pPropName } {
 	
 	set lFilteredPropList {
@@ -659,7 +687,8 @@ proc ::capPdfUtil::annotateEffectiveProp { pPropName pPropValue pPropType pEdita
 	
 	set lPropNameStr [DboTclHelper_sGetConstCharPtr $pPropName]
 	
-	if {[::capPdfUtil::isFilteredProp $lPropNameStr] != 1 } {
+	
+	if {[::capPdfUtil::isTargetProp $lPropNameStr] == 1 } {
 		
 		set lPropValStr [DboTclHelper_sGetConstCharPtr $pPropValue]
 		
