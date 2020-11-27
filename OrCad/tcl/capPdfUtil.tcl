@@ -285,7 +285,8 @@ proc ::capPdfUtil::init { } {
 	set ::capPdfUtil::mIsCreatePropertiesPdfFile "0"
 	set ::capPdfUtil::mPSToPDFConverterOptionIndex 0
 	#set ::capPdfUtil::mPSDriver "Acrobat Distiller"
-	set ::capPdfUtil::mPSDriver "OrCadPrinter"
+	#set ::capPdfUtil::mPSDriver "OrCadPrinter"
+	set ::capPdfUtil::mPSDriver "PDFCreator"
 	set ::capPdfUtil::mPaperSizeListIndex 0
 	
 	set ::capPdfUtil::mAnnotateGraphics 1
