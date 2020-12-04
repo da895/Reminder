@@ -44,6 +44,8 @@ Collection for Misc information
 
 - [Github MarkDown](https://guides.github.com/features/mastering-markdown/)
 
+- [Emulator Advantage](https://www.zhihu.com/question/47732296/answer/107633792)
+
 - [TOC for MarkDown](https://github.com/ekalinin/github-markdown-toc)
 
 - [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)
