@@ -54,6 +54,7 @@ Table of Contents
 * [How to setup yum reposity using locally mounted DVD](#how-to-setup-yum-reposity-using-locally-mounted-dvd)
 * [Create ISO from DVD](#create-iso-from-dvd)
 * [Disabling the subscription mamager repository RHEL](#disabling-the-subscription-mamager-repository-rhel)
+* [ctags for systemverilog](#ctags-for-systemverilog)
 * [enable or disabling a repository using RHEL subscription Management](#enable-or-disabling-a-repository-using-rhel-subscription-management)
 * [Manageing repositories where can i find a list of repositories](#manageing-repositories-where-can-i-find-a-list-of-repositories)
 * [use centos repo for RHEL](#use-centos-repo-for-rhel)
@@ -749,6 +750,39 @@ https://www.thegeekdiary.com/downloading-rpm-packages-with-dependencies-yumdownl
 ## [Disabling the subscription mamager repository RHEL](https://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/html/rhsm/yum-disable)
 
 `subscription-manager config --rhsm.manage_repos=0`
+
+## [ctags for systemverilog](https://verificationacademy.com/forums/systemverilog/ctags-systemverilog)
+
+```
+--exclude=.SOS
+--exclude=.git
+--exclude=nobackup
+--exclude=nobkp
+
+--langdef=systemverilog
+--langmap=systemverilog:.v.vg.sv.svh.tv.vinc
+
+--regex-systemverilog=/^\s*(\b(static|local|virtual|protected)\b)*\s*\bclass\b\s*(\b\w+\b)/\3/c,class/
+--regex-systemverilog=/^\s*(\b(static|local|virtual|protected)\b)*\s*\btask\b\s*(\b(static|automatic)\b)?\s*(\w+::)?\s*(\b\w+\b)/\6/t,task/
+--regex-systemverilog=/^\s*(\b(static|local|virtual|protected)\b)*\s*\bfunction\b\s*(\b(\w+)\b)?\s*(\w+::)?\s*(\b\w+\b)/\6/f,function/
+
+--regex-systemverilog=/^\s*\bmodule\b\s*(\b\w+\b)/\1/m,module/
+--regex-systemverilog=/^\s*\bprogram\b\s*(\b\w+\b)/\1/p,program/
+--regex-systemverilog=/^\s*\binterface\b\s*(\b\w+\b)/\1/i,interface/
+--regex-systemverilog=/^\s*\btypedef\b\s+.*\s+(\b\w+\b)\s*;/\1/e,typedef/
+--regex-systemverilog=/^\s*`define\b\s*(\w+)/`\1/d,define/
+--regex-systemverilog=/}\s*(\b\w+\b)\s*;/\1/e,typedef/
+
+--regex-systemverilog=/^\s*(\b(static|local|private|rand)\b)*\s*(\b(shortint|int|longint)\b)\s*(\bunsigned\b)?(\s*\[.+\])*\s*(\b\w+\b)/\7/v,variable/
+--regex-systemverilog=/^\s*(\b(static|local|private|rand)\b)*\s*(\b(byte|bit|logic|reg|integer|time)\b)(\s*\[.+\])*\s*(\b\w+\b)/\6/v,variable/
+--regex-systemverilog=/^\s*(\b(static|local|private)\b)*\s*(\b(real|shortreal|chandle|string|event)\b)(\s*\[.+\])*\s*(\b\w+\b)/\6/v,variable/
+--regex-systemverilog=/(\b(input|output|inout)\b)?\s*(\[.+\])*\s*(\b(wire|reg|logic)\b)\s*(\[.+\])*\s*(#(\(.+\)|\S+)\))?\s*(\b\w+\b)/\9/v,variable/
+--regex-systemverilog=/(\b(parameter|localparam)\b).+(\b\w+\b)\s*=/\3/a,parameter/
+
+--systemverilog-kinds=+ctfmpied
+
+--languages=systemverilog,C,C++,HTML,Lisp,Make,Matlab,Perl,Python,Sh,Tex
+```
 
 ## [enable or disabling a repository using RHEL subscription Management](https://access.redhat.com/solutions/265523)
 
