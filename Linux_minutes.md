@@ -60,6 +60,7 @@ Table of Contents
 * [use centos repo for RHEL](#use-centos-repo-for-rhel)
 * [linux list process by user name](#linux-list-process-by-user-name)
 * [fix the pip error with Cannot fetch index base URL http://pypi.python.org/simple/ ](#fix-the-pip-error-with-cannot-fetch-index-base-url-httppypipythonorgsimple-)
+* [install 32bits lib for ubuntu](#install-32bits-lib-for-ubuntu)
 
 <!-- vim-markdown-toc -->
 
@@ -852,6 +853,27 @@ You can use repo-file from CentOS, but need to prepare it:
    [global]
    index-url = http://pypi.mirrors.ustc.edu.cn/simple
    ```
+
+## install 32bits lib for ubuntu
+
+
+fix below issue
+` /usr/local/openjdk-8/jre/lib/amd64/libawt_xawt.so: libXrender.so.1: `
+
+```
+    dpkg --add-architecture i386
+    apt-get update
+    sudo apt-get install build-essential
+    apt -y install libxext6
+    apt-get -y install libbz2-1.0:i386 libxrender1:i386 libxtst6:i386 libxi6:i386
+    apt-get -y install libxrender1 libxtst6 libxi6
+    apt install default-jre default-jdk lsb dos2unix
+
+
+```
+
+
+
 <!-- vim-markdown-toc GFM -->
 
 <!-- vim-markdown-toc -->
