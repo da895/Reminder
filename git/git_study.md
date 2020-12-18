@@ -81,6 +81,7 @@ And then , push changes to remote repo
 ## [Removing sensitive data from a repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
 
 `git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch fixtures/11_user_answer.json' HEAD`
+`git push origin --force --all`
 
 ## Reference
 - [Git for beginners: The definitive practical guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
