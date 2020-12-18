@@ -868,6 +868,7 @@ fix below issue
     apt-get -y install libbz2-1.0:i386 libxrender1:i386 libxtst6:i386 libxi6:i386
     apt-get -y install libxrender1 libxtst6 libxi6
     apt install default-jre default-jdk lsb dos2unix
+    apt install libxft2 libxft2:i386
 
 
 ```

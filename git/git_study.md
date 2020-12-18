@@ -1,5 +1,27 @@
 # GIT
 
+
+Table of Contents
+==========================
+
+<!-- vim-markdown-toc GFM -->
+
+* [Git locally](#git-locally)
+* [Branch out](#branch-out)
+* [Merge branches](#merge-branches)
+* [Git remote](#git-remote)
+* [Git config list](#git-config-list)
+* [Misc](#misc)
+* [Discard local change](#discard-local-change)
+* [Git rm](#git-rm)
+* [Generial Config within .gitconfig](#generial-config-within-gitconfig)
+* [Removing a file added in the most recent unpushed commit](#removing-a-file-added-in-the-most-recent-unpushed-commit)
+* [Removing sensitive data from a repository](#removing-sensitive-data-from-a-repository)
+* [how can i clean .git folder](#how-can-i-clean-git-folder)
+* [Reference](#reference)
+
+<!-- vim-markdown-toc -->
+
 ## Git locally
 - `git init`                : create repo at local directory
 - `git add file_name`       : add file_name to repo
@@ -83,6 +105,10 @@ And then , push changes to remote repo
 `git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch fixtures/11_user_answer.json' HEAD`
 
 `git push origin --force --all`
+
+## [how can i clean .git folder](https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti)
+
+`git gc --aggressive --prune`
 
 ## Reference
 - [Git for beginners: The definitive practical guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
