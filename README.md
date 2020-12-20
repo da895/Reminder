@@ -1,7 +1,7 @@
 # Reminder
 Collection for Misc information 
 
-- [map 51240](map.51240.com)
+- [map 51240](https://map.51240.com)
 
 - [Oxford Discover](https://elt.oup.com/catalogue/items/global/young_learners/oxford_discover_second_edition/?cc=cn&selLanguage=zh&mode=hub)
 
