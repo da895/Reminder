@@ -787,6 +787,8 @@ https://www.thegeekdiary.com/downloading-rpm-packages-with-dependencies-yumdownl
 
 ## [enable or disabling a repository using RHEL subscription Management](https://access.redhat.com/solutions/265523)
 
+## [Creating a personal access token for Github](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+
 ## [Manageing repositories where can i find a list of repositories](https://access.redhat.com/discussions/750393)
 
 ## [use centos repo for RHEL](https://unix.stackexchange.com/questions/433046/how-do-i-enable-centos-repositories-on-rhel-red-hat)
