@@ -56,6 +56,8 @@ Table of Contents
 * [Disabling the subscription mamager repository RHEL](#disabling-the-subscription-mamager-repository-rhel)
 * [ctags for systemverilog](#ctags-for-systemverilog)
 * [enable or disabling a repository using RHEL subscription Management](#enable-or-disabling-a-repository-using-rhel-subscription-management)
+* [Creating a personal access token for Github](#creating-a-personal-access-token-for-github)
+* [Caching your GitHub credentials in Git](#caching-your-github-credentials-in-git)
 * [Manageing repositories where can i find a list of repositories](#manageing-repositories-where-can-i-find-a-list-of-repositories)
 * [use centos repo for RHEL](#use-centos-repo-for-rhel)
 * [linux list process by user name](#linux-list-process-by-user-name)
@@ -788,6 +790,19 @@ https://www.thegeekdiary.com/downloading-rpm-packages-with-dependencies-yumdownl
 ## [enable or disabling a repository using RHEL subscription Management](https://access.redhat.com/solutions/265523)
 
 ## [Creating a personal access token for Github](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+
+## [Caching your GitHub credentials in Git](https://docs.github.com/en/free-pro-team@latest/github/using-git/caching-your-github-credentials-in-git)
+
+1. In Terminal, enter the following:
+```
+git config --global credential.helper cache
+# Set git to use the credential memory cache
+```
+2. To change the default password cache timeout, enter the following :
+```
+git config --global credential.helper 'cache --timeout=3600'
+# set the cache to timeout after 1 hour
+```
 
 ## [Manageing repositories where can i find a list of repositories](https://access.redhat.com/discussions/750393)
 
