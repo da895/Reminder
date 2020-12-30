@@ -4,7 +4,7 @@ SETLOCAL ENABLEEXTENSIONS
 
 :: Check interactive
 SET noninteractive=1
-echo¡¡%CMDCMDLINE% | FINDSTR /L /B %COMSPEC% >NUL 2>&1
+echo %CMDCMDLINE% | FINDSTR /L /B %COMSPEC% >NUL 2>&1
 IF %ERRORLEVEL% == 0 SET noninteractive=0
 
 SET me=%~n0

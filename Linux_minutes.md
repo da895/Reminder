@@ -543,6 +543,10 @@ alias foo='__foo() { unset -f $0; echo "arg1 for foo=$1"; }; __foo()'
   * then you unzip the unsplit file:
 `unzip unsplit.zip`
 
+## zip the folder and deleter the original file
+
+`zip -rmq ziped_file_name folder0 folder1 folder...`
+
 ## [NFS](https://help.ubuntu.com/lts/serverguide/network-file-system.html)
 
 - Server: 
