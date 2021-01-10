@@ -3,6 +3,8 @@ Collection for Misc information
 
 - [map 51240](https://map.51240.com)
 
+- [HuangPu Education, Shanghai](https://www.hpe.cn/index.jsp)
+
 - [Oxford Discover](https://elt.oup.com/catalogue/items/global/young_learners/oxford_discover_second_edition/?cc=cn&selLanguage=zh&mode=hub)
 
 - [Functional Safety for ISO 26262, IEC 61508, IEC 60730 and IEC 62304](https://www.microchip.com/design-centers/functional-safety?gclid=Cj0KCQjwufn8BRCwARIsAKzP696uwLKyYO20VFBylt7cIiun_FSN91r1MThdvuKrDhAe0LgkV_1mTz8aAke8EALw_wcB)
