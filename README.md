@@ -3,7 +3,10 @@ Collection for Misc information
 
 - [map 51240](https://map.51240.com)
 
-- [HuangPu Education, Shanghai](https://www.hpe.cn/index.jsp)
+- **HuangPu, Shanghai**
+  - [Education](https://www.hpe.cn/index.jsp)
+  - [Pulic rental Housing](http://www.jcq365.com/)
+
 
 - [Oxford Discover](https://elt.oup.com/catalogue/items/global/young_learners/oxford_discover_second_edition/?cc=cn&selLanguage=zh&mode=hub)
 
