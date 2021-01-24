@@ -35,6 +35,7 @@ Table of Contents
 * [How do I boot directly to tty1 in ubuntu?](#how-do-i-boot-directly-to-tty1-in-ubuntu)
 * [Make a Bash alias that takes a parameter](#make-a-bash-alias-that-takes-a-parameter)
 * [How to unzip a multipart (spanned) ZIP on Linux](#how-to-unzip-a-multipart-spanned-zip-on-linux)
+* [zip the folder and deleter the original file](#zip-the-folder-and-deleter-the-original-file)
 * [NFS](#nfs)
 * [Check Perl Library](#check-perl-library)
 * [install perl lib via local::lib](#install-perl-lib-via-locallib)
@@ -62,6 +63,7 @@ Table of Contents
 * [use centos repo for RHEL](#use-centos-repo-for-rhel)
 * [linux list process by user name](#linux-list-process-by-user-name)
 * [fix the pip error with Cannot fetch index base URL http://pypi.python.org/simple/ ](#fix-the-pip-error-with-cannot-fetch-index-base-url-httppypipythonorgsimple-)
+* [download youtube viedo](#download-youtube-viedo)
 * [install 32bits lib for ubuntu](#install-32bits-lib-for-ubuntu)
 
 <!-- vim-markdown-toc -->
@@ -874,6 +876,14 @@ You can use repo-file from CentOS, but need to prepare it:
    [global]
    index-url = http://pypi.mirrors.ustc.edu.cn/simple
    ```
+## download youtube viedo
+
+1. [youtube-dl](https://github.com/ytdl-org/youtube-dl)  
+`youtube-dl --proxy socks5://127.0.0.1:1080/    URL`
+
+2. [annie](https://github.com/iawia002/annie)  
+`HTTP_PROXY="socks5://127.0.0.1:1080/" annie -i URL`
+
 
 ## install 32bits lib for ubuntu
 
