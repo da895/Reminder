@@ -64,6 +64,7 @@ Table of Contents
 * [linux list process by user name](#linux-list-process-by-user-name)
 * [fix the pip error with Cannot fetch index base URL http://pypi.python.org/simple/ ](#fix-the-pip-error-with-cannot-fetch-index-base-url-httppypipythonorgsimple-)
 * [download youtube viedo](#download-youtube-viedo)
+* [ModuleNotFoundError: No module named 'apt_pkg' error](#modulenotfounderror-no-module-named-apt_pkg-error)
 * [install 32bits lib for ubuntu](#install-32bits-lib-for-ubuntu)
 
 <!-- vim-markdown-toc -->
@@ -884,6 +885,15 @@ You can use repo-file from CentOS, but need to prepare it:
 2. [annie](https://github.com/iawia002/annie)  
 `HTTP_PROXY="socks5://127.0.0.1:1080/" annie -i URL`
 
+## [ModuleNotFoundError: No module named 'apt_pkg' error](https://askubuntu.com/questions/1069087/modulenotfounderror-no-module-named-apt-pkg-error)
+
+
+    I run below command on ubuntu 16.4 :
+    
+    `sudo add-apt-repository ppa:noobslab/apps`
+
+solution:  
+` /usr/lib/python3/dist-packages# sudo cp apt_pkg.cpython-35m-x86_64-linux-gnu.so apt_pkg.so`
 
 ## install 32bits lib for ubuntu
 
