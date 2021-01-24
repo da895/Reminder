@@ -895,6 +895,11 @@ You can use repo-file from CentOS, but need to prepare it:
 solution:  
 ` /usr/lib/python3/dist-packages# sudo cp apt_pkg.cpython-35m-x86_64-linux-gnu.so apt_pkg.so`
 
+## [ubuntu install Nanny for parental-control](https://sites.google.com/site/installationubuntu/security/parental-control-for-internet)
+
+1. `sudo add-apt_pkg ppa:nanny`
+2. `sudo apt-get update && sudo apt-get install nanny`
+
 ## install 32bits lib for ubuntu
 
 
