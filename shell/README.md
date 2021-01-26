@@ -17,7 +17,8 @@
 
 1. [Some differences between BASH and TCSH](https://web.fe.up.pt/~jmcruz/etc/unix/sh-vs-csh.html)
 2. [The differences between Linux shells (namely BASH and TCSH)](https://thesoftwareprogrammer.com/2017/11/15/the-differences-between-linux-shells-namely-bash-and-tcsh/)
-3. [Comparison with Bourne shell](https://en.wikibooks.org/wiki/C_Shell_Scripting/syntax#Comparison_with_Bourne_shell)
+3. [The differences between Linux shells (namely BASH and TCSH)_local](./the_difference_between_bash_csh.md)
+4. [Comparison with Bourne shell](https://en.wikibooks.org/wiki/C_Shell_Scripting/syntax#Comparison_with_Bourne_shell)
    * Features
      a. List variables
         C shell has it Bourne doesn't
