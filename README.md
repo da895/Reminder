@@ -21,6 +21,11 @@ Collection for Misc information
   * [Tcl Tutorial](https://wiki.tcl-lang.org/page/Tcl+Tutorial+Lesson+0)
   * [Tcl manual](https://www.tcl.tk/man/tcl8.5/TclCmd/contents.htm)
 
+- **FPGA**
+  * [Finding Hardware Bugs Faster with Full Visibility Debug](https://www.synopsys.com/company/resources/newsletters/prototyping-newsletter/finding-hardware-bugs-faster.html)
+  * [Configuration Readback Capture in UltraScale FPGAs](https://www.xilinx.com/support/documentation/application_notes/xapp1230-configuration-readback-capture.pdf)
+
+
 - [**Shell**](./shell/README.md)
 
 - **SPICE**
