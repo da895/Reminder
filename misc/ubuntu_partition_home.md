@@ -1,31 +1,26 @@
  Partitioning /Home /Moving
 ===========================
 
-+-----------------------------------------------------------------------+
-| ::: {.table-of-contents}                                              |
-| Contents                                                              |
-|                                                                       |
-| 1.  [Creating a new partition](#Creating_a_new_partition)             |
-|     1.  [Setup Partitions](#Setup_Partitions)                         |
-|     2.  [Find the uuid of the                                         |
-|         Partition](#Find_the_uuid_of_the_Partition)                   |
-|     3.  [Setup Fstab](#Setup_Fstab)                                   |
-|     4.  [Copy /home to the New                                        |
-|         Partition](#Copy_.2Fhome_to_the_New_Partition)                |
-|     5.  [Check Copying Worked](#Check_Copying_Worked)                 |
-|     6.  [Preparing fstab for the                                      |
-|         switch](#Preparing_fstab_for_the_switch)                      |
-|     7.  [Moving /home into                                            |
-|         /old\_home](#Moving_.2Fhome_into_.2Fold_home)                 |
-|     8.  [Reboot or Remount all](#Reboot_or_Remount_all)               |
-|     9.  [Deleting the old Home](#Deleting_the_old_Home)               |
-| 2.  [Technical Notes and Resources](#Technical_Notes_and_Resources)   |
-|     1.  [Different filesystems on the same                            |
-|         disk](#Different_filesystems_on_the_same_disk)                |
-| :::                                                                   |
-+-----------------------------------------------------------------------+
 
+<!-- vim-markdown-toc GFM -->
 
+* [Overview {#Overview}](#overview-overview)
+* [Creating a new partition](#creating-a-new-partition)
+  * [Setup Partitions](#setup-partitions)
+  * [Find the uuid of the Partition](#find-the-uuid-of-the-partition)
+    * [Alternative Method](#alternative-method)
+  * [Setup Fstab](#setup-fstab)
+  * [Copy /home to the New Partition](#copy-home-to-the-new-partition)
+    * [Encrypted file systems](#encrypted-file-systems)
+  * [Check Copying Worked](#check-copying-worked)
+    * [Encrypted file systems](#encrypted-file-systems-1)
+  * [Preparing fstab for the switch](#preparing-fstab-for-the-switch)
+  * [Moving /home into /old\_home](#moving-home-into-old_home)
+  * [Reboot or Remount all](#reboot-or-remount-all)
+    * [Troubleshooting](#troubleshooting)
+  * [Deleting the old Home](#deleting-the-old-home)
+
+<!-- vim-markdown-toc -->
 
 ### Overview {#Overview}
 
@@ -56,7 +51,6 @@ This guide will follow these 8 basic steps:
 7.  Edit fstab again so the new partition mounts as /home instead of as
     /media/home 
 8.  Reboot or remount all. Check system seems to be working well
-    
 9.  Delete the /old\_home after a while 
 
 The guide is written in such a way so that at any point in time if there
@@ -65,7 +59,7 @@ have a negative impact on the system and *SHOULD* safeguard against the
 possibility of the user accidentally deleting their home directory in
 the process. 
 
-Creating a new partition {#Creating_a_new_partition}
+Creating a new partition 
 ========================
 
 
@@ -78,7 +72,7 @@ like to wipe whatever partition they are being installed to so either
 the data & settings need to be backed-up elsewhere or else avoid the
 fuss each time by having /home on a different partition. 
 
-Setup Partitions {#Setup_Partitions}
+Setup Partitions 
 ----------------
 
 
@@ -88,7 +82,7 @@ the partition, something like /sda3. When you do create a new partition
 it is highly suggested that you create an ext3 or ext4 partition to
 house your new home directory. 
 
-Find the uuid of the Partition {#Find_the_uuid_of_the_Partition}
+Find the uuid of the Partition 
 ------------------------------
 
 
@@ -99,7 +93,7 @@ to type the following:
 
     sudo blkid
 
-### Alternative Method {#Alternative_Method}
+### Alternative Method 
 
 
 For some older releases of Ubuntu the \"blkid\" command might not work
@@ -116,7 +110,7 @@ for example
 Now you just need to take note (copy&paste into a text-file) the uuid of
 the partition that you have set-up ready to be the new /home partition.
 
-Setup Fstab {#Setup_Fstab}
+Setup Fstab 
 -----------
 
 
@@ -174,7 +168,7 @@ Either should have mounted the new partition as /media/home. We will
 edit the fstab again later so this arrangement of the partition is only
 temporary. 
 
-Copy /home to the New Partition {#Copy_.2Fhome_to_the_New_Partition}
+Copy /home to the New Partition 
 -------------------------------
 
 
@@ -200,7 +194,7 @@ The \--exclude=\'/\*/.gvfs\' prevents rsync from complaining about not
 being able to copy .gvfs, but I believe it is optional. Even if rsync
 complains, it will copy everything else anyway. ([See here for discussion on this](http://ubuntuforums.org/showthread.php?t=791693){.http})
 
-### Encrypted file systems {#Encrypted_file_systems}
+### Encrypted file systems 
 
 
 If you have an encrypted home file system, then the above will just
@@ -225,7 +219,7 @@ because the names of the files are encrypted too!
 
 Leave your machine running from the LiveCD or USB for the moment.
 
-Check Copying Worked {#Check_Copying_Worked}
+Check Copying Worked 
 --------------------
 
 
@@ -248,7 +242,7 @@ due to symbolic links that point to places that don\'t presently exist
 (but will do after you have rebooted). You can ignore these - but check
 out anything else. 
 
-### Encrypted file systems {#Encrypted_file_systems-1}
+### Encrypted file systems 
 
 
 If you have an encrypted file system, the command will look more like
@@ -260,7 +254,7 @@ this.
 Now you can shut-down, remove the LiveCD / USB stick, and reboot as
 normal. 
 
-Preparing fstab for the switch {#Preparing_fstab_for_the_switch}
+Preparing fstab for the switch 
 ------------------------------
 
 
@@ -279,7 +273,7 @@ part to simply say \"/home\" so that it looks like this:
 
 Then, press Save, close the file but don\'t reboot just yet.
 
-Moving /home into /old\_home {#Moving_.2Fhome_into_.2Fold_home}
+Moving /home into /old\_home 
 ----------------------------
 
 
@@ -305,7 +299,7 @@ home so we can then use the sudo mv command to essentially rename /home
 into /old\_home, and finally create a new, empty /home placeholder.
 .anchor}
 
-Reboot or Remount all {#Reboot_or_Remount_all}
+Reboot or Remount all 
 ---------------------
 
 
@@ -327,7 +321,7 @@ updated fstab
 
 There is no need to reboot - unless you have an encrypted file system.
 
-### Troubleshooting {#Troubleshooting}
+### Troubleshooting 
 
 
 If you receive an error like \'The volume may already be mounted\', use
@@ -343,7 +337,7 @@ Then try mounting again
     sudo mount -a
 
 
-Deleting the old Home {#Deleting_the_old_Home}
+Deleting the old Home 
 ---------------------
 
 
