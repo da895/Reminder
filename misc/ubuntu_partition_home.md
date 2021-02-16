@@ -4,7 +4,7 @@
 
 <!-- vim-markdown-toc GFM -->
 
-* [Overview {#Overview}](#overview-overview)
+* [Overview](#overview)
 * [Creating a new partition](#creating-a-new-partition)
   * [Setup Partitions](#setup-partitions)
   * [Find the uuid of the Partition](#find-the-uuid-of-the-partition)
@@ -22,8 +22,8 @@
 
 <!-- vim-markdown-toc -->
 
-### Overview {#Overview}
-
+Overview 
+========
 
 This guide offers detailed instructions for migrating your home
 directory into its own dedicated partition. Setting up /home on a
