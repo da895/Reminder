@@ -238,7 +238,7 @@ Then add your permitted SSH users to the group "sshlogin", and restart the SSH s
 
 ## [Partitioning /home /moving](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
-    [local URL](./misc/ubuntu_partition_home.md)
+   [local URL](./misc/ubuntu_partition_home.md)
 
 ## [Add proxy for apt](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-the-proxy-for-apt-for-ubuntu-18-04/) [and](https://askubuntu.com/questions/35223/syntax-for-socks-proxy-in-apt-conf/550026) 
  - socks5 proxy:  `Acquire::socks::proxy "socks5://server:port";` within `/etc/apt/apt.conf.d/12proxy`
