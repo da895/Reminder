@@ -17,6 +17,8 @@ Table of Contents
   * [Adding and Deleting Users](#adding-and-deleting-users)
   * [Use Profile Security](#use-profile-security)
   * [Password Policy](#password-policy)
+* [ssh server in Ubuntu](#ssh-server-in-ubuntu)
+* [Partitioning /home /moving](#partitioning-home-moving)
 * [Add proxy for apt and](#add-proxy-for-apt-and)
 * [List repositories on Linux](#list-repositories-on-linux)
 * [sprov blog](#sprov-blog)
@@ -65,6 +67,8 @@ Table of Contents
 * [fix the pip error with Cannot fetch index base URL http://pypi.python.org/simple/ ](#fix-the-pip-error-with-cannot-fetch-index-base-url-httppypipythonorgsimple-)
 * [download youtube viedo](#download-youtube-viedo)
 * [ModuleNotFoundError: No module named 'apt_pkg' error](#modulenotfounderror-no-module-named-apt_pkg-error)
+* [ubuntu install Nanny for parental-control](#ubuntu-install-nanny-for-parental-control)
+* [fix grub rescue go with following steps](#fix-grub-rescue-go-with-following-steps)
 * [install 32bits lib for ubuntu](#install-32bits-lib-for-ubuntu)
 
 <!-- vim-markdown-toc -->
@@ -227,6 +231,19 @@ Then add your permitted SSH users to the group "sshlogin", and restart the SSH s
 `sudo adduser username sshlogin`
 
 `sudo systemctl restart sshd.service`
+
+## ssh server in Ubuntu
+    sudo apt install openssh-server 
+    sudo systemctl enable ssh
+
+## [Partitioning /home /moving](https://help.ubuntu.com/community/Partitioning/Home/Moving)
+
+* Setup Partitions for /home
+* Find the uuid of the partition
+    `sudo blkid`
+* Setup Fstab
+*
+
 
 ## [Add proxy for apt](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-the-proxy-for-apt-for-ubuntu-18-04/) [and](https://askubuntu.com/questions/35223/syntax-for-socks-proxy-in-apt-conf/550026) 
  - socks5 proxy:  `Acquire::socks::proxy "socks5://server:port";` within `/etc/apt/apt.conf.d/12proxy`
@@ -899,6 +916,43 @@ solution:
 
 1. `sudo add-apt_pkg ppa:nanny`
 2. `sudo apt-get update && sudo apt-get install nanny`
+
+## [fix grub rescue go with following steps](https://askubuntu.com/questions/192621/grub-rescue-prompt-repair-grub)
+
+
+1. First thing is we have to start our OS only then after we can fix grub
+```
+    #to start OS
+    error: unknow filesystem
+    Entering rescue mode...
+    grub rescue>
+```
+when you can see such an error first we have to check for filesystem is ext2
+```
+    grub rescue: ls  # show as below
+    (hd0) (hd0,msdos6) (hd0,msdos7)
+```
+this are our drives now we have to check which one is ext2
+```
+    grub rescue> ls (hd0,msdos6)
+    error: disk 'hd,msdos6' not found
+```
+go for another drives until you get "Filesystem is ext2"
+```
+    grub rescue> ls (hd0,msdos7)
+    (hd0,msdos7): Filesystem is ext2
+```
+now set the path 
+```
+    grub rescue> set boot=(hd0,msdos7)
+    grub rescue> set prefix=(hd0,msdos7)/boot/grub
+    grub rescue> insmod normal
+    grub rescue> normal
+```
+2. Now just fix grub by following command on any ubuntu 
+```
+    sudo grub-install /dev/sda
+```
 
 ## install 32bits lib for ubuntu
 
