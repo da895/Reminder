@@ -240,12 +240,16 @@ Then add your permitted SSH users to the group "sshlogin", and restart the SSH s
 ## [how to disconnect and connect the wired connection from the command line](https://askubuntu.com/questions/1218779/how-to-disconnect-and-connect-the-wired-connection-from-the-command-line)
 
 You can try using `nmcli` to disconnect and re-connect a particular network `deivce` ex.
+
      nmcli dev disconnect enp0s25 && nmcli dev connect enp0s25
+
 where the wired `ifname` `enp0s25` may be obtained if you don't already know it using `nmcli dev status`
+
     $ nmcli dev status
     DEVICE  TYPE    STATE           CONNECTION
     enp0s25 ethernet unavailable    --
     lo      loopback unmanaged      --
+
 
 ## [Partitioning /home /moving](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
