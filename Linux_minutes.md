@@ -18,6 +18,7 @@ Table of Contents
   * [Use Profile Security](#use-profile-security)
   * [Password Policy](#password-policy)
 * [ssh server in Ubuntu](#ssh-server-in-ubuntu)
+* [how to disconnect and connect the wired connection from the command line](#how-to-disconnect-and-connect-the-wired-connection-from-the-command-line)
 * [Partitioning /home /moving](#partitioning-home-moving)
 * [Add proxy for apt and](#add-proxy-for-apt-and)
 * [List repositories on Linux](#list-repositories-on-linux)
@@ -235,6 +236,16 @@ Then add your permitted SSH users to the group "sshlogin", and restart the SSH s
 ## ssh server in Ubuntu
     sudo apt install openssh-server 
     sudo systemctl enable ssh
+
+## [how to disconnect and connect the wired connection from the command line](https://askubuntu.com/questions/1218779/how-to-disconnect-and-connect-the-wired-connection-from-the-command-line)
+
+You can try using `nmcli` to disconnect and re-connect a particular network `deivce` ex.
+     nmcli dev disconnect enp0s25 && nmcli dev connect enp0s25
+where the wired `ifname` `enp0s25` may be obtained if you don't already know it using `nmcli dev status`
+    $ nmcli dev status
+    DEVICE  TYPE    STATE           CONNECTION
+    enp0s25 ethernet unavailable    --
+    lo      loopback unmanaged      --
 
 ## [Partitioning /home /moving](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
