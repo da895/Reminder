@@ -36,6 +36,7 @@ Collection for Misc information
     * [Making Sub-Circuits / Hierarchical Circuits in LTSpice](https://forum.digikey.com/t/making-sub-circuits-hierarchical-circuits-in-ltspice/2038)
     * [LTSPICE Creating New Symbols](http://www.zen22142.zen.co.uk/ltspice/newsymbols.htm)
     * [How to add a model to LTspice](http://denethor.wlu.ca/ltspice/#models)
+    * [LTspice groups](https://groups.io/g/LTspice/)
     * [Subcircuits in LTspice](http://www.audio-perfection.com/spice-ltspice/subcircuits-in-ltspice.html)
     * [LTSPICE Tutorials](http://www.simonbramble.co.uk/lt_spice/ltspice_lt_spice.htm)
     * [Import third Lib for LTSPICE](https://blog.csdn.net/gaoyong_wang/article/details/105000614)
