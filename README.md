@@ -41,6 +41,11 @@ Collection for Misc information
     * [Import third Lib for LTSPICE](https://blog.csdn.net/gaoyong_wang/article/details/105000614)
     * [LTSPICE step by step](https://www.getit01.com/p20190405157983635/)
     * [LTSPICE step by step_Tsinghua](https://zhuanlan.zhihu.com/p/57983635)
+    * [Library for LTspice](http://bordodynov.ltwiki.org/)
+    * [STspice short guide](https://www.eecg.utoronto.ca/~ali/spice/LTspice/LTSpiceShortGuide.pdf)
+    * [Modelling Quarts Crystals](https://www.pspice.com/resources/application-notes/modelling-quartz-crystals)
+    * [Parameters of common Crystals](http://www.k8iqy.com/miscellaneous/XtalParms/xtal_parameters.htm)
+    * [Crystal Basic](https://www.ctscorp.com/wp-content/uploads/Appnote-Crystal-Basics.pdf)
     
   * [Istvan Novak's electrical integrity](http://www.electrical-integrity.com/)
     
