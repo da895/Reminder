@@ -2,7 +2,7 @@
 
 ## [In-Vehicle Networking](https://www.nxp.com.cn/docs/en/brochure/BRINVEHICLENET.pdf)
 
-    [local file](./Automotive/BRINVEHICLENET.pdf)
+  [local file](./Automotive/BRINVEHICLENET.pdf)
 
 ## CAN Bus
 
