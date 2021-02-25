@@ -1,5 +1,9 @@
 # Automatic Guide
 
+## [In-Vehicle Networking](https://www.nxp.com.cn/docs/en/brochure/BRINVEHICLENET.pdf)
+
+    [local file](./Automotive/BRINVEHICLENET.pdf)
+
 ## CAN Bus
 
 1. [UJA1169ATK: Mini High-Speed CAN System Basis Chip](https://www.nxp.com/products/power-management/pmics-and-sbcs/mini-sbcs/mini-high-speed-can-system-basis-chip:UJA1169ATK)
@@ -13,6 +17,11 @@
 3. [UJA1166ATK: self-supplied high-speed CAN transceiver with Sleep mode](https://www.nxp.com/part/UJA1166ATK#/)
 
   ![UJA1166ATK_DB](./UJA1166ATK_BD.JPG)
+
+4. [AH138 Application Hints - Standalone high-speed CAN transceivers Mantis
+TJA1044/TJA1057 and Dual-Mantis TJA1046](https://www.nxp.com.cn/docs/en/supporting-information/AH1308_Application_Hints_Mantis.pdf)
+
+5. [AH1014 Application Hints - Standalone high speed CAN transceivers TJA1042/TJA1043/TJA1048/TJA1051](https://www.nxp.com.cn/docs/en/supporting-information/AH1014_v1_4_Application_Hints_TJA1042_43_48_51.pdf)
 
 ## Ethernet
 
