@@ -239,6 +239,10 @@ Then add your permitted SSH users to the group "sshlogin", and restart the SSH s
 
 ## [how to disconnect and connect the wired connection from the command line](https://askubuntu.com/questions/1218779/how-to-disconnect-and-connect-the-wired-connection-from-the-command-line)
 
+Get `ifname` as below
+
+    ifname=$(nmcli dev status | grep ethernet | sed 's/ .*//g')
+
 You can try using `nmcli` to disconnect and re-connect a particular network `deivce` ex.
 
      nmcli dev disconnect enp0s25 && nmcli dev connect enp0s25
