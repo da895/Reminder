@@ -103,6 +103,12 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 10. [CAN bus wikipedia](https://en.wikipedia.org/wiki/CAN_bus)
 
+11. DB9 for CAN
+  
+  ![dsub_for_can](./dsub-connector.png)
+
+12. [CiA for CAN FD](https://www.can-cia.org/can-knowledge/can/can-fd/)
+
 ## Ethernet
 
 1. [KSZ9131: Gigabit Ethernet Transceiver with Power Saving Features](https://www.microchip.com/wwwproducts/en/ksz9131)
