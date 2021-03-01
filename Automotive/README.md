@@ -55,6 +55,7 @@ Three specifications are in use:
 * **CAN FD**  increases the max data throughput to ~ 3.7 Mbits/sec. It does this by retaining much of the 2.0 packet structure (which it is compatible with) but using one reserved bit to indicate that the data part of the packet is using the new standard. Once an FD enabled device or interface detects this it can do two things..... Transmits/receives the data part at a secondary frequency of up to 12 Mbits/sec (v 1Mbits/sec for CAN 2.0) and also it allows the data part of the package to consist of up to 64 bytes (v 8 bytes for CAN 2.0). 
 
 **CAN 2.0 Data Frames**
+
 For CAN 2.0 all bits are sent at the speed setting for the bus - max 1MBits/sec. They contain the following fields......
 
 <pre>
@@ -115,6 +116,8 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 2. [Marvell Alaska 88E1512 - Integrated 10/100/1000 Mbps Energy Efficient Ethernet Transceiver](https://www.marvell.com/search.html?search=88E1512)
 3. [RTL8211F:INTEGRATED 10/100/1000M ETHERNET PRECISION TRANSCEIVER](https://www.realtek.com/en/products/communications-network-ics/item/rtl8211f-i-cg)
 4. [Marvell Automotive Ethernet](https://www.marvell.com/products/automotive.html)
+5. [MII from wikipedia](https://en.wikipedia.org/wiki/Media-independent_interface)
+6. [Go through the Internet -- MAC/PHY and MII(GMII/SGMII/RGMII)](http://blog.chinaaet.com/justlxy/p/5100064094)
 
 
 ## Safty Manual
