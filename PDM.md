@@ -12,6 +12,8 @@
 
 ## [4 Efficient PWM Amplifier Circuits Explained](https://www.homemade-circuits.com/4-efficient-pwm-amplifier-circuits-explained/)
 
+## [AN3998 PDM audio software decoding on STM32 microcontrollers](https://www.st.com/resource/en/application_note/dm00040808-pdm-audio-software-decoding-on-stm32-microcontrollers-stmicroelectronics.pdf)
+
 ## TODO 
 
 * PDM vs PWM
