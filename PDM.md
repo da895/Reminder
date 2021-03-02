@@ -10,6 +10,8 @@
 
 ## [TFA9881 3.4 W PDM input class-D audio amplifier](https://www.nxp.com/docs/en/data-sheet/TFA9881.pdf)
 
+## [4 Efficient PWM Amplifier Circuits Explained](https://www.homemade-circuits.com/4-efficient-pwm-amplifier-circuits-explained/)
+
 ## TODO 
 
 * PDM vs PWM
