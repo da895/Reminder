@@ -1,5 +1,14 @@
 # Python 
 
+## [miniconda3](https://docs.conda.io/en/latest/miniconda.html)
+
+    conda install numpy
+    conda create -n myenv python=3
+    conda update conda
+    conda env list
+    conda activate myenv
+    conda deactivate
+
 ## [plotting a square wave(python) using a Fourier series](https://stackoverflow.com/questions/46672128/my-code-is-not-plotting-a-square-wavepython-using-a-fourier-series)
 
 Below image represents the Fourier function
