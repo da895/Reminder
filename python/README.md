@@ -1,5 +1,17 @@
 # Python 
 
+## vscode
+   * [portable mode](https://code.visualstudio.com/docs/editor/portable)
+   * [Proxy server support](https://code.visualstudio.com/docs/setup/network)
+   
+        start the program with `--proxy-server=http://myproxy.example.com:3128`
+   
+   * [pip timeout](https://stackoverflow.com/questions/50305112/pip-install-timeout-issue)
+
+        `PIP` has a default timeout of 15 sec. `Pandas` is a relatively big file, at 10MB, and it's dependant `Numpy`, at 20MB could still be needed (if it is not installed already.). In addition, your network connection may be slow. Therefore, set `PIP` to take longer time by, for example, giving it 1000 sec:
+
+        `pip --default-timeout=1000 install pandas`
+
 ## [miniconda3](https://docs.conda.io/en/latest/miniconda.html)
 
     conda install numpy
