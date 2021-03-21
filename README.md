@@ -3,6 +3,8 @@ Collection for Misc information
 
 - [map 51240](https://map.51240.com)
 
+- [JeeLabs](https://jeelabs.org/)
+
 - **HuangPu, Shanghai**
   - [Education](https://www.hpe.cn/index.jsp)
   - [Pulic rental Housing](http://www.jcq365.com/)
