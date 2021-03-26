@@ -5,6 +5,8 @@ Collection for Misc information
 
 - [JeeLabs](https://jeelabs.org/)
 
+- [P82B715 - I2C-bus extender](https://www.nxp.com/docs/en/data-sheet/P82B715.pdf)
+
 - **HuangPu, Shanghai**
   - [Education](https://www.hpe.cn/index.jsp)
   - [Pulic rental Housing](http://www.jcq365.com/)
