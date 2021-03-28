@@ -110,6 +110,15 @@ And then , push changes to remote repo
 
 `git gc --aggressive --prune`
 
+## [put links in code blocks on github](https://gist.github.com/jesstelford/cb4dd6fafc18221ce27250e84fd19327)
+
+```
+<pre>
+<a href="hyperlink">title</a>
+<b> bold font </b>
+</pre>
+```
+
 ## Reference
 - [Git for beginners: The definitive practical guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
 
