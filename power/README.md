@@ -10,6 +10,7 @@
 
 ## [TPS61585 EVM kit fail: The USB-to-GPIO adapter gets bricked by the TPS65185 software](https://e2e.ti.com/support/power-management/f/power-management-forum/423703/tps65185-evm-kit-fail-the-usb-to-gpio-adapter-gets-bricked-by-the-tps65185-software)
 
+<pre>
     ATTENTION: Need reboot Windows 10 with enable install drivers without digital signature !
     
     0. Disconnect HPA172 (brick)
@@ -23,7 +24,7 @@
     Apploader.inf
     HPA172.bin
     
-    [/cfs-file/__key/communityserver-discussions-components-files/196/2476.HPA172.zip](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/HPA172.zip)
+    <a href="https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/HPA172.zip">/cfs-file/__key/communityserver-discussions-components-files/196/2476.HPA172.zip</a>
     
     4. Open  Apploader.inf in text editor and replace text TUSBXXXX.BIN to HPA172.bin
     5. Connect your brick HPA172 to computer, open Device Manager and see unknown device with USB\VID_0451&PID_2136
@@ -38,7 +39,7 @@
     
     and original HPA172-FW 1.0.11
     
-    [/cfs-file/__key/communityserver-discussions-components-files/196/7266.HPA172_2D00_1.0.11.zip](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/HPA172_2D00_1.0.11.zip)
+    <a href="https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/HPA172_2D00_1.0.11.zip">/cfs-file/__key/communityserver-discussions-components-files/196/7266.HPA172_2D00_1.0.11.zip</a>
     
     Start USB-TO-GPIO Firmware Loader.exe
     Load image HPA172-1.0.11.BIN
@@ -48,6 +49,7 @@
     
     P.P.S. TI need fix file EEProm Image 1.0.11 (gpio write fix)
     Need remove first 4 bytes.
+</pre>
 
 ## [PMBus™ MonitoringGraphical User InterfaceUser’s Guide](ww1.microchip.com/downloads/en/DeviceDoc/50002380A.pdf)
 
