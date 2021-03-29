@@ -1,4 +1,29 @@
+Power Board Design
+=================
+
+
+<!-- vim-markdown-toc GFM -->
+
+* [INA301 36V High-Speed, zero-drift, voltage-output, current-shunt monitor with higg-speed, overcurrent comparator](#ina301-36v-high-speed-zero-drift-voltage-output-current-shunt-monitor-with-higg-speed-overcurrent-comparator)
+* [Simplifying current sense](#simplifying-current-sense)
+* [AN-105: Current Sense Circuit Collection Making sense of Current](#an-105-current-sense-circuit-collection-making-sense-of-current)
+* [High-side Current Sensing with Wide Dynamic Range:Tree solutions](#high-side-current-sensing-with-wide-dynamic-rangetree-solutions)
+* [Automotive, mA-to-kA range, Current Shunt Sensor Reference design](#automotive-ma-to-ka-range-current-shunt-sensor-reference-design)
+* [INA229, 85V， 20-Bit, Ultra-Precise Power/Energy/Charge Monitor with SPI interface](#ina229-85v-20-bit-ultra-precise-powerenergycharge-monitor-with-spi-interface)
+* [TPS61585 EVM kit fail: The USB-to-GPIO adapter gets bricked by the TPS65185 software](#tps61585-evm-kit-fail-the-usb-to-gpio-adapter-gets-bricked-by-the-tps65185-software)
+* [PMBus™ MonitoringGraphical User InterfaceUser’s Guide](#pmbus-monitoringgraphical-user-interfaceusers-guide)
+* [PMBus stack user guide](#pmbus-stack-user-guide)
+* [TI usb 2 gpio](#ti-usb-2-gpio)
+* [USB Interface Adapter Evaluation Module User Guide](#usb-interface-adapter-evaluation-module-user-guide)
+* [Implementing Robust PMBus System Software for the LTC3880](#implementing-robust-pmbus-system-software-for-the-ltc3880)
+* [Direct Format Usage for PMBusData Transfer](#direct-format-usage-for-pmbusdata-transfer)
+* [PMBUS Spec](#pmbus-spec)
+
+<!-- vim-markdown-toc -->
+
 ## [INA301 36V High-Speed, zero-drift, voltage-output, current-shunt monitor with higg-speed, overcurrent comparator](https://www.ti.com/product/INA301-Q1?keyMatch=&tisearch=search-everything&usecase=partmatches) 
+
+## [Simplifying current sense](./slyy154a.pdf)
 
 ## [AN-105: Current Sense Circuit Collection Making sense of Current](./an-105fa.pdf)
 

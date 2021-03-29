@@ -106,6 +106,8 @@ And then , push changes to remote repo
 
 `git push origin --force --all`
 
+`git filter-branch --tree-filter 'rm -f my_file' HEADA` will remove "my_file" from every commit.
+
 ## [how can i clean .git folder](https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti)
 
 `git gc --aggressive --prune`
