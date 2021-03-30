@@ -81,6 +81,10 @@ Power Board Design
 ## [PMBus stack user guide](http://ww1.microchip.com/downloads/en/devicedoc/41361a.pdf)
 
 ## [TI usb 2 gpio](https://www.ti.com/tool/USB-TO-GPIO#tech-docs)
+    
+   [TUSB3210 Datasheet](./tusb3210.pdf)
+   [TUSB3210 EVB](./sllu031a.pdf)
+   [TUSB3210 bootcode](./sllu025a.pdf)
 
 ## [USB Interface Adapter Evaluation Module User Guide](https://www.ti.com/lit/ml/sllu093/sllu093.pdf?ts=1615900255365&ref_url=https%253A%252F%252Fwww.ti.com%252Ftool%252FUSB-TO-GPIO)
 
