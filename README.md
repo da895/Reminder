@@ -109,3 +109,10 @@ Collection for Misc information
 
      [Local Document](/misc/PCB%20Interface%20Optimization.pdf)
 
+* S25FS-S Serial Flash
+    
+    * [Datasheet](https://pdl.designspark.com/api/v1/manufacturers/a9acc4f477a645f2b10a6f25/part/c1c14d32ba3347d790dbe66b/070a1a6417854f838c0ba15c/1.pdf)
+    * [S25FS-S Programming Guide](https://www.cypress.com/file/197336/download)
+    * [Datasheet Local](./misc/S25FS128SAGMFI101_ds.pdf)
+    * [Programming Guide Local](./misc/AN98553_S25FS-S_Programming_Guide.pdf)
+     
