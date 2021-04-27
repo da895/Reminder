@@ -125,6 +125,8 @@ After installing, you can click Accessories -> Keyboard to open the keyboard.
 
 # [Topic of Raspberry Pi display](https://www.raspberrypi.org/forums/viewtopic.php?t=74656)
 
+# [Custmon MIPI DSI panel -dsi work but the display is always black](https://www.raspberrypi.org/forums/viewtopic.php?t=279292)
+
 # [Raspberry Pi  Display connector reference1](https://github.com/da895/documentation/blob/master/hardware/computemodule/schematics/rpi_SCH_CMCDA_1p1.pdf)
 
 # [P/N of SFW15R-2STE1LF for Display connector](https://www.digikey.co.uk/product-detail/en/amphenol-fci/SFW15R-2STE1LF/609-1906-1-ND/1003189)
