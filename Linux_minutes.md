@@ -478,6 +478,7 @@ If you still see signature errors, resetting your pacman key store might help:
 ## [markdown convert to pdf within command line](https://stackoverflow.com/questions/17630486/how-to-convert-from-a-markdown-file-to-pdf) 
 
 * [pandoc org](https://pandoc.org/demos.html) 
+    `pandoc -s -r html xxx -o xx.md`
 * For PDF output, you’ll need `LaTeX`. We recommend installing `TeX Live` via your package manager. (On Debian/Ubuntu, `apt-get install texlive`.)
 * TODO -- support Chinese
 

@@ -35,3 +35,9 @@ ifeq ($(strip $(foo)),)
 text-if-empty
 endif
 ```
+
+## [makefile cheatsheet](https://devhints.io/makefile)
+
+## [ isaacs/Makefile ](https://gist.github.com/isaacs/62a2d1825d04437c6f08)
+
+    should add `SHELL=bash` at first line
