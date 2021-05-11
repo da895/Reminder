@@ -116,3 +116,6 @@ Collection for Misc information
     * [Datasheet Local](./misc/S25FS128SAGMFI101_ds.pdf)
     * [Programming Guide Local](./misc/AN98553_S25FS-S_Programming_Guide.pdf)
      
+* [CEC white paper](https://www.quantumdata.com/pdf/CEC_White_Paper.pdf)
+
+    [local file](./misc/CEC_White_Paper.pdf)
