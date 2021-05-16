@@ -990,6 +990,55 @@ fix below issue
 
 ## [learn X in Y mininuts](https://learnxinyminutes.com/)
 
+## [crontab](https://opensource.com/article/17/11/how-use-cron-linux)
+
+Edit the crontab: `crontab -e`, the syntax show as below
+
+
+```sh
+┌────────── minute (0 - 59)
+ │ ┌──────── hour (0 - 23)
+ │ │ ┌────── day of month (1 - 31)
+ │ │ │ ┌──── month (1 - 12)
+ │ │ │ │ ┌── day of week (0 - 6 => Sunday - Saturday, or
+ │ │ │ │ │                1 - 7 => Monday - Sunday)
+ ↓ ↓ ↓ ↓ ↓
+ * * * * * command to be executed
+```
+```sh
+    :-) Sunday    |    0  ->  Sun
+                  |  
+        Monday    |    1  ->  Mon
+       Tuesday    |    2  ->  Tue
+     Wednesday    |    3  ->  Wed
+      Thursday    |    4  ->  Thu
+        Friday    |    5  ->  Fri
+      Saturday    |    6  ->  Sat
+                  |  
+    :-) Sunday    |    7  ->  Sun
+```
+
+* example1 : This line runs mycronjob.sh every Thursday at 3 p.m.
+
+
+    00 15 * * Thu /usr/local/bin/mycronjob.sh
+
+* example2: This cron job runs quarterly reports on the first day of the month after a quarter ends.
+
+    02 03 1 1,4,7,10 * /usr/local/bin/reports.sh
+
+* example3: Sometimes you want to run jobs at regular times during normal business hours.
+
+    01 09-17 * * * /usr/local/bin/hourlyreminder.sh
+
+* example4: This cron job runs every five minutes during every hour between 8 a.m. and 5:58 p.m. by dividing the hours by the desired interval the expression, */5 in the minutes position means "run the job every 5 minutes."
+
+    */5 08-18/2 * * * /usr/local/bin/mycronjob.sh
+
+* exampe5: shedule to p[aly audio using vlc
+
+    0  7 * * * DISPLAY=:0.0 /usr/bin/cvlc --loop --random /home/music_dir
+    20 7 * * * usr/bin/killall vlc
 
 <!-- vim-markdown-toc GFM -->
 
