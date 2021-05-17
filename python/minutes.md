@@ -43,29 +43,29 @@ Minutes for Python
 ## [python data structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 ### list
-    
+
 methods:
-
-```python
-list.append(x)
-list.extend(x)
-list.insert(i,x)
-list.remove(x)
-list.pop([i])
-list.clear()
-list.index(x[x,start[,end]])
-list.count(x)
-list.sort
-list.reverse()
-list.copy()
-```
-ex:
-```python
-stack = [4,5,6]
-stack.append(6)
-stack.pop()
-```
-
+    
+    ```python
+    list.append(x)
+    list.extend(x)
+    list.insert(i,x)
+    list.remove(x)
+    list.pop([i])
+    list.clear()
+    list.index(x[x,start[,end]])
+    list.count(x)
+    list.sort
+    list.reverse()
+    list.copy()
+    ```
+    ex:
+    ```python
+    stack = [4,5,6]
+    stack.append(6)
+    stack.pop()
+    ```
+    
 ### Tuples
 
 ex:
@@ -116,7 +116,7 @@ robin the brave
 
 * `zip()` used for looping over two or more sequences at the same time
 
-``python
+```python
 >>> questions = ['name', 'quest', 'favorite color']
 >>> answers = ['lancelot', 'the holy grail', 'blue']
 >>> for q, a in zip(questions, answers):
