@@ -46,25 +46,26 @@ Minutes for Python
 
 methods:
     
-    ```python
-    list.append(x)
-    list.extend(x)
-    list.insert(i,x)
-    list.remove(x)
-    list.pop([i])
-    list.clear()
-    list.index(x[x,start[,end]])
-    list.count(x)
-    list.sort
-    list.reverse()
-    list.copy()
-    ```
-    ex:
-    ```python
-    stack = [4,5,6]
-    stack.append(6)
-    stack.pop()
-    ```
+```python
+list.append(x)
+list.extend(x)
+list.insert(i,x)
+list.remove(x)
+list.pop([i])
+list.clear()
+list.index(x[x,start[,end]])
+list.count(x)
+list.sort
+list.reverse()
+list.copy()
+```
+ex:
+
+```python
+stack = [4,5,6]
+stack.append(6)
+stack.pop()
+```
     
 ### Tuples
 
