@@ -119,6 +119,15 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 5. [MII from wikipedia](https://en.wikipedia.org/wiki/Media-independent_interface)
 6. [Go through the Internet -- MAC/PHY and MII(GMII/SGMII/RGMII)](http://blog.chinaaet.com/justlxy/p/5100064094)
 
+## AutoSAR
+
+1. [AUTOSAR org](https://www.autosar.org/)
+
+1. [Acceptance Test Specification of Communication Management](https://www.autosar.org/fileadmin/user_upload/standards/tests/1-1/AUTOSAR_ATS_CommunicationManagement.pdf)
+
+2. [Experiences with a CANoe-based Fault Injection Framework for AUTOSAR](https://users.ece.cmu.edu/~planigan/research/lanigan-dsn10.pdf)
+
+3. [Experiences with CANoe-based Fault Injection for AUTOSAR](https://users.ece.cmu.edu/~planigan/research/lanigan-dsn10.key.pdf)
 
 ## Safty Manual
 
