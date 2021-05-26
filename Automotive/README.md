@@ -114,6 +114,11 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 14. [STM32 BOOT from CAN](./dm00660346-fdcan-protocol-used-in-the-stm32-bootloader-stmicroelectronics.pdf)
 
+15. [STM32 CAN Prestation](./en.STM32G4-Peripheral-Flexible_Datarate_Controller_Area_Network_FDCAN.pdf)
+
+16. [keil CAN test](./apnt_236.pdf)
+
+17. [CAN introduction from CSDN](https://blog.csdn.net/weifengdq/article/details/113891879)
 
 ## Ethernet
 
