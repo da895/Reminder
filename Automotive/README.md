@@ -120,6 +120,8 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 17. [CAN introduction from CSDN](https://blog.csdn.net/weifengdq/article/details/113891879)
 
+18. [bitime Calculation](http://www.bittiming.can-wiki.info/)
+
 ## Ethernet
 
 1. [KSZ9131: Gigabit Ethernet Transceiver with Power Saving Features](https://www.microchip.com/wwwproducts/en/ksz9131)
