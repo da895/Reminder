@@ -110,6 +110,11 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 12. [CiA for CAN FD](https://www.can-cia.org/can-knowledge/can/can-fd/)
 
+13. [STM32 CANFD](./dm00625700-fdcan-peripheral-on-stm32-devices-stmicroelectronics.pdf)
+
+14. [STM32 BOOT from CAN](./dm00660346-fdcan-protocol-used-in-the-stm32-bootloader-stmicroelectronics.pdf)
+
+
 ## Ethernet
 
 1. [KSZ9131: Gigabit Ethernet Transceiver with Power Saving Features](https://www.microchip.com/wwwproducts/en/ksz9131)
