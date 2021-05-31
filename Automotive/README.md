@@ -130,6 +130,12 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 4. [Marvell Automotive Ethernet](https://www.marvell.com/products/automotive.html)
 5. [MII from wikipedia](https://en.wikipedia.org/wiki/Media-independent_interface)
 6. [Go through the Internet -- MAC/PHY and MII(GMII/SGMII/RGMII)](http://blog.chinaaet.com/justlxy/p/5100064094)
+7. [Impedance Matching Resistors on MII Ethernet Lines](https://electronics.stackexchange.com/questions/392368/impedance-matching-resistors-on-mii-ethernet-lines)
+
+    The RMII signals are treated as lumped signals rather than transmission lines; no termination or controlled impedance is necessary; output drive (and thus slew rates) need to be as slow as possible (rise times from 1–5 ns) to permit this. Drivers should be able to drive 25 pF of capacitance which allows for PCB traces up to 0.30 m. At least the standard says the signals need not be treated as transmission lines. However, at 1 ns edge rates a trace longer than about 2.7 cm (1ns5.9>nsm⋅3.7m0.0254m⋅>16=4.115m), transmission line effects could be a significant problem; at 5 ns, traces can be 5 times longer. The IEEE version of the related MII standard specifies 68 Ω trace impedance. National recommends running 50 Ω traces with 33 Ω (adds to driver output impedance) series termination resistors for either MII or RMII mode to reduce reflections.[citation needed] National also suggests that traces be kept under 0.15 m long and matched within 0.05 m on length to minimize skew.
+
+8. [Impedance/Termination of Marvell PHY](https://electronics.stackexchange.com/questions/524620/impedance-termination-of-marvell-phy)
+9. [RTL8211](./Realtek-Semicon-RTL8211EG-VB-CG_C69264.pdf)
 
 ## AutoSAR
 
