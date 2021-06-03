@@ -13,6 +13,7 @@
 1. [Math arithmetic: How to Do Calculation in Bash](https://www.shell-tips.com/bash/math-arithmetic-calculation/#)
 2. [Introduction to Bash](https://cs.lmu.edu/~ray/notes/bash/)
 3. [GNU Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+4. [Bash Array](./you_dont_know_bash_arrays.md)
 
 ## [TCSH](https://www.tcsh.org)
 
@@ -20,6 +21,10 @@
 2. [tcsh Manual Pages](./tcsh.pdf)
 3. [tcsh wiki](https://en.wikibooks.org/wiki/C_Shell_Scripting)
 4. [C shell Variable Operators and Expressions](https://docstore.mik.ua/orelly/unix/upt/ch47_04.htm)
+
+## Exercise
+
+1. [Generate random playlist](./generate_plylist.sh)
 
 ## Differences between BASH and TCSH
 
