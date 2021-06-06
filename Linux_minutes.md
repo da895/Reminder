@@ -990,6 +990,146 @@ fix below issue
 
 ## [learn X in Y mininuts](https://learnxinyminutes.com/)
 
+## [Docker for Unbuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+### uninstall
+
+1. Uninstall the Docker Engine, CLI, and Containerd packages:
+
+    sudo apt-get purge docker-ce docker-ce-cli containerd.io
+
+2. mages, containers, volumes, or customized configuration files on your host are not automatically removed. To delete all images, containers, and volumes:
+
+     sudo rm -rf /var/lib/docker
+     sudo rm -rf /var/lib/containerd
+
+You must delete any edited configuration files manually.
+
+### install
+
+1. Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
+
+    sudo apt-get update
+
+    sudo apt-get install \
+        apt-transport-https \
+        ca-certificates \
+        curl \
+        gnupg \
+        lsb-release
+
+2. Add Docker’s official GPG key:
+
+     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+3. Use the following command to set up the stable repository. To add the nightly or test repository, add the word nightly or test (or both) after the word stable in the commands below. Learn about nightly and test channels.
+
+    echo \
+    "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+4. install Docker Engine
+
+    sudo apt-get update
+    sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+### Manage Docker as a non-root user
+
+1. Create the `docker` group.
+
+    sudo groupadd docker
+
+2. Add your user to the docker group.
+
+    sudo usermod -aG docker $USER
+
+3. Log out and log back in so that your group membership is re-evaluated.
+
+    newgrp docker 
+
+4. Verify that you can run docker commands without `sudo`.
+
+    docker run hello-world
+
+### Usage
+
+1. search 
+
+    docker search ubuntu
+
+2. pull
+    
+    docker pull ubuntu 
+
+3. remove
+    
+    docker image rm "image_name"
+
+4. create container
+
+    docker run [option] image_name [cmd forward to container]
+
+    docker run -itd --name=xxx image_name /bin/bash
+
+5. use a container
+
+    docker exec -it xxx /bin/bash
+
+6. list container
+
+    docker ps -a
+
+7. start, stop or kill a container
+
+    docker container start xxx
+    docker container stop xxx
+    docker container kill xxx
+
+8. remove a container
+
+    docker container rm xxx
+    
+9. save container as image
+
+    docker commit container_name image_name
+
+10. image save and distributor
+
+    docker save -o file_name image_name
+    docker load -i file_name
+
+### [How to move docker data directory to another location on Ubuntu](https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/)
+
+1. stop the docker daemon
+
+    sudo service docker stop
+
+2. add a configutation file *daemon.json* under the `/etc/docker`
+
+    { 
+        "data-root": "/path/to/your/docker" 
+    }
+
+3. copy the current data to the new one
+
+    sudo rsync -aP /var/lib/docker/ /path/to/your/docker
+
+4. rename the old docker directory
+
+    sudo mv /var/lib/docker /var/lib/docker.old
+
+5. restart the docker daemon
+
+    sudo service docker start
+
+6. test, if everything is ok you can remove old one
+
+    sudo rm -rf /var/lib/docker.old
+
+7. others
+    
+    `/etc/default/docker`
+
 ## [crontab](https://opensource.com/article/17/11/how-use-cron-linux)
 
 Edit the crontab: `crontab -e`, the syntax show as below
