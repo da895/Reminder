@@ -1,0 +1,18 @@
+
+_BUILD:
+
+
+include Makefile
+
+SUBDIR_PATH:=$(SUBDIRS:%=$(CURDIR)/%)
+SUBDIR_PATH:=$(foreach dr,$(SUBDIR_PATH),"$(dr)\n")
+
+_BUILD: $(SUBDIRS) 
+	@echo "PATH:$(SUBDIR_PATH)"
+	@echo "SUB:$(SUBDIRS)"
+	@echo $(SUBDIR_PATH)  >> $(dir_tmp)
+
+$(SUBDIRS):
+	@echo "TOPDIR:$(TOPDIR)"
+	@echo "CURDIR:$(CURDIR)"
+	$(MAKE) -C $(CURDIR)/../$@ -f  $(TOPDIR)/make/Makefile.dag

@@ -1,0 +1,7 @@
+
+TOPDIR=$(CURDIR)
+dir_tmp=$(TOPDIR)/dir.tmp
+export TOPDIR dir_tmp
+
+all:
+	make -C make -f Makefile

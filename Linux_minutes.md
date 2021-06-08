@@ -71,6 +71,14 @@ Table of Contents
 * [ubuntu install Nanny for parental-control](#ubuntu-install-nanny-for-parental-control)
 * [fix grub rescue go with following steps](#fix-grub-rescue-go-with-following-steps)
 * [install 32bits lib for ubuntu](#install-32bits-lib-for-ubuntu)
+* [learn X in Y mininuts](#learn-x-in-y-mininuts)
+* [Docker for Unbuntu](#docker-for-unbuntu)
+  * [uninstall](#uninstall)
+  * [install](#install)
+  * [Manage Docker as a non-root user](#manage-docker-as-a-non-root-user)
+  * [Usage](#usage)
+  * [How to move docker data directory to another location on Ubuntu](#how-to-move-docker-data-directory-to-another-location-on-ubuntu)
+* [crontab](#crontab)
 
 <!-- vim-markdown-toc -->
 
@@ -984,8 +992,6 @@ fix below issue
     apt-get -y install libxrender1 libxtst6 libxi6
     apt install default-jre default-jdk lsb dos2unix
     apt install libxft2 libxft2:i386
-
-
 ```
 
 ## [learn X in Y mininuts](https://learnxinyminutes.com/)
@@ -996,12 +1002,14 @@ fix below issue
 
 1. Uninstall the Docker Engine, CLI, and Containerd packages:
 
-    sudo apt-get purge docker-ce docker-ce-cli containerd.io
+    `sudo apt-get purge docker-ce docker-ce-cli containerd.io`
 
 2. mages, containers, volumes, or customized configuration files on your host are not automatically removed. To delete all images, containers, and volumes:
 
+```
      sudo rm -rf /var/lib/docker
      sudo rm -rf /var/lib/containerd
+```
 
 You must delete any edited configuration files manually.
 
@@ -1009,6 +1017,7 @@ You must delete any edited configuration files manually.
 
 1. Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
 
+```
     sudo apt-get update
 
     sudo apt-get install \
@@ -1017,117 +1026,133 @@ You must delete any edited configuration files manually.
         curl \
         gnupg \
         lsb-release
+```
 
 2. Add Docker’s official GPG key:
 
+```
      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
 
 3. Use the following command to set up the stable repository. To add the nightly or test repository, add the word nightly or test (or both) after the word stable in the commands below. Learn about nightly and test channels.
 
+```
     echo \
     "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
 
 4. install Docker Engine
 
+```
     sudo apt-get update
     sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
 
 ### Manage Docker as a non-root user
 
 1. Create the `docker` group.
 
-    sudo groupadd docker
+    `sudo groupadd docker`
 
 2. Add your user to the docker group.
 
-    sudo usermod -aG docker $USER
+    `sudo usermod -aG docker $USER`
 
 3. Log out and log back in so that your group membership is re-evaluated.
 
-    newgrp docker 
+    `newgrp docker` 
 
 4. Verify that you can run docker commands without `sudo`.
 
-    docker run hello-world
+    `docker run hello-world`
 
 ### Usage
 
 1. search 
 
-    docker search ubuntu
+    `docker search ubuntu`
 
 2. pull
-    
-    docker pull ubuntu 
+
+    `docker pull ubuntu `
 
 3. remove
-    
-    docker image rm "image_name"
+
+    `docker image rm "image_name"`
 
 4. create container
 
+```
     docker run [option] image_name [cmd forward to container]
 
+    docker create -v map_to_dir:path_within_image -it --name xx image_name
     docker run -itd --name=xxx image_name /bin/bash
+```
 
 5. use a container
 
-    docker exec -it xxx /bin/bash
+    `docker exec -it xxx /bin/bash`
 
 6. list container
 
-    docker ps -a
+    `docker ps -a`
 
 7. start, stop or kill a container
 
+```
     docker container start xxx
     docker container stop xxx
     docker container kill xxx
+```
 
 8. remove a container
 
-    docker container rm xxx
-    
+    `docker container rm xxx`
+
 9. save container as image
 
-    docker commit container_name image_name
+    `docker commit container_name image_name`
 
 10. image save and distributor
 
+```
     docker save -o file_name image_name
     docker load -i file_name
+```
 
 ### [How to move docker data directory to another location on Ubuntu](https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/)
 
 1. stop the docker daemon
 
-    sudo service docker stop
+    `sudo service docker stop`
 
 2. add a configutation file *daemon.json* under the `/etc/docker`
 
+```json
     { 
         "data-root": "/path/to/your/docker" 
     }
+```
 
 3. copy the current data to the new one
 
-    sudo rsync -aP /var/lib/docker/ /path/to/your/docker
+    `sudo rsync -aP /var/lib/docker/ /path/to/your/docker`
 
 4. rename the old docker directory
 
-    sudo mv /var/lib/docker /var/lib/docker.old
+   `sudo mv /var/lib/docker /var/lib/docker.old`
 
 5. restart the docker daemon
 
-    sudo service docker start
+    `sudo service docker start`
 
 6. test, if everything is ok you can remove old one
 
-    sudo rm -rf /var/lib/docker.old
+    `sudo rm -rf /var/lib/docker.old`
 
 7. others
-    
+
     `/etc/default/docker`
 
 ## [crontab](https://opensource.com/article/17/11/how-use-cron-linux)
@@ -1161,25 +1186,24 @@ Edit the crontab: `crontab -e`, the syntax show as below
 * example1 : This line runs mycronjob.sh every Thursday at 3 p.m.
 
 
-    00 15 * * Thu /usr/local/bin/mycronjob.sh
+    `00 15 * * Thu /usr/local/bin/mycronjob.sh`
 
 * example2: This cron job runs quarterly reports on the first day of the month after a quarter ends.
 
-    02 03 1 1,4,7,10 * /usr/local/bin/reports.sh
+    `02 03 1 1,4,7,10 * /usr/local/bin/reports.sh`
 
 * example3: Sometimes you want to run jobs at regular times during normal business hours.
 
-    01 09-17 * * * /usr/local/bin/hourlyreminder.sh
+    `01 09-17 * * * /usr/local/bin/hourlyreminder.sh`
 
 * example4: This cron job runs every five minutes during every hour between 8 a.m. and 5:58 p.m. by dividing the hours by the desired interval the expression, */5 in the minutes position means "run the job every 5 minutes."
 
-    */5 08-18/2 * * * /usr/local/bin/mycronjob.sh
+    `*/5 08-18/2 * * * /usr/local/bin/mycronjob.sh`
 
 * exampe5: shedule to p[aly audio using vlc
 
+```
     0  7 * * * DISPLAY=:0.0 /usr/bin/cvlc --loop --random /home/music_dir
     20 7 * * * usr/bin/killall vlc
+```
 
-<!-- vim-markdown-toc GFM -->
-
-<!-- vim-markdown-toc -->
