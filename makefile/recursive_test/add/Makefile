@@ -1,1 +1,1 @@
-OBJS := add.c
+SUBDIRS:=add/

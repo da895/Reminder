@@ -1,7 +1,8 @@
 
 
 
-SUBDIRS:= ../add/ ../sub/ ../input/
+TOPSUBDIRS:= add/ sub/ input/
+SUBDIRS:=$(TOPSUBDIRS:%=$(TOPDIR)/%)
 
 all: clean
 	@echo "TOPDIR:$(TOPDIR)"
