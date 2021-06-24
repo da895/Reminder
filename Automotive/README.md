@@ -122,6 +122,16 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 18. [bitime Calculation](http://www.bittiming.can-wiki.info/)
 
+19. [CAN stack factsheet](./CAN-STACK-Factsheet-1.pdf)
+
+19. [CAN Protocol](./what_is_ISO11898_based_CAN_protocol_and_why_it_is_critical_software_solution_for_Vehicle_NetWorking.md)
+
+20. CANopen
+
+    a. [wiki](https://en.wikipedia.org/wiki/CANopen)
+    b. [introduction](https://www.can-cia.org/can-knowledge/canopen/canopen/)
+
+
 ## Ethernet
 
 1. [KSZ9131: Gigabit Ethernet Transceiver with Power Saving Features](https://www.microchip.com/wwwproducts/en/ksz9131)
