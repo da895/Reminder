@@ -129,6 +129,7 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 20. CANopen
 
     a. [wiki](https://en.wikipedia.org/wiki/CANopen)
+
     b. [introduction](https://www.can-cia.org/can-knowledge/canopen/canopen/)
 
 
