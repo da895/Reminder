@@ -1,4 +1,4 @@
-Multi-Architecture Builds {#multi-architecture-builds .entry-title}
+Multi-Architecture Builds
 =========================
 
 August 18th, 2000    (updated June 8th, 2019)
@@ -48,7 +48,7 @@ Table of Contents
 
 ------------------------------------------------------------------------
 
-[]{#other}Other Common Methods
+Other Common Methods
 ==============================
 
 First we’ll think about some other methods used for multi-architecture
@@ -60,7 +60,7 @@ There are three main approaches to this problem that are most common:
 the [**Source Copy**](#sourcecopy) method, the [**Explicit
 Path**](#explicitpath) method, and the [**VPATH**](#vpath) method.
 
-[]{#sourcecopy}Source Copy Method
+Source Copy Method
 ---------------------------------
 
 This approach is fairly straightforward. At its simplest, it’s merely a
@@ -109,7 +109,7 @@ directories or files to the source tree can be problematic: you need to
 remember to add them to the master copy, and have a way of updating the
 links in all your farms.
 
-[]{#explicitpath}Explicit Path Method
+Explicit Path Method
 -------------------------------------
 
 Better (IMO) than the previous one is the Explicit Path method. You
@@ -144,7 +144,7 @@ Second, you cannot use simple rebuild commands like “`make foo.o`“; you
 must remember to prefix it with the target directory, like
 “`make '$(OBJDIR)/foo.o'`“. This can get unwieldy quickly.
 
-[]{#vpath}The VPATH Method
+The VPATH Method
 --------------------------
 
 Eh? VPATH? But didn’t [we
@@ -194,7 +194,7 @@ directory). Or, you could set up a symbolic link in the target directory
 pointing back to the makefile in the source directory. This can work,
 but it’s still annoying and doesn’t address the first problem at all.
 
-[]{#advanced}The Advanced VPATH Method
+The Advanced VPATH Method
 ======================================
 
 What would be really great is if we could combine the best parts of
@@ -221,13 +221,13 @@ current directory. The `then` clause jumps to the target directory. The
 current directory. I use GNU `make`‘s `include` preprocessor feature to
 keep individual makefiles simpler-looking.
 
-[]{#single}Single Target Directory
+Single Target Directory
 ----------------------------------
 
 We’ll start with the basic case: each source directory is completely
 built in a single target directory.
 
-### []{#template}Standard Makefile Template
+### Standard Makefile Template
 
 Here’s a sample makefile:
 
@@ -300,7 +300,7 @@ The end of the `if` statement. You shouldn’t put **anything** after this
 (at least, I can’t think of anything useful to put here).
 Not too bad. So, what’s in this magical `target.mk` file?
 
-### []{#target.mk}The `target.mk` Makefile
+### The `target.mk` Makefile
 
 This file is where all the magical bits are hidden. If make is parsing
 this file, it means that the user invoked the build in the source
@@ -474,7 +474,8 @@ Thus, the `clean` rule is quite simply to remove the target directory
 and all of its contents! This is most readily accomplished from the
 source directory, rather than the target directory, and saves us an
 extra invocation of `make` as well.
-[]{#multiple}Multiple Target Directories
+
+Multiple Target Directories
 ----------------------------------------
 
 Sometimes you’ll want a single invocation of the build to create files
@@ -494,7 +495,7 @@ target directory. Then we’ll jump to each target directory in order and
 re-invoke make there. In this example we’ll stick with one extra target
 directory, so we’ll need three parts to the makefile.
 
-### []{#testingextra}Testing for Extra Target Directories
+### Testing for Extra Target Directories
 
 The first complication that arises with multiple target directories is,
 how do you decide if you have one or not? If all your directories have
@@ -536,7 +537,7 @@ There are about as many possible ways to permute this as there are
 requirements to do so; here I’m going to provide an example of a simple
 case.
 
-### []{#multitemplate}Standard Makefile Template with Multiple Targets
+### Standard Makefile Template with Multiple Targets
 
 Here’s an example of a standard source makefile for a directory that has
 two targets: the `_common` target and the \$(OBJDIR) target. This
@@ -594,7 +595,7 @@ Obviously this example is geared towards handling generated source code;
 your need for multiple targets in the same build may be quite different
 and not require this type of interaction.
 
-### []{#multitarget.mk}The `target.mk` File with Multiple Targets
+### The `target.mk` File with Multiple Targets
 
 In the last section we saw how the user separates her rules into
 different sections depending on which target directory is being built.
@@ -663,7 +664,7 @@ target directory, so we must be careful not to remove the directory
 itself, only its contents. The `if`-statement will expand to an empty
 string if \$(EXTRATARGETS) doesn’t exist.
 
-[]{#sample}Sample Implementation
+Sample Implementation
 --------------------------------
 
 You can download a very small sample implementation of the above method
@@ -708,7 +709,7 @@ but a new `version` binary is built:
     example$ _Test/version
     The version is `1.0'.
 
-[]{#acknowledgments}Acknowledgments
+Acknowledgments
 ===================================
 
 -   When I was first developing this idea back in 1991/1992, I bounced a
@@ -724,11 +725,12 @@ but a new `version` binary is built:
 
 Thanks to all!
 
-[]{#history}Revision History
+Revision History
 ============================
 
   ------ ---------------- ------------------------------------------------------------------
   1.00   18 August 2000   Revised.
+  
   0.10   ???? 1997        Initial version posted; final sections still under construction.
   ------ ---------------- ------------------------------------------------------------------
 
