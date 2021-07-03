@@ -24,3 +24,50 @@
 -  $LINENO - Returns the current line number in the Bash script.
 -  $FUNCNAME - Returns the function name
 
+## User input
+
+- simple menu
+
+```bash
+ #!/bin/bash
+ OPTIONS="Hello Quit"
+ select opt in $OPTIONS; do
+     if [ "$opt" = "Quit" ]; then
+      echo done
+      exit
+     elif [ "$opt" = "Hello" ]; then
+      echo Hello World
+     else
+      clear
+      echo bad option
+     fi
+ done
+```
+
+- command line
+
+```bash
+#!/bin/bash        
+if [ -z "$1" ]; then 
+    echo usage: $0 directory
+    exit
+fi
+SRCD=$1
+TGTD="/var/backups/"
+OF=home-$(date +%Y%m%d).tgz
+tar -cZf $TGTD$OF $SRCD
+```
+
+- read user input
+
+```bash
+#!/bin/bash
+echo Please, enter your firstname and lastname
+read FN LN 
+echo "Hi! $LN, $FN !"
+```
+
+## Arithmetic 
+
+- `echo $((1+1))`
+- `echo 3/4 | bc -l`
