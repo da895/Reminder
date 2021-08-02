@@ -63,22 +63,22 @@ For CAN 2.0 all bits are sent at the speed setting for the bus - max 1MBits/sec.
 
     <b>Message Identifier  (MID)</b>     the Lower the value the Higher the priority of the message
            its length is either 11 or 29 bits long depending on the standard being used (Basic or Fast).
-
+    
     <b>Remote Transmission Request (RTR) = 0</b>  ----- see "Remote Frames" para below for non zero value
-
+    
     <b>Control field  (CONTROL)</b>  This specifies
-
+    
           <b>EDL</b> that this is a CAN 2.0 or FD transaction (see below for FD Data Frames details)
-
+    
           <b>DLC</b> this specifies the number of bytes of data to follow (0-8 for 2.0)
-
+    
     <b>Data Field (DATA)</b> length 0 to 8 bytes for CAN 2.0
-
+    
     <b>CRC field</b>  containing a fifteen bit cyclic redundancy check code
-
+    
     <b>Acknowledge field  (ACK)</b>   an empty slot which will be filled by every node that receives the frame
       it does NOT say that the node you intended the data for got it, just that at least one node on the whole network got it.
-
+    
     <b>End of Frame   (EOF)</b>
 </pre>
 
@@ -91,13 +91,13 @@ If you are writing diagnostic code and wish to not "exist" on the network as a n
 CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 the CAN FD is more complex
 
     Stuffing error  -  a transmitting node inserts a high after five consecutive low bits (and a low after five consecutive high). A receiving node that detects violation will flag a bit stuffing error.
-
+    
     Bit error  -  A transmitting node always reads back the message as it is sending. If it detects a different bit value on the bus than the one it sent, and the bit is not part of the arbitration field or in the acknowledgement field, an error is detected.
-
+    
     Checksum error - each receiving node checks CAN messages for checksum errors (different rules apply for CAN 2.0 and CAN FD).
-
+    
     Frame error - There are certain predefined bit values that must be transmitted at certain points within any CAN Message Frame. If a receiver detects an invalid bit in one of these positions a Form Error (sometimes also known as a Format Error) will be flagged.
-
+    
     Acknowledgement Error - If a transmitter determines that a message has not been ACKnowledged then an ACK Error is flagged.
 
 9. [The CAN wiki](http://www.can-wiki.info/doku.php)
@@ -105,7 +105,7 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 10. [CAN bus wikipedia](https://en.wikipedia.org/wiki/CAN_bus)
 
 11. DB9 for CAN
-  
+
   ![dsub_for_can](./dsub-connector.png)
 
 12. [CiA for CAN FD](https://www.can-cia.org/can-knowledge/can/can-fd/)
@@ -150,4 +150,8 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 ## Safty Manual
 
 1. [S32K1xx Saft Manual](./S32K1xx20Series_Safety_Manual.pdf)
+
+## LIN
+
+1. [LIN Bus Explained - A Simple Intro (2021)](./LIN Bus Explained - A Simple Intro (2021).md)
 
