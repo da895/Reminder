@@ -165,4 +165,7 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 ## LIN
 
 1. [LIN Bus Explained - A Simple Intro (2021)](./LIN Bus Explained - A Simple Intro (2021).md)
+2. [Introduction to the Local Interconnect Network (LIN) Bus](https://www.ni.com/en-us/innovations/white-papers/09/introduction-to-the-local-interconnect-network--lin--bus.html)
+3. [Introduction to the LIN bus](https://www.kvaser.com/about-can/can-standards/linbus/)
+4. [LIN Bus Explained (2021)](https://www.autopi.io/blog/lin-bus-protocol-explained/)
 
