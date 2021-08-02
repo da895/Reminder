@@ -78,6 +78,9 @@ proc ::capGUIUtils::addDisplayProperty {lObject Prop Value } {
       #placeholder: do your processing on $lDProp 
       set lName [DboTclHelper_sMakeCString] 
       $lDProp GetName $lName
+ 
+      set lValue [DboTclHelper_sMakeCString] 
+      #$lDProp GetStringValue $lValue 
 
       set lLocation [$lDProp GetLocation $lStatus] 
  
@@ -130,7 +133,9 @@ proc ::capGUIUtils::addDisplayProperty {lObject Prop Value } {
   } else {
         if { $Value == "" } {
             $pDispProp SetDisplayType $::DboValue_DO_NOT_DISPLAY
-        } 
+        } elseif { $Value == "DNP" } {
+			$pDispProp SetDisplayType $::DboValue_VALUE_ONLY
+		}
   } 
 }
 

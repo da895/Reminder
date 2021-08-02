@@ -14,6 +14,9 @@
 2. [Introduction to Bash](https://cs.lmu.edu/~ray/notes/bash/)
 3. [GNU Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 4. [Bash Array](./you_dont_know_bash_arrays.md)
+5. [Array as a function argument](./array_as_argument.sh)
+6. [**Bash tips**](./bash_tips.md)
+7. [How can I use variable variables (indirect variables, pointers, references) or associative arrays?](http://mywiki.wooledge.org/BashFAQ/006#Indirection)
 
 ## [TCSH](https://www.tcsh.org)
 

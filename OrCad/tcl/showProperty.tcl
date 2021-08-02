@@ -86,6 +86,9 @@ proc ::capGUIUtils::showDisplayProps {lObject} {
  
         #get the rotation 
         set lRot [$lDProp GetRotation $lStatus] 
+		
+		#get the DisplayType
+		set lDispT [$lDProp GetDisplayType $lStatus]
  
         #get the font 
         set lFont [DboTclHelper_sMakeLOGFONT] 
@@ -94,7 +97,7 @@ proc ::capGUIUtils::showDisplayProps {lObject} {
         #get the color 
         set lColor [$lDProp GetColor $lStatus] 
         
-        puts "lName:[DboTclHelper_sGetConstCharPtr $lName], lLocation:([DboTclHelper_sGetCPointX $lLocation], [DboTclHelper_sGetCPointY $lLocation]), lRot:$lRot, lFont:$lFont, lColor:$lColor"
+        puts "lName:[DboTclHelper_sGetConstCharPtr $lName], lLocation:([DboTclHelper_sGetCPointX $lLocation], [DboTclHelper_sGetCPointY $lLocation]), lDispT:$lDispT, lRot:$lRot, lFont:$lFont, lColor:$lColor"
  
         #get the next display property on the object 
         set lDProp [$lPropsIter NextProp $lStatus] 
