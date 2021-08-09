@@ -34,6 +34,8 @@ It offers lower performance and reliability - but also  drastically lower costs.
 
 ![LIN bus vs CAN bus Signal](https://canlogger1000.csselectronics.com/img/LIN-bus-vs-CAN-bus-Local-Interconnect-Network.svg)
 
+![differences between lin bus and can bus](https://www.autopi.io/media/django-summernote/2021-07-27/b35985c6-a382-4987-93dc-93feb0551cf3.webp)
+
 ### LIN bus history
 
 Below we briefly recap the history of the LIN protocol:

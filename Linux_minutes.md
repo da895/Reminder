@@ -90,7 +90,7 @@ The command to have Ubuntu fix unmet dependencies and broken packages is
 `sudo apt-get install -f` 
 
 > -f, --fix-broken Fix; attempt to correct a system with broken dependencies in place. This option, when used with install/remove, can omit any packages to permit APT to deduce a likely solution. If packages are specified, these have to completely correct the problem. The option is sometimes necessary when running APT for the first time; APT itself does not allow broken package dependencies to exist on a system. It is possible that a system's dependency structure can be so corrupt as to require manual intervention (which usually means using dselect(1) or dpkg --remove to eliminate some of the offending packages)
-    
+
 ## [How to Install Specific Version of Package using apt-get ](https://linoxide.com/linux-command/install-specific-version-package-apt-get/)  
 
 * Check the available versions of package 
@@ -193,7 +193,7 @@ chgrp   - change a file's group owner
 * enjoy it!
 
 ## [Ubuntu User Management](https://help.ubuntu.com/lts/serverguide/user-management.html)
- 
+
 ### Where is root? 
  - enable root password    -- `sudo passwd`
  - disable root password   -- `sudo passwd -l root`
@@ -213,9 +213,9 @@ chgrp   - change a file's group owner
 
 ### Use Profile Security
  - verify the current user home directory permission : `ls -ld /home/username`, the following output shows the dir /home/username has world-readable permissions: 
-  `drwxr-xr-x 2 username username 4096 2007-10-02 20:03 username`
+    `drwxr-xr-x 2 username username 4096 2007-10-02 20:03 username`
  - remove the world readable-permission : `sudo chmod 750 /home/username`, Simply edit the file `/etc/adduser.conf` and modify the `DIR_MODE` variable to something appropriate, so that all new home diretories will receive the correct permission.
-  `DIR_MODE=0750` 
+    `DIR_MODE=0750` 
 
 ### Password Policy
  - view the current status of a user account: `sudo chage -l username`
@@ -227,7 +227,7 @@ chgrp   - change a file's group owner
      * `-W` : a warning time period before password expiration
  - minimum password length :  `password [success=1 default=ignore] pam_unix.so obscure sha512 minlen=8` within `/etc/pam.d/common-password`
  - SSH Access by Disabled Users 
- 
+
 Simply disabling/locking a user account will not prevent a user from logging into your server remotely if they have previously set up RSA public key authentication.
     
 Remove or rename the directory `.ssh/` in the user's home folder to prevent further SSH autnetication capabilities. 
@@ -453,9 +453,9 @@ If you still see signature errors, resetting your pacman key store might help:
 
 - Vundle
     * install [Vundle](https://github.com/VundleVim/Vundle.vim)
-`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+    `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
     * Put below at the top of your `.vimrc` to use Vundle.
-`source ~/.vim/bundle/Vundle.vim/test/minirc.vim`
+    `source ~/.vim/bundle/Vundle.vim/test/minirc.vim`
     * launch `vim` and run `:PluginInstall` 
 
 - vim-markdown
@@ -758,7 +758,7 @@ Deleted or lost files can sometimes be recovered from failed or formatted drives
 
 ## [how can you find and replace text in a file using the Windows command_line env](https://stackoverflow.com/questions/60034/how-can-you-find-and-replace-text-in-a-file-using-the-windows-command-line-envir)
 
- 
+
 1. `powershell -Command "(gc myFile.txt) -replace 'foo', 'bar' | Out-File -encoding ASCII myFile.txt"`
 
   *  powershell starts up powershell.exe, which is included in Windows 7
@@ -877,15 +877,15 @@ check if you can install any package like
 You can use repo-file from CentOS, but need to prepare it:
 
     Replace $releasever inside this file with the appropriate release number (e.g. 7 for RHEL-7):
-
+    
     `sed -i 's/$releasever/7/g' /etc/yum.repos.d/CentOS-Base.repo`
-
+    
     Download key:
-
+    
     `curl http://mirror.centos.org/centos/7/os/x86_64/RPM-GPG-KEY-CentOS-7 >/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7`
-
+    
     or change inside repo-file gpgkey's:
-
+    
     `gpgkey=http://mirror.centos.org/centos/7/os/x86_64/RPM-GPG-KEY-CentOS-7`
 
 -----------------------
@@ -905,13 +905,13 @@ You can use repo-file from CentOS, but need to prepare it:
   caused by blocked by CDN like github. You can fix it by adding mirror as below:
 
     `pip --trusted-host pypi.mirrors.ustc.edu.cn install paramiko -i http://pypi.mirrors.ustc.edu.cn/simple`
-
+    
     mirrors at GFW:
     1. http://pypi.douban.com
     2. http://pypi.hustunique.com
     3. http://pypi.sdutlinux.org
     4. http://pypi.mirrors.ustc.edu.cn
-  
+
    You can also add configuration file as below(Linux: ~/.pip/pip.conf, windows: %HOMEPATH%\pip\pip.ini)
    ```sh
    [global]
@@ -920,10 +920,25 @@ You can use repo-file from CentOS, but need to prepare it:
 ## download youtube viedo
 
 1. [youtube-dl](https://github.com/ytdl-org/youtube-dl)  
-`youtube-dl --proxy socks5://127.0.0.1:1080/    URL`
+  `youtube-dl --proxy socks5://127.0.0.1:1080/    URL`
 
-2. [annie](https://github.com/iawia002/annie)  
-`HTTP_PROXY="socks5://127.0.0.1:1080/" annie -i URL`
+  list all available format, default is best
+
+  `youtube-dl --proxy socks5://127.0.0.1:1080/  -F  URL`
+
+  select special format
+
+  `youtube-dl --proxy socks5://127.0.0.1:1080/  -f xx  URL`
+
+2. Get youtube-dl
+
+  ```
+  sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+  sudo chmod a+rx /usr/local/bin/youtube-dl
+  ```
+
+3. [annie](https://github.com/iawia002/annie)  
+  `HTTP_PROXY="socks5://127.0.0.1:1080/" annie -i URL`
 
 ## [ModuleNotFoundError: No module named 'apt_pkg' error](https://askubuntu.com/questions/1069087/modulenotfounderror-no-module-named-apt-pkg-error)
 
