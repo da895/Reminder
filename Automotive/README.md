@@ -168,4 +168,4 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 2. [Introduction to the Local Interconnect Network (LIN) Bus](./introduction_to_the_LIN_bus_ni.md)
 3. [Introduction to the LIN bus](./introduction_to_the_LIN_bus_kvaser.md)
 4. [LIN conformance test](./LIN_conformance_test.md)
-
+5. [LIN_explain_chinese](./LIN_explain_Chinese.md)
