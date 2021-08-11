@@ -62,6 +62,9 @@ Table of Contents
 * [enable or disabling a repository using RHEL subscription Management](#enable-or-disabling-a-repository-using-rhel-subscription-management)
 * [Creating a personal access token for Github](#creating-a-personal-access-token-for-github)
 * [Caching your GitHub credentials in Git](#caching-your-github-credentials-in-git)
+* [Create a Github repository](#create-a-github-repository)
+  * [create a new repository on the command line](#create-a-new-repository-on-the-command-line)
+  * [push an existing repository from the command line](#push-an-existing-repository-from-the-command-line)
 * [Manageing repositories where can i find a list of repositories](#manageing-repositories-where-can-i-find-a-list-of-repositories)
 * [use centos repo for RHEL](#use-centos-repo-for-rhel)
 * [linux list process by user name](#linux-list-process-by-user-name)
@@ -851,6 +854,28 @@ git config --global credential.helper 'cache --timeout=3600'
 # set the cache to timeout after 1 hour
 ```
 
+## Create a Github repository
+
+### create a new repository on the command line               
+
+```shell
+echo "# Docs" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/xxx/xxx.git
+git push -u origin main
+```
+
+### push an existing repository from the command line                  
+
+```shell
+git remote add origin https://github.com/xxx/xxx.git
+git branch -M main
+git push -u origin main
+```
+
 ## [Manageing repositories where can i find a list of repositories](https://access.redhat.com/discussions/750393)
 
 ## [use centos repo for RHEL](https://unix.stackexchange.com/questions/433046/how-do-i-enable-centos-repositories-on-rhel-red-hat)
@@ -920,7 +945,7 @@ You can use repo-file from CentOS, but need to prepare it:
 ## download youtube viedo
 
 1. [youtube-dl](https://github.com/ytdl-org/youtube-dl)  
-  `youtube-dl --proxy socks5://127.0.0.1:1080/    URL`
+    `youtube-dl --proxy socks5://127.0.0.1:1080/    URL`
 
   list all available format, default is best
 
@@ -938,7 +963,7 @@ You can use repo-file from CentOS, but need to prepare it:
   ```
 
 3. [annie](https://github.com/iawia002/annie)  
-  `HTTP_PROXY="socks5://127.0.0.1:1080/" annie -i URL`
+    `HTTP_PROXY="socks5://127.0.0.1:1080/" annie -i URL`
 
 ## [ModuleNotFoundError: No module named 'apt_pkg' error](https://askubuntu.com/questions/1069087/modulenotfounderror-no-module-named-apt-pkg-error)
 
