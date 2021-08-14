@@ -165,7 +165,18 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 ## LIN
 
 1. [LIN Bus Explained - A Simple Intro (2021)](./LIN_Bus_Explained_A_Simple_Intro_2021.md)
+
 2. [Introduction to the Local Interconnect Network (LIN) Bus](./introduction_to_the_LIN_bus_ni.md)
+
 3. [Introduction to the LIN bus](./introduction_to_the_LIN_bus_kvaser.md)
+
 4. [LIN conformance test](./LIN_conformance_test.md)
+
 5. [LIN_explain_chinese](./LIN_explain_Chinese.md)
+
+6. [ISO 9141 ( K Line )](https://www.nxp.com/products/no-longer-manufactured/automotive-iso-9141-serial-link-k-and-l-lines-driver:MC33199)
+
+   It is the interface between the microcontroller and the special K and L  Lines of the ISO diagnostic port. The MC33199D has been designed to meet the "Diagnosis System ISO 9141" specification. The device has a  bi–directional bus K Line driver, fully protected against short circuits and over temperature. It also includes the L Line receiver, used during the wake up sequence in the ISO transmission. The MC33199 also has a  feature which allows transmission baud rate up to 200 k baud.
+
+7. [LIN Transceiver](./LIN_Transceiver.md)
+
