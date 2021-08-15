@@ -876,6 +876,105 @@ git branch -M main
 git push -u origin main
 ```
 
+### push by PAT
+
+1. update URL
+```shell
+git remote set-url origin https://[token]@github.com/user_name/[repo].git /dev/null 2>&1
+```
+2. command with token
+```shell
+git push https://[token]@github.com/user_name/[repo].git
+```
+3. command with username
+```shell
+git push 
+Username: your_token
+Password:
+```
+
+## [Github Connect with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+
+1. check for existing SSH key
+
+   * Enter `ls -al ~/.ssh` to see if existing SSH keys are present:
+
+   * Check the directory listing to see if you already have a public SSH  key. By default, the filenames of the public keys are one of the  following:
+     * *id_rsa.pub*
+     * *id_ecdsa.pub*
+     * *id_ed25519.pub*
+
+2. generate new SSH key
+
+   * generate ed25529  key
+
+     ```shell
+     ssh-keygen -t ed25519 -C "your_email@example.com"
+     ```
+
+   * generate  legacy rsa key
+
+     ```shell
+     $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+     ```
+
+3. Add a new SSH key
+
+   * copy your public key to the clipboard
+
+   * In the upper-right corner of any page, click your profile photo, then click **Settings**.
+
+     ![Settings icon in the user bar](Linux_minutes.assets/userbar-account-settings.png)
+
+   * In the user settings sidebar, click **SSH and GPG keys**.
+
+     ![Authentication keys](Linux_minutes.assets/settings-sidebar-ssh-keys.png)
+
+   * Click **New SSH key** or **Add SSH key**.
+
+     ![SSH Key button](Linux_minutes.assets/ssh-add-ssh-key.png)
+
+   * In the "Title" field, add a descriptive label for the new key. For  example, if you're using a personal Mac, you might call this key  "Personal MacBook Air".
+
+   * Paste your key into the "Key" field.
+
+     ![The key field](Linux_minutes.assets/ssh-key-paste.png)
+
+4. Test your SSH connection
+
+   ```shell
+   ssh -T git@github.com
+   ```
+
+5. SSH key passphrases
+
+   ```shell
+   ssh-keygen -p -f ~/.ssh/id_ed25519
+   > Enter old passphrase: [Type old passphrase]
+   > Key has comment 'your_email@example.com'
+   > Enter new passphrase (empty for no passphrase): [Type new passphrase]
+   > Enter same passphrase again: [Repeat the new passphrase]
+   > Your identification has been saved with the new passphrase.
+   ```
+
+## [Manage remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
+
+### switching remote URLs from HTTPS to SSH
+
+1. list your existing remotes in order to get the name of the remote you want to change
+
+   ```shell
+   $ git remote -v
+   > origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+   > origin  https://github.com/USERNAME/REPOSITORY.git (push)
+   ```
+
+2. change your remote's URL from HTTPS to SSH
+
+   ```shell
+   $ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+   ```
+
 ## [Manageing repositories where can i find a list of repositories](https://access.redhat.com/discussions/750393)
 
 ## [use centos repo for RHEL](https://unix.stackexchange.com/questions/433046/how-do-i-enable-centos-repositories-on-rhel-red-hat)
