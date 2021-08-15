@@ -1,5 +1,17 @@
 # Automatic Guide
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [In-Vehicle Networking](#in-vehicle-networking)
+* [CAN Bus](#can-bus)
+* [Ethernet](#ethernet)
+* [AutoSAR](#autosar)
+* [Safty Manual](#safty-manual)
+* [LIN](#lin)
+
+<!-- vim-markdown-toc -->
+
 ## [In-Vehicle Networking](https://www.nxp.com.cn/docs/en/brochure/BRINVEHICLENET.pdf)
 
   [local file](./Automotive/BRINVEHICLENET.pdf)
