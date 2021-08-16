@@ -372,3 +372,25 @@ The conversion from LDF to DBC is not entirely 1-to-1. In  particular, note how 
 
 This is also the simplest way to handle the LIN signal  'logical_value' entries in the Signal_encoding_types    section. These typically reflect how specific values of the LIN  signal should be treated (e.g. as errors). One way of treating these  entries would be to ignore them and    possibly exclude them as part of your data post processing - similar to how FF byte values in CAN bus are often excluded as they represent  invalid or N/A data.
 
+#### LIN workflow
+
+![image-20210817061733246](LIN_Bus_Explained_A_Simple_Intro_2021.assets/image-20210817061733246.png)
+
+The configuration of the entire network cluster is defined and standardized, which is where the LIN Description File (LDF) comes in.  The LDF is what differentiates the LIN clusters from each other, defining the specific use and properties for that cluster (node amount, amount and the description of message frames, message rate, and so forth). This allows the generation of software files by developers to establish what task each node in the cluster performs. The LDF can be used to automatically generate the software involved in communication, as well as supply information for measurement and test tools involved in the LIN cluster analysis.
+
+The LDF is written using syntax defined by the *LIN Configuration Language Specification*. This syntax is used in combination with the *System Defining Tool* to create the LDF, and thus define the whole network. Along with these tools, there is the *LIN Node Capability Language*, which allows the developer to define and describe the implementation of Off-the-Shelf Nodes, which are easily-implementable, general-purpose LIN nodes designed for typical applications that can be bought in large quantities.
+
+In every ***cluster***, there is one master node, and up to 16 slave nodes. 
+
+#### Threshold Values
+
+For *dominant* pulses (low), the sender must drive the voltage level down to **20%** of the battery voltage level, while the receiver will interpret a dominant bit when the voltage level reaches **40%** on their end. 
+
+For *recessive* pulses (high), the sender must drive the voltage to **80%** of the battery voltage, while the receiver interprets a recessive bit when the voltage level reaches **60%** on the bus. 
+
+![image-20210817064705082](LIN_Bus_Explained_A_Simple_Intro_2021.assets/image-20210817064705082.png)
+
+#### BIT-Rate Tolerance
+
+The bit rate for LIN ranges from 1 to 20 kilobits per second, with a bit rate tolerance ***±14%***. This 14% value comes from the fact that low-cost on-chip oscillators are used, and with internal calibration, better than ±14% can be achieved. 
+
