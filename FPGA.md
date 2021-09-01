@@ -1,4 +1,35 @@
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [wait for License](#wait-for-license)
+* [Vivado -- Fix routing](#vivado----fix-routing)
+  * [1. Fix routing by incremental compile flow](#1-fix-routing-by-incremental-compile-flow)
+  * [2. How do I use Vivado's Directed Routing features to lock down my critical paths?](#2-how-do-i-use-vivados-directed-routing-features-to-lock-down-my-critical-paths)
+    * [Description](#description)
+    * [Solution](#solution)
+* rchical design flow](#hierarchical-design-flow)
+  * [xilinx 7 series device, pls refer to ug905-vivado-hierarchical-design.pdf](#xilinx-7-series-device-pls-refer-to-ug905-vivado-hierarchical-designpdf)
+  * [xilinx UltraScale and beyond, pls refer to ug909-vivado-partial-reconfiguration.pdf](#xilinx-ultrascale-and-beyond-pls-refer-to-ug909-vivado-partial-reconfigurationpdf)
+  * [Example scripts for the non-project flow are provided in the `Vivado Design Suite Tutorial: Partial Reconfiguration` (UG947)](#example-scripts-for-the-non-project-flow-are-provided-in-the-vivado-design-suite-tutorial-partial-reconfiguration-ug947)
+  * [A question about Pblock](#a-question-about-pblock)
+  * [Partial Reconfiguration to reduce Synthesis and Implementation run times for Ultrascale Projects](#partial-reconfiguration-to-reduce-synthesis-and-implementation-run-times-for-ultrascale-projects)
+  * [Reserve an empty area](#reserve-an-empty-area)
+  * [Hierarchical design, UG905](#hierarchical-design-ug905)
+  * [The role of timing constraints is different in synthesis vs. place and route...](#the-role-of-timing-constraints-is-different-in-synthesis-vs-place-and-route)
+  * [What are the differences among -physical_exclusive, -logical_exclusive and -asynchronous arguments of set_clock_groups?](#what-are-the-differences-among--physical_exclusive--logical_exclusive-and--asynchronous-arguments-of-set_clock_groups)
+* [MISC](#misc)
+    * [clock group](#clock-group)
+    * [[Problem with RPD (Raw Programming Data File)]https://forums.intel.com/s/question/0D50P00003yyHbmSAE/problem-with-rpd-raw-programming-data-file?language=en_US](#problem-with-rpd-raw-programming-data-filehttpsforumsintelcomsquestion0d50p00003yyhbmsaeproblem-with-rpd-raw-programming-data-filelanguageen_us)
+    * [[How to generate .rbf files in Altera Quartus]https://stackoverflow.com/questions/28799960/how-to-generate-rbf-files-in-altera-quartus](#how-to-generate-rbf-files-in-altera-quartushttpsstackoverflowcomquestions28799960how-to-generate-rbf-files-in-altera-quartus)
+    * [JTAG+Serial Programmer](#jtagserial-programmer)
+
+<!-- vim-markdown-toc -->
+
+## [wait for License](./misc/waitforlicense.tcl)
+
+https://forums.xilinx.com/t5/Installation-and-Licensing/Waiting-for-floating-license-in-Vivado/td-p/881090
+
 ## Vivado -- Fix routing
 
 ### 1. Fix routing by incremental compile flow
@@ -49,7 +80,7 @@ Besides capturing a routing constraint, it is also necessary to  ensure that all
       puts "Creating LOC_PINS constraint $lut_array($lut_name) for LUT $lut_name."
       set_property LOCK_PINS "$lut_array($lut_name)" [get_cells $lut_name]
    }
-   ```
+    ```
 
 6. write_xdc ./dirt.xdc -force
 
@@ -216,7 +247,7 @@ There is an example of "set_clock_groups" under the Section "Constraining Exclus
 
 Please refer to this example which will help you understand the difference between -logical_exclusive and -physical_exclusive.
 
-### MISC
+## MISC
 http://www.pldtool.com/pld-file-formats5
 
 https://sourceforge.net/p/openocd/tickets/208/
@@ -235,6 +266,22 @@ https://gnu-mcu-eclipse.github.io/openocd/build-procedure/
 
 Hope this helps.
 
+### clock group
+
+clock  relationship is {A D} {B D} {C D}, the right method show as below
+
+```
+set_clock_groups -asynchronous -group {A B C D}
+set_clock_groups -asynchronous -group {A} -group {B} -group {C}
+```
+
+the wrong method as: 
+
+```
+set_clock_groups -asynchronous -group {A D}
+set_clock_groups -asynchronous -group {B D}
+set_clock_groups -asynchronous -group {C D}
+```
 
 ### [Problem with RPD (Raw Programming Data File)]https://forums.intel.com/s/question/0D50P00003yyHbmSAE/problem-with-rpd-raw-programming-data-file?language=en_US
 

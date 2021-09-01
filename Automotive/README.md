@@ -144,6 +144,12 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
     b. [introduction](https://www.can-cia.org/can-knowledge/canopen/canopen/)
 
+21. [VH6501 webinar](https://assets.vector.com/cms/content/events/2018/Webinars18/Vector_Webinar_VH6501_20180220.pdf)
+
+22. [CAN bus-off using VH6501 from zhihu](https://zhuanlan.zhihu.com/p/164987820)
+
+23. [A System Evaluation of CAN Transceivers from TI](https://www.ti.com/lit/an/slla109a/slla109a.pdf?ts=1629930573034&ref_url=https%253A%252F%252Fwww.google.com%252F) 
+
 
 ## Ethernet
 
