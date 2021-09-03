@@ -9,11 +9,11 @@ A standard HDMI connector has 19 pins. Out of the 19 pins, 8 are of particular i
 - TMDS data1+ and data1-
 - TMDS data2+ and data2-
 
-![img](https://www.fpga4fun.com/images/HDMI connector.gif)
+![img](<https://www.fpga4fun.com/images/HDMI connector.gif>)
 
 Our connection from an FPGA to an HDMI connector can hardly be  simpler... we use 8 FPGA pins configured as 4 differential TMDS outputs.
 
-![img](https://www.fpga4fun.com/images/HDMI FPGA.gif)
+![img](<https://www.fpga4fun.com/images/HDMI FPGA.gif>)
 
 #### Video signal
 
@@ -21,7 +21,7 @@ Let's create a 640x480 RGB 24bpp @ 60Hz video signal. That's 307200 pixels per f
 
 But video signals usually also have an "off-screen" area, which is  used by the HDMI receiver (TV or monitor) for some housekeeping. Our 640x480 frame is actually sent as an 800x525 frame.
 
-![img](https://www.fpga4fun.com/images/HDMI off-screen.gif)
+![img](<https://www.fpga4fun.com/images/HDMI off-screen.gif>)
 
 With that in mind, we need a 24.5MHz pixel clock to achieve 60 frames per seconds, but HDMI specifies a 25MHz minimum pixel clock, so that's  we use (which gets us a 61Hz frame rate).
 
@@ -30,11 +30,11 @@ With that in mind, we need a 24.5MHz pixel clock to achieve 60 frames per second
 The FPGA has 4 TMDS differential pairs to drive.
  First, the TMDS clock is simply the pixel clock, so it runs at 25MHz. The other 3 pairs transmit the red, green and blue 8bit signals, so we get something like that.
 
-![img](https://www.fpga4fun.com/images/HDMI TMDS data0.gif)
+![img](<https://www.fpga4fun.com/images/HDMI TMDS data0.gif>)
 
 Things are in fact just a bit more complicated. HDMI requires that we scramble the data and add 2 bits per color lane,  so we have 10 bits instead of 8 and the link ends up transporting 30  bits per pixel. The scrambling and extra bits are needed by the HDMI receiver to  properly synchronize to and acquire each lane (make sure to check the  DVI and HDMI specifications for more details).
 
-![img](https://www.fpga4fun.com/images/HDMI TMDS data1.gif)
+![img](<https://www.fpga4fun.com/images/HDMI TMDS data1.gif>)
 
 #### Source code
 
