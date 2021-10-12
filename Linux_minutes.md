@@ -88,6 +88,16 @@ Table of Contents
 ## lsf
 * [IBM Platform LSF Documentation](https://www.bsc.es/support/LSF/9.1.2/)
 * [bhist](https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=reference-bhist#bhist_ref3495__timeformat273684)
+* [Get CWD of bjobs in LSF environment](https://stackoverflow.com/questions/30816868/get-cwd-of-bjobs-in-lsf-environment)
+
+ ```
+$ bjobs -o 'jobid exec_cwd' 5950
+JOBID EXEC_CWD
+5950  /home/squirrel/cwd
+ ```  
+ 
+ The `-UF` option to bjobs will display the same output at the `-l` option, but in an "unformatted" way. This will basically take all of those job events that are currently split into many lines and display each one on a single line for easier parsing.
+ * [Finding historical job information of old completed jobs](https://www.ibm.com/support/pages/finding-historical-job-information-old-completed-jobs)
 
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
