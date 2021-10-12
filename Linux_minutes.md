@@ -85,6 +85,9 @@ Table of Contents
 
 <!-- vim-markdown-toc -->
 
+## lsf
+* [IBM Platform LSF Documentation](https://www.bsc.es/support/LSF/9.1.2/)
+* [bhist](https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=reference-bhist#bhist_ref3495__timeformat273684)
 
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
