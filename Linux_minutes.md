@@ -110,6 +110,7 @@ JOBID EXEC_CWD
 ## JLink Script
 * basic usage: `JLink.exe -JLinkScriptFile MyFile.JLinkScript`
 * [Basic of Jlink script and used for IAR](https://www.cnblogs.com/henjay724/p/14008691.html)
+* [J-Link_script_files from SEGGER](https://wiki.segger.com/J-Link_script_files#Global_DLL_variables)
 * [Jlink for Raspberry](https://mlog.club/article/3483195)  
 `Command line: -if jtag -device Cortex-A53 -endian little -speed auto -port 2331 -swoport 2332 -telnetport 2333 -vd -ir -localhostonly 1 -singlerun -strict -timeout 0 -nogui -jlinkscriptfile /home/piotr/rpi.JLinkScript`
 
