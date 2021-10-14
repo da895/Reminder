@@ -99,6 +99,21 @@ JOBID EXEC_CWD
  The `-UF` option to bjobs will display the same output at the `-l` option, but in an "unformatted" way. This will basically take all of those job events that are currently split into many lines and display each one on a single line for easier parsing.
  * [Finding historical job information of old completed jobs](https://www.ibm.com/support/pages/finding-historical-job-information-old-completed-jobs)
 
+## ubuntu sync time to ntp to solve clock skew issue
+
+`ntpdate cn.pool.ntp.org`
+
+## print all windows enviroment variables
+
+`PS C:\> dir env: >env.txt`
+
+## JLink Script
+* basic usage: `JLink.exe -JLinkScriptFile MyFile.JLinkScript`
+* [Basic of Jlink script and used for IAR](https://www.cnblogs.com/henjay724/p/14008691.html)
+* [Jlink for Raspberry](https://mlog.club/article/3483195)  
+`Command line: -if jtag -device Cortex-A53 -endian little -speed auto -port 2331 -swoport 2332 -telnetport 2333 -vd -ir -localhostonly 1 -singlerun -strict -timeout 0 -nogui -jlinkscriptfile /home/piotr/rpi.JLinkScript`
+
+
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
 The command to have Ubuntu fix unmet dependencies and broken packages is 
