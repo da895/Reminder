@@ -5,6 +5,10 @@ Table of Contents
 
 <!-- vim-markdown-toc GFM -->
 
+* [lsf](#lsf)
+* [ubuntu sync time to ntp to solve clock skew issue](#ubuntu-sync-time-to-ntp-to-solve-clock-skew-issue)
+* [print all windows enviroment variables](#print-all-windows-enviroment-variables)
+* [JLink Script](#jlink-script)
 * [[How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)](#how-do-i-resolve-the-following-packages-have-unmet-dependencieshttpsstackoverflowcomquestions26571326how-do-i-resolve-the-following-packages-have-unmet-dependencies)
 * [How to Install Specific Version of Package using apt-get ](#how-to-install-specific-version-of-package-using-apt-get-)
 * [how to check glic version on linux](#how-to-check-glic-version-on-linux)
@@ -65,6 +69,10 @@ Table of Contents
 * [Create a Github repository](#create-a-github-repository)
   * [create a new repository on the command line](#create-a-new-repository-on-the-command-line)
   * [push an existing repository from the command line](#push-an-existing-repository-from-the-command-line)
+  * [push by PAT](#push-by-pat)
+* [Github Connect with SSH](#github-connect-with-ssh)
+* [Manage remote repositories](#manage-remote-repositories)
+  * [switching remote URLs from HTTPS to SSH](#switching-remote-urls-from-https-to-ssh)
 * [Manageing repositories where can i find a list of repositories](#manageing-repositories-where-can-i-find-a-list-of-repositories)
 * [use centos repo for RHEL](#use-centos-repo-for-rhel)
 * [linux list process by user name](#linux-list-process-by-user-name)
