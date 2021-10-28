@@ -102,8 +102,8 @@ Table of Contents
 $ bjobs -o 'jobid exec_cwd' 5950
 JOBID EXEC_CWD
 5950  /home/squirrel/cwd
- ```  
- 
+ ```
+
  The `-UF` option to bjobs will display the same output at the `-l` option, but in an "unformatted" way. This will basically take all of those job events that are currently split into many lines and display each one on a single line for easier parsing.
  * [Finding historical job information of old completed jobs](https://www.ibm.com/support/pages/finding-historical-job-information-old-completed-jobs)
 
@@ -929,6 +929,14 @@ git push
 Username: your_token
 Password:
 ```
+
+
+
+## [Clone A Private Repository Github](https://stackoverflow.com/questions/2505096/clone-a-private-repository-github)
+
+`git clone git@github.com:username/xxx.git`
+
+
 
 ## [Github Connect with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 
