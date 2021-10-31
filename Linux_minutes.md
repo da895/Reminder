@@ -122,6 +122,10 @@ JOBID EXEC_CWD
 * [Jlink for Raspberry](https://mlog.club/article/3483195)  
 `Command line: -if jtag -device Cortex-A53 -endian little -speed auto -port 2331 -swoport 2332 -telnetport 2333 -vd -ir -localhostonly 1 -singlerun -strict -timeout 0 -nogui -jlinkscriptfile /home/piotr/rpi.JLinkScript`
 
+## Typora and Diagram
+
+* [Typora](https://typora.io/)
+* [Diagram by mermaid](https://mermaid-js.github.io/mermaid/#/README)
 
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 

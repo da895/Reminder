@@ -4,6 +4,7 @@
 
 * [modern cmake from gitlab](https://cliutils.gitlab.io/modern-cmake/)
 * [HSF cmake](https://hsf-training.github.io/hsf-training-cmake-webpage/)
+* [official cmake documents ](https://cmake.org/cmake/help/latest/)
 * [step by step example](https://github.com/ttroy50/cmake-examples)
 * [cmake useful variable](https://gitlab.kitware.com/cmake/community/-/wikis/doc/cmake/Useful-Variables)
 
