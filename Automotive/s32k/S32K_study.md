@@ -109,5 +109,54 @@
 
     
 
+## Block Diagram
 
+![image-20211103190149791](S32K_study.assets/image-20211103190149791.png)
 
+## Feature Comparison
+
+| Parameter                                | K142/4/6/8                       | K144W/142W             |
+| ---------------------------------------- | -------------------------------- | ---------------------- |
+| Core                                     | M4F                              | M4F                    |
+| Frequency                                | 80MHz(RUNmode) or 112MHz (HSRUN) | 80MHz                  |
+| FPU                                      | Y                                | Y                      |
+| CSEc                                     | Y                                | Y                      |
+| CRC                                      | 1x                               | 1x                     |
+| ISO26262                                 | ASIL-B                           | ASIL-B                 |
+| Peripheral Speed                         | 112MHz(HSRUN)                    | 80MH                   |
+| Crossbar                                 | Y                                | Y                      |
+| DMA                                      | Y                                | Y                      |
+| EWM                                      | Y                                | Y                      |
+| FIRC CMU                                 | **N**                            | **N**                  |
+| MPU                                      | Y                                | Y                      |
+| WatchDog                                 | 1x                               | Y                      |
+| Low power mode                           | Y                                | Y                      |
+| HSRUN mode                               | Y                                | **N**                  |
+| Number of IO                             | 89/9/128/156                     | 43/58                  |
+| Single Supply Voltage                    | 2.7 ~ 5.5V                       | 3.13～5.5V             |
+| Flash                                    | 256K/512K/1M/2M                  | 512K/26K               |
+| Temperature                              | -40~105/-40~125                  | -40~150                |
+| ECC                                      | Y                                | Y                      |
+| System memory(including FlexRAM and MTB) | 32K/64K/128K/256K                | 64K/32K                |
+| FlexRAM                                  | 4K                               | 4K                     |
+| Cache                                    | 4K                               | 4K                     |
+| EEROM mulated by FlexRAM                 | 4KB(up to 64K D Flash)           | 4KB(up to 64K D Flash) |
+| External memory interface                | **N**                            | **N**                  |
+| LPIT                                     | 1x                               | 1x                     |
+| FlexTimer(16bit) 8 channels              | 4x/4x/6x/8x                      | 4x(26)/4x(30)          |
+| LPMR                                     | 1x                               | 1x                     |
+| RTC                                      | 1x                               | 1x                     |
+| PDB                                      | 1x                               | 2x                     |
+| TRGMUX                                   | 1x(64)/1x(64)/1x(73)/1xx(81)     | 1x(59)                 |
+| 12 SAR ADC (1M)                          | 2x(16)/2x(16)/2x(24)/2x(32)      | 14,9/16,13             |
+| Comparator with8-bit DAC                 | 1x                               | 6/8                    |
+| 10/100Mpbs Ethernet                      | **N/N/N/Y**                      | **N**                  |
+| Serial Audio Interface(AC97/TDM/I2S)     | **N/N/N/2x**                     | **N**                  |
+| LPUART                                   | 2x/2x/2x/3x                      | 2x/3x                  |
+| LPSPI                                    | 2x/2x/2x/3x                      | 2x/3x                  |
+| LPI2C                                    | 1x/1x/1x/2x                      | 1x                     |
+| FlexCAN                                  | 2x/3x/3x/3x                      | 2x                     |
+| FlexIO(8 pins as UART/SPI/I2S)           | 1x                               | 1x                     |
+| Debug & trace                            | SWD,JTAG(ITM,SWV,SWO),,, **ETM** | SWD,JTAG(ITM,SWV,SWO)  |
+
+​	
