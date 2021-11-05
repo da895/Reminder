@@ -71,3 +71,19 @@ echo "Hi! $LN, $FN !"
 
 - `echo $((1+1))`
 - `echo 3/4 | bc -l`
+
+```bash
+ifndef_any_of = $(filter undefined,$(foreach v,$(1),$(origin $(v))))
+ifdef_any_of = $(filter-out undefined,$(foreach v,$(1),$(origin $(v))))
+
+ifneq ($(call ifdef_any_of,VAR1 VAR2),)
+ifeq ($(call ifndef_any_of,VAR1 VAR2),)
+```
+
+## [Remove item from a Makefile variable](https://stackoverflow.com/questions/7402205/remove-item-from-a-makefile-variable)
+
+```bash
+THERVAR := $(filter-out SomethingElse,$(VAR))
+
+```
+
