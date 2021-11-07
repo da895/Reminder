@@ -41,7 +41,7 @@ Debug monitor mode based debugging works by triggering an exception known as the
 
 ### Debug Halting Control and Status Register (DHCSR), 0xE000EDF0
 
-![img](Step-through debugging with no debugger on Cortex-M.assets/dhcsr.png)
+![img](Step-through_debugging_with_no_debugger_on_Cortex-M.assets/dhcsr.png)
 
 Monitor Mode Debug only works if halting debug is disabled. Notably, the `C_DEBUGEN` setting above must be cleared. This bit can *only* be set via the JTAG/SWD connection and is *only* reset when a full Power-On-Reset (POR) occurs or a debugger clears the bit on exit.
 
@@ -73,7 +73,7 @@ This can also be a useful way to keep an active GDB session open and probe its s
 
 The core configuration for the DebugMonitor exception is controlled in the upper 16 bits of the `DEMCR` register:
 
-![img](Step-through debugging with no debugger on Cortex-M.assets/demcr.png)
+![img](Step-through_debugging_with_no_debugger_on_Cortex-M.assets/demcr.png)
 
 where:
 
@@ -161,7 +161,7 @@ void DebugMon_Handler(void) {
 
 When the DebugMonitor Exception fires, the DFSR can be inspected for information about what debug event took place:
 
-![img](https://interrupt.memfault.com/img/debugmon/dfsr.png)
+![img](Step-through_debugging_with_no_debugger_on_Cortex-M.assets/dfsr.png)
 
 Some of the events are only possible when using a **halting debug**. For the DebugMonitor the states of interest are:
 
@@ -282,7 +282,7 @@ As expected we see bit 1 in `DFSR` is set indicating a breakpoint debug event wa
 
 We can also dump the instruction and confirm it matches the BKPT instruction encoding (`0xbe..`):
 
-![img](Step-through debugging with no debugger on Cortex-M.assets/bkpt-instruction-cortex-m.png)
+![img](Step-through_debugging_with_no_debugger_on_Cortex-M.assets/bkpt-instruction-cortex-m.png)
 
 ```
 (gdb) p/x *(uint16_t*)0x000009d4
@@ -600,4 +600,5 @@ See anything you'd like to change? Submit a pull request or open an issue at [Gi
 7. [PySerial Miniterm](https://pyserial.readthedocs.io/en/latest/tools.html#module-serial.tools.miniterm) [↩](https://interrupt.memfault.com/blog/cortex-m-debug-monitor#fnref:miniterm)
 8. [SEGGERs Monitor Mode Debugging](https://www.segger.com/products/debug-probes/j-link/technology/monitor-mode-debugging/) [↩](https://interrupt.memfault.com/blog/cortex-m-debug-monitor#fnref:4)
 9. [Monitor Mode Debugging on the NRF5 Series](https://devzone.nordicsemi.com/nordic/nordic-blog/b/blog/posts/monitor-mode-debugging-with-j-link-and-gdbeclipse) [↩](https://interrupt.memfault.com/blog/cortex-m-debug-monitor#fnref:5)
-10. [Official GDB Remote Serial Protocol Docs](https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html) & [Informative Unofficial Doc](https://www.embecosm.com/appnotes/ean4/embecosm-howto-rsp-server-ean4-issue-2.html)
+10. [Official GDB Remote Serial Protocol Docs](https://sourceware.org/gdb/onlinedocs/gdb/Remote-Protocol.html) & [Informative Unofficial Doc](https://www.embecosm.com/appnotes/ean4/embecosm-howto-rsp-server-ean4-issue-2.htm
+11. [demo project with stm32](https://github.com/cheng3100/armdbg)
