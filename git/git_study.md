@@ -22,6 +22,10 @@ Table of Contents
 
 <!-- vim-markdown-toc -->
 
+## Get Git URL
+- `git config --get remote.origin.url`
+- `git remote show origin`
+
 ## Git locally
 - `git init`                : create repo at local directory
 - `git add file_name`       : add file_name to repo
