@@ -242,3 +242,121 @@ You also learnt that it is possible **to add and update Git submodules** using t
 Finally, you have seen that it is possible to tweak your Git  configuration in order to get more information about your Git  repository.
 
 If you are interested about Git or about software engineering in  general, we have a complete section dedicated to it on the website, so  make sure to check it out!
+
+
+# How to create git submodule from repository subdirectory
+
+This tutorial explains how to extract a subdirectory of a git  repository and how to make it a submodule or an independent git  repository in 8 easy steps.
+
+
+
+## Problem
+
+If you work with git repositories it’s probably only a matter of time until you’ll need/want to refactor them in order to share some parts or to create new repositories.
+
+For example you have a repository with a layout similar to this one:
+
+```
+Project/
+|---- data/
+|---+ src/
+    |---- app/
+    |---+ libs/
+        |---- Library1/
+        |---- ...
+        |---- LibraryN/
+```
+
+maybe at some point you’ll want to make *Library1* an independent git repository to share it with other projects preserving its previous history.
+
+A pretty easy way to achieve this is using git filter branch and git sumbmodule as explained in the next section.
+
+## From repository subdirectory to git submodule
+
+The following steps are based on the repository introduced in the  previous section.They will explain how to turn a subdirectory of  a project into an independent git repository and how to use this new  repository as submodule, a foreign repository embedded within a  dedicated subdirectory of the source tree of a project.
+
+### **1- CREATE A NEW REPOSITORY**
+
+ The first thing to do is creating a new empty repository for *Library1*. The following instructions assume that you are doing this on some server from the shell.
+
+```
+cd /path/to/git/repos/
+mkdir Library1.git
+cd Library1.git
+git init --bare
+```
+
+here */path/to/git/repos/* is the directory storing all the git repositories on your server.
+
+### **2- CLONE Project REPOSITORY**
+
+ The second step is cloning the *Project* repository to work on a new copy.
+
+```
+git clone git@REMOTE_URL:/path/to/git/repos/Project.git
+```
+
+### **3- FILTER SUBDIRECTORY**
+
+ Now it’s time to rewrite the repository to look as if *Library1/* had been its project root, and discard all other history.
+
+```
+git filter-branch --subdirectory-filter src/libs/Library1 -- --all
+```
+
+### **4- REPLACE ORIGIN**
+
+ As we are working on a clone of *Project*, *origin* is still pointing to the remote repository of *Project*. We want to remove that and make *origin* point to the new remote repository of *Library1*.
+
+```
+git remote rm origin
+git remote add origin git@REMOTE_URL:/path/to/git/repos/Library1.git
+```
+
+### **5- PUSH FILES TO REMOTE REPOSITORY**
+
+Then we can push all the *Library1* files and populate its remote repository.
+
+```
+git push origin master
+```
+
+At this point *Library1* is an independent git repository.
+
+### **6- DELETE Library1 FROM Project**
+
+It’s time to remove the *Library1/* directory from *Project* as we’re going to replace it with a submodule.
+
+Go into the root directory of *Project* and type the following commands:
+
+```
+git rm -r src/libs/Library1/
+git commit -m "Removed Library1 directory to replace it with submodule."
+```
+
+### **7- ADD Library1 AS SUBMODULE**
+
+Now we can add *Library1* as a submodule from the root directory of *Project*:
+
+```
+git submodule add git@REMOTE_URL:/path/to/git/repos/Library1.git src/libs/Library1
+```
+
+### **8- COMMIT AND PUSH CHANGES**
+
+Finally we can commit and push our changes
+
+```
+git commit -m "Replaced Library1 directory with submodule."
+git push origin master
+```
+
+## References
+
+If you want to know more about the commands and concepts discussed in this tutorial you can check out the following resources:
+
+- [Git on the server – Setting up the server](http://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server)
+- [Git tools – Submodules](http://git-scm.com/book/en/v2/Git-Tools-Submodules)
+- [git-filter-branch](http://git-scm.com/docs/git-filter-branch)
+- [git-remote](http://git-scm.com/docs/git-remote)
+- [git-submodule](
