@@ -9,6 +9,8 @@ Table of Contents
 * [ubuntu sync time to ntp to solve clock skew issue](#ubuntu-sync-time-to-ntp-to-solve-clock-skew-issue)
 * [print all windows enviroment variables](#print-all-windows-enviroment-variables)
 * [JLink Script](#jlink-script)
+* [Typora and Diagram](#typora-and-diagram)
+* [vim substitute](#vim-substitute)
 * [[How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)](#how-do-i-resolve-the-following-packages-have-unmet-dependencieshttpsstackoverflowcomquestions26571326how-do-i-resolve-the-following-packages-have-unmet-dependencies)
 * [How to Install Specific Version of Package using apt-get ](#how-to-install-specific-version-of-package-using-apt-get-)
 * [how to check glic version on linux](#how-to-check-glic-version-on-linux)
@@ -70,6 +72,7 @@ Table of Contents
   * [create a new repository on the command line](#create-a-new-repository-on-the-command-line)
   * [push an existing repository from the command line](#push-an-existing-repository-from-the-command-line)
   * [push by PAT](#push-by-pat)
+* [Clone A Private Repository Github](#clone-a-private-repository-github)
 * [Github Connect with SSH](#github-connect-with-ssh)
 * [Manage remote repositories](#manage-remote-repositories)
   * [switching remote URLs from HTTPS to SSH](#switching-remote-urls-from-https-to-ssh)
@@ -126,6 +129,9 @@ JOBID EXEC_CWD
 
 * [Typora](https://typora.io/)
 * [Diagram by mermaid](https://mermaid-js.github.io/mermaid/#/README)
+
+## [vim substitute](http://vimregex.com/#substitute)
+
 
 ## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
