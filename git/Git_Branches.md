@@ -1,10 +1,7 @@
 # Git Branches: List, Create, Switch to, Merge, Push,  Delete
 
 
-
 [Git branches *cheatsheet*](https://devhints.io/git-branch)
-
-
 
 Git lets you branch out from the original code base. This lets you more  easily work with other developers, and gives you a lot of flexibility in your workflow.
 
