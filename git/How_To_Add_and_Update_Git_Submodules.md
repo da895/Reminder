@@ -55,7 +55,7 @@ When adding a new Git submodule into your project, multiple actions will be perf
 - Your Git configuration (located at .git/config) was also modified in order to include the submodule you just added;
 - The submodule you just added are marked as changes to be committed in your repository.
 
-![git add submodule](dd.assets/add-submodule-1.png)
+![git add submodule](How_To_Add_and_Update_Git_Submodules.assets/add-submodule-1.png)
 
 ## Pull a Git Submodule
 
@@ -244,6 +244,9 @@ Finally, you have seen that it is possible to tweak your Git  configuration in o
 If you are interested about Git or about software engineering in  general, we have a complete section dedicated to it on the website, so  make sure to check it out!
 
 
+
+
+
 # How to create git submodule from repository subdirectory
 
 This tutorial explains how to extract a subdirectory of a git  repository and how to make it a submodule or an independent git  repository in 8 easy steps.
@@ -359,4 +362,4 @@ If you want to know more about the commands and concepts discussed in this tutor
 - [Git tools – Submodules](http://git-scm.com/book/en/v2/Git-Tools-Submodules)
 - [git-filter-branch](http://git-scm.com/docs/git-filter-branch)
 - [git-remote](http://git-scm.com/docs/git-remote)
-- [git-submodule](
+- [git-submodule](http://git-scm.com/docs/git-submodule)

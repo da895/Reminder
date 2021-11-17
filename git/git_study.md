@@ -1,31 +1,5 @@
 # GIT
 
-
-Table of Contents
-==========================
-
-<!-- vim-markdown-toc GFM -->
-
-* [Git locally](#git-locally)
-* [Branch out](#branch-out)
-* [Merge branches](#merge-branches)
-* [Git remote](#git-remote)
-* [Git config list](#git-config-list)
-* [Misc](#misc)
-* [Discard local change](#discard-local-change)
-* [Git rm](#git-rm)
-* [Generial Config within .gitconfig](#generial-config-within-gitconfig)
-* [Removing a file added in the most recent unpushed commit](#removing-a-file-added-in-the-most-recent-unpushed-commit)
-* [Removing sensitive data from a repository](#removing-sensitive-data-from-a-repository)
-* [how can i clean .git folder](#how-can-i-clean-git-folder)
-* [Reference](#reference)
-
-<!-- vim-markdown-toc -->
-
-## Get Git URL
-- `git config --get remote.origin.url`
-- `git remote show origin`
-
 ## Git locally
 - `git init`                : create repo at local directory
 - `git add file_name`       : add file_name to repo
@@ -80,50 +54,6 @@ And then , push changes to remote repo
 	last = log -1 HEAD
 	psh = push origin master
   ```
-
-## [Removing a file added in the most recent unpushed commit](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/removing-files-from-a-repositorys-history)
-
-
-1. Open Terminal.
-2. Change the current working directory to your local repository.
-3. To remove the file, enter `git rm --cached`:
-```
-    $ git rm --cached giant_file
-    # Stage our giant file for removal, but leave it on disk
-```
-4. Commit this change using --amend -CHEAD:
-```
-    $ git commit --amend -CHEAD
-    # Amend the previous commit with your change
-    # Simply making a new commit won't work, as you need
-    # to remove the file from the unpushed history as well
-```
-5. Push your commits to GitHub:
-```
-    $ git push
-    # Push our rewritten, smaller commit
-```
-
-## [Removing sensitive data from a repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
-
-`git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch fixtures/11_user_answer.json' HEAD`
-
-`git push origin --force --all`
-
-`git filter-branch -f --tree-filter 'rm -rf xxx' HEAD` will remove "my_file" from every commit.
-
-## [how can i clean .git folder](https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti)
-
-`git gc --aggressive --prune`
-
-## [put links in code blocks on github](https://gist.github.com/jesstelford/cb4dd6fafc18221ce27250e84fd19327)
-
-```
-<pre>
-<a href="hyperlink">title</a>
-<b> bold font </b>
-</pre>
-```
 
 ## Reference
 - [Git for beginners: The definitive practical guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
