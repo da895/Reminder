@@ -10,6 +10,8 @@ https://sysadmin.lk/awk-regular-expressions-filter-text-string-files/
 
 https://linuxhandbook.com/awk-command-tutorial/
 
+https://www.grymoire.com/Unix/Awk.html
+
 ```shell
 echo "" | awk '{print "Current date is:" , d }' d="`echo "this is a test" | sed -e 's/est/EST/'`"
 ```
