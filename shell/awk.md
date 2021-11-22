@@ -18,12 +18,26 @@ https://linuxhandbook.com/awk-command-tutorial/
 
 https://www.grymoire.com/Unix/Awk.html
 
+[How do I escape a field variable in an awk command in an alias](https://stackoverflow.com/questions/3110580/how-do-i-escape-a-field-variable-in-an-awk-command-in-an-alias)
+
+Wrap the alias w/ ' and use '\'' for the embedded '.  
+
+```tcsh
+alias testawk 'awk '\''{print $2}'\'' file'
+```
+
+------------------------------------------------------------------------------------------
+
 ```shell
 echo "" | awk '{print "Current date is:" , d }' d="`echo "this is a test" | sed -e 's/est/EST/'`"
 ```
 
 ```shell
 echo "" | awk '{cmd="echo this is a test | sed -e 's/est/EST/'"; while((cmd | getline a)>0) print a;}'
+```
+
+```shell
+echo "" | awk 'BEGIN{printf "%10s | %10s | %10s", "CWD","Done at","Elapse time(h)"}; /Done Successfully/ {b=gensub(/(.*): Done.*/,"\\1","g");c=gensub(/.* CPU time used is (.*)\..*/,"\\1","g");printf "%s | %s | %s\n",a,b,c/3600;next} /Execution CWD/ {a=gensub(/.*CWD <(.*)>,.*/,"\\1","g"}'
 ```
 
 # How to Call an External Program Using awk
