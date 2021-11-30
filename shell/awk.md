@@ -16,6 +16,25 @@ https://sysadmin.lk/awk-regular-expressions-filter-text-string-files/
 
 https://linuxhandbook.com/awk-command-tutorial/
 
+[grep a block of text delimited by two key lines](https://stackoverflow.com/questions/19926634/grep-a-block-of-text-delimited-by-two-key-lines)
+
+```shell
+awk '/Beginning of block/ {p=1};
+     {if (p==1) {a[NR]=$0}};
+     /some_pattern/ {f=1};
+     /End of block/ {p=0; if (f==1) {for (i in a) print a[i]};f=0; delete a}' file
+```
+
+[How to print an array in defined order in AWK 3.1.3](https://stackoverflow.com/questions/16075582/how-to-print-an-array-in-defined-order-in-awk-3-1-3)
+
+Just keep a second array order with numerical indices and the keys for the first array as the values. You can then iterate through order in sequence and look up the values of array:
+```shell
+for (i = 1; i < length(order); i++) {
+  print order[i], array[order[i]]
+}
+```
+When building order, you may want to check whether the key is already present in array, to prevent the keys of array being shown multiple times. 
+
 https://www.grymoire.com/Unix/Awk.html
 
 [How do I escape a field variable in an awk command in an alias](https://stackoverflow.com/questions/3110580/how-do-i-escape-a-field-variable-in-an-awk-command-in-an-alias)
