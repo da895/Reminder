@@ -150,6 +150,8 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 23. [A System Evaluation of CAN Transceivers from TI](https://www.ti.com/lit/an/slla109a/slla109a.pdf?ts=1629930573034&ref_url=https%253A%252F%252Fwww.google.com%252F) 
 
+24. [AN754 understanding microchip's CAN bit timing](./AN754_understanding_microchip_CAN_Bit_timing.pdf)
+
 
 ## Ethernet
 
