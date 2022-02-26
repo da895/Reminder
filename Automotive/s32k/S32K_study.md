@@ -1,5 +1,11 @@
 # S32K Study
 
+## Reference
+
+1. [hacking S32K1244](https://github.com/GreyZhang/g_s32k144)
+
+
+
 ## Key Features
 
 * Operation Characteristics
