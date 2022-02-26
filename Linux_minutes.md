@@ -114,6 +114,11 @@ JOBID EXEC_CWD
 
 `ntpdate cn.pool.ntp.org`
 
+## Excel with Regex (VBA)
+
+* [stackoverflow](https://stackoverflow.com/questions/22542834/how-to-use-regular-expressions-regex-in-microsoft-excel-both-in-cell-and-loops)
+* [software-solution](https://software-solutions-online.com/vba-regex-guide/)
+
 ## print all windows enviroment variables
 
 `PS C:\> dir env: >env.txt`
