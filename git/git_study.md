@@ -28,6 +28,9 @@
 - `git reset --hard`   discard all local file
 - `git stash`   discard all local changes, but save them for possible re-use later
 
+## Git OpenSSL SSL_read: Connection was reset, errno 10054
+- `git config --global http.sslVerfiy "false"`
+
 ## Git rm
 
 * remove the file from the Git repository and the filesystem
