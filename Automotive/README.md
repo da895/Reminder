@@ -171,12 +171,10 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 ## AutoSAR
 
 1. [AUTOSAR org](https://www.autosar.org/)
-
-1. [Acceptance Test Specification of Communication Management](https://www.autosar.org/fileadmin/user_upload/standards/tests/1-1/AUTOSAR_ATS_CommunicationManagement.pdf)
-
-2. [Experiences with a CANoe-based Fault Injection Framework for AUTOSAR](https://users.ece.cmu.edu/~planigan/research/lanigan-dsn10.pdf)
-
+2. [Acceptance Test Specification of Communication Management](https://www.autosar.org/fileadmin/user_upload/standards/tests/1-1/AUTOSAR_ATS_CommunicationManagement.pdf)
+3. [Experiences with a CANoe-based Fault Injection Framework for AUTOSAR](https://users.ece.cmu.edu/~planigan/research/lanigan-dsn10.pdf)
 3. [Experiences with CANoe-based Fault Injection for AUTOSAR](https://users.ece.cmu.edu/~planigan/research/lanigan-dsn10.key.pdf)
+3. [Autosar tutorial](https://autosartutorials.com/what-is-autosar/)
 
 ## Safty Manual
 
