@@ -152,6 +152,8 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 24. [AN754 understanding microchip's CAN bit timing](./AN754_understanding_microchip_CAN_Bit_timing.pdf)
 
+25. [CAN Stack introduce PART2](./CAN_Bus_Protocol_Stack_Part2.pdf)
+
 
 ## Ethernet
 
