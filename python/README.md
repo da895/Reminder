@@ -40,6 +40,8 @@
     conda env list
     conda activate myenv
     conda deactivate
+    
+## [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)
 
 ## [plotting a square wave(python) using a Fourier series](https://stackoverflow.com/questions/46672128/my-code-is-not-plotting-a-square-wavepython-using-a-fourier-series)
 
