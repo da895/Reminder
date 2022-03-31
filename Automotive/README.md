@@ -154,6 +154,12 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 25. [CAN Stack introduce PART2](./CAN_Bus_Protocol_Stack_Part2.pdf)
 
+26. [Model 3 DBC](https://github.com/da895/model3dbc)
+
+27. [CSS electronics for automitive bus](https://www.csselectronics.com/)
+
+28. [UDS introduce from CSS](./UDS_Explained_a_simple_intro.md)
+
 
 ## Ethernet
 
