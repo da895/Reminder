@@ -160,6 +160,15 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 28. [UDS introduce from CSS](./UDS_Explained_a_simple_intro.md)
 
+29. UDS from Github
+
+  a. [iso15765-canbus](https://github.com/devcoons/iso15765-canbus)
+  b. [python-udsoncan](https://github.com/pylessard/python-udsoncan)
+  c. [ECU-simulator for OBD](https://github.com/lbenthins/ecu-simulator)
+  d. [py-uds is ongoing](https://github.com/mdabrowski1990/uds)
+  e. [isotp implemented by C](https://github.com/lishen2/isotp-c)
+  f. [ISO14229](https://github.com/driftregion/iso14229)
+  g. [CAN Resource collection](https://gist.github.com/Semant1ka/59f4ac0dc899e1501d36936188374246)
 
 ## Ethernet
 
