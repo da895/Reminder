@@ -12,9 +12,9 @@ Part 2:  Transport protocol and network layer services
 
 ## 6.2 Illustration of CAN parameters for transport protocol and network layer services
 
-![image-20220410185823857](ISO15767_study.assets/image-20220410185823857.png)
+![image-20220410185823857](ISO15765_study.assets/image-20220410185823857.png)
 
-![image-20220410190155912](ISO15767_study.assets/image-20220410190155912.png)
+![image-20220410190155912](ISO15765_study.assets/image-20220410190155912.png)
 
 # 7 Network layer overview
 
@@ -40,9 +40,9 @@ b) Protocol parameter setting services
 
 ## 7.3 Internal operation of network layer
 
-![image-20220410192552887](ISO15767_study.assets/image-20220410192552887.png)
+![image-20220410192552887](ISO15765_study.assets/image-20220410192552887.png)
 
-![image-20220410192623587](ISO15767_study.assets/image-20220410192623587.png)
+![image-20220410192623587](ISO15765_study.assets/image-20220410192623587.png)
 
 # 8 Network layer services
 
@@ -207,13 +207,13 @@ N_SA, N_TA, N_TAtype, N_AE
 
 #### 8.3.2.4 N_TAtype, network target address type
 
-![image-20220407102256319](ISO15767_study.assets/image-20220407102256319.png)
+![image-20220407102256319](ISO15765_study.assets/image-20220407102256319.png)
 
 
 
-![image-20220407102353860](ISO15767_study.assets/image-20220407102353860.png)
+![image-20220407102353860](ISO15765_study.assets/image-20220407102353860.png)
 
-![image-20220407102443001](ISO15767_study.assets/image-20220407102443001.png)
+![image-20220407102443001](ISO15765_study.assets/image-20220407102443001.png)
 
 #### 8.3.2.5 N_AE, address externsion
 
@@ -269,7 +269,7 @@ enumeration, Range: STmin, BS
 
 ### 9.2.1 SF with TX_DL=8
 
-![image-20220410203112490](ISO15767_study.assets/image-20220410203112490.png)
+![image-20220410203112490](ISO15765_study.assets/image-20220410203112490.png)
 
 * six (TX_DL - 2) : extended or mixed addressing
 * seven (TX_DL - 1 ) : normal addressing
@@ -294,7 +294,7 @@ two different modes for the adoption of above values for the receiver of a segme
 
 ALL blocks , except the last one , will consist of BS N_PDUs. the last one will contain the remaining N_PDUs (from 1 up to BS)
 
-![image-20220410210235404](ISO15767_study.assets/image-20220410210235404.png)
+![image-20220410210235404](ISO15765_study.assets/image-20220410210235404.png)
 
 ## 9.4 Transport layer protocol data units
 
@@ -374,7 +374,7 @@ the size of N_Data depends on the N_PDU type, the address format chosen, and the
 
 ### 9.5.1 definition of TX_DL
 
-![image-20220407140359576](ISO15767_study.assets/image-20220407140359576.png)
+![image-20220407140359576](ISO15765_study.assets/image-20220407140359576.png)
 
 ### 9.5.2 Creating CAN frames based on N_TAtype and TX_DL
 
@@ -382,19 +382,19 @@ CAN frames are generated based upon **N_AI**, the configured **addressing format
 
 ### 9.5.3 Verifying the correctness of received CAN Frames
 
-![image-20220407141443422](ISO15767_study.assets/image-20220407141443422.png)
+![image-20220407141443422](ISO15765_study.assets/image-20220407141443422.png)
 
-![image-20220407141527610](ISO15767_study.assets/image-20220407141527610.png)
+![image-20220407141527610](ISO15765_study.assets/image-20220407141527610.png)
 
 ### 9.5.4 Receiver determination RX_DL
 
-![image-20220407141812010](ISO15767_study.assets/image-20220407141812010.png)
+![image-20220407141812010](ISO15765_study.assets/image-20220407141812010.png)
 
 ## 9.6 Protocol control information specification
 
 ### 9.6.1 N_PCI
 
-![image-20220407135210477](ISO15767_study.assets/image-20220407135210477.png)
+![image-20220407135210477](ISO15765_study.assets/image-20220407135210477.png)
 
 ### 9.6.2 SF N_PCI parameter definition
 
@@ -402,19 +402,19 @@ CAN frames are generated based upon **N_AI**, the configured **addressing format
 
 **SF_DL** is used to specify the number of service message data bytes. The ranges of valid SF_DL values depend on the configured transmit data link layer data length (**TX_DL**) and the **actual payload** to be transmitted.
 
-![image-20220407144042106](ISO15767_study.assets/image-20220407144042106.png)
+![image-20220407144042106](ISO15765_study.assets/image-20220407144042106.png)
 
-![image-20220407144056856](ISO15767_study.assets/image-20220407144056856.png)
+![image-20220407144056856](ISO15765_study.assets/image-20220407144056856.png)
 
 #### 9.6.2.2 SF_DL error handling
 
 * Received CAN_DL is less or equal to 8
 
-  ![image-20220407145258343](ISO15767_study.assets/image-20220407145258343.png)
+  ![image-20220407145258343](ISO15765_study.assets/image-20220407145258343.png)
 
 * Received CAN_DL is greater than 8
 
-![image-20220407145339603](ISO15767_study.assets/image-20220407145339603.png)
+![image-20220407145339603](ISO15765_study.assets/image-20220407145339603.png)
 
 ### 9.6.3 FF N_PCI parameter definition
 
@@ -422,11 +422,11 @@ CAN frames are generated based upon **N_AI**, the configured **addressing format
 
 for the sender, the range of valid **FF_DL** values depends on the addressing scheme and the configured transmit data link layer data length (**TX_DL**). The minimum values of FF_DL (**FF_DLmin**) based on addressing scheme and TX_DL are specified in below Table
 
-![image-20220407172343377](ISO15767_study.assets/image-20220407172343377.png)
+![image-20220407172343377](ISO15765_study.assets/image-20220407172343377.png)
 
 
 
-![image-20220407173128893](ISO15767_study.assets/image-20220407173128893.png)
+![image-20220407173128893](ISO15765_study.assets/image-20220407173128893.png)
 
 #### 9.6.3.2 FF_DL error handling
 
@@ -457,7 +457,7 @@ the payload data length CAN_DL of the received CAN frame has to match the RX_DL 
 
 * when the SN reaches the value of 15, it shall wrapparound and be set to zero for the next CF.
 
-  ![image-20220407180406750](ISO15767_study.assets/image-20220407180406750.png)
+  ![image-20220407180406750](ISO15765_study.assets/image-20220407180406750.png)
 
 #### 9.6.4.4 SN error handling
 
@@ -469,7 +469,7 @@ when violated the above SN rule, abort the receipt message and the network layer
 
 A **sending** network entity shall support all specified (not reserved )values of the FS parameter.
 
-![image-20220407182012323](ISO15767_study.assets/image-20220407182012323.png)
+![image-20220407182012323](ISO15765_study.assets/image-20220407182012323.png)
 
 #### 9.6.5.2 FlowStatus (FS) error handling 
 
@@ -483,13 +483,13 @@ eg, If BS is 20, then the block will consist of 20 CF N_PDUs.
 
 Only the last block of CF in a segmented data transmission may have less than the BS number of frames.
 
-![image-20220407202425738](ISO15767_study.assets/image-20220407202425738.png)
+![image-20220407202425738](ISO15765_study.assets/image-20220407202425738.png)
 
 #### 9.6.5.4 SeparationTime minimum (STmin) parameter definition
 
 specified by the receiving entity, which is the minimum time gap allowed between the transmissions of two CFs.
 
-![image-20220407202654263](ISO15767_study.assets/image-20220407202654263.png)
+![image-20220407202654263](ISO15765_study.assets/image-20220407202654263.png)
 
 The measurement of the STmin starts after completion of transmission of a CF and ends at the request for the transmission of the next CF.
 
@@ -516,17 +516,17 @@ avoid sender nodes within while_1_loop. This parameter is local to communication
 
 ### 9.8.1 Timing parameters
 
-![image-20220408103355987](ISO15767_study.assets/image-20220408103355987.png)
+![image-20220408103355987](ISO15765_study.assets/image-20220408103355987.png)
 
 * .req  -> request
 * .con -> confirm
 * .ind -> indication
 
-![image-20220408103157726](ISO15767_study.assets/image-20220408103157726.png)
+![image-20220408103157726](ISO15765_study.assets/image-20220408103157726.png)
 
 ### 9.8.2 Network layer timeouts
 
-![image-20220408104155570](ISO15767_study.assets/image-20220408104155570.png)
+![image-20220408104155570](ISO15765_study.assets/image-20220408104155570.png)
 
 | Error | Cause | Action | Comments                           |
 | ----- | ----- | ------ | ---------------------------------- |
@@ -615,23 +615,23 @@ three addressing formats
 
 Base on [N_TAtype](#8.3.2.4 N_TAtype, network target address type), [Table 9](#9.6.1 N_PCI)
 
-![image-20220408163535889](ISO15767_study.assets/image-20220408163535889.png)
+![image-20220408163535889](ISO15765_study.assets/image-20220408163535889.png)
 
-![image-20220408164536422](ISO15767_study.assets/image-20220408164536422.png)
+![image-20220408164536422](ISO15765_study.assets/image-20220408164536422.png)
 
 ### 10.3.3 Normal fixed addressing
 
 only 29 bit CAN identifiers are allowed. Base on [N_TAtype](#8.3.2.4 N_TAtype, network target address type), [Table 9](#9.6.1 N_PCI)
 
-![image-20220408164928328](ISO15767_study.assets/image-20220408164928328.png)![image-20220408164955276](ISO15767_study.assets/image-20220408164955276.png)
+![image-20220408164928328](ISO15765_study.assets/image-20220408164928328.png)![image-20220408164955276](ISO15765_study.assets/image-20220408164955276.png)
 
 ### 10.3.4 Extended addressing
 
 Base on [N_TAtype](#8.3.2.4 N_TAtype, network target address type), [Table 9](#9.6.1 N_PCI)
 
-![image-20220408165101092](ISO15767_study.assets/image-20220408165101092.png)
+![image-20220408165101092](ISO15765_study.assets/image-20220408165101092.png)
 
-![image-20220408165133735](ISO15767_study.assets/image-20220408165133735.png)
+![image-20220408165133735](ISO15765_study.assets/image-20220408165133735.png)
 
 ### 10.3.5 Mixed addressing
 
@@ -641,15 +641,15 @@ Mixed addressing is the addressing format to be used if [*Mtype*](#8.3.1 Mtype, 
 
 Base on [N_TAtype](#8.3.2.4 N_TAtype, network target address type),
 
-![image-20220408165948221](ISO15767_study.assets/image-20220408165948221.png)
+![image-20220408165948221](ISO15765_study.assets/image-20220408165948221.png)
 
-![image-20220408170001195](ISO15767_study.assets/image-20220408170001195.png)
+![image-20220408170001195](ISO15765_study.assets/image-20220408170001195.png)
 
 #### 10.3.5.2 11 bit CAN identifier
 
-![image-20220408170115600](ISO15767_study.assets/image-20220408170115600.png)
+![image-20220408170115600](ISO15765_study.assets/image-20220408170115600.png)
 
-![image-20220408170128911](ISO15767_study.assets/image-20220408170128911.png)
+![image-20220408170128911](ISO15765_study.assets/image-20220408170128911.png)
 
 ## 10.4 CAN frame data length code (DLC)
 
@@ -663,17 +663,17 @@ DLC is always set to 8. this can be the case for an SF, FC frame or the last CF 
 
 DLC parameter cannot be used to determine the message length; this information shall be extracted from the N_PCI information at the beginning of a message.
 
-![image-20220408170944891](ISO15767_study.assets/image-20220408170944891.png)
+![image-20220408170944891](ISO15765_study.assets/image-20220408170944891.png)
 
 #### 10.4.2.2 CAN frame data optimization (TX_DL = 8)
 
 DLC is **not** always need to be  8. this can **only** be the case for an SF, FC frame or the last CF of a segmented message. 
 
-![image-20220408171856688](ISO15767_study.assets/image-20220408171856688.png)
+![image-20220408171856688](ISO15765_study.assets/image-20220408171856688.png)
 
 #### 10.4.2.3 Mandatory padding of CAN FD frames (TX_DL > 8)
 
-![image-20220408172155036](ISO15767_study.assets/image-20220408172155036.png)
+![image-20220408172155036](ISO15765_study.assets/image-20220408172155036.png)
 
 ### 10.4.3 DLC error handling
 

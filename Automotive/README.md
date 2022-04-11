@@ -158,7 +158,7 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 27. [CSS electronics for automitive bus](https://www.csselectronics.com/)
 
-28. [UDS introduce from CSS](./UDS_Explained_a_simple_intro.md)
+28. [UDS introduce from CSS](./UDS/UDS_Explained_a_simple_intro.md)
 
 29. UDS from Github
 
@@ -169,6 +169,8 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
     e. [isotp implemented by C](https://github.com/lishen2/isotp-c)  
     f. [ISO14229](https://github.com/driftregion/iso14229)  
     g. [CAN Resource collection](https://gist.github.com/Semant1ka/59f4ac0dc899e1501d36936188374246)  
+
+30. [ISO15765 part 2](./UDS/ISO15765_study.md)
 
 ## Ethernet
 
