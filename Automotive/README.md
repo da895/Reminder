@@ -20,15 +20,15 @@
 
 1. [UJA1169ATK: Mini High-Speed CAN System Basis Chip](https://www.nxp.com/products/power-management/pmics-and-sbcs/mini-sbcs/mini-high-speed-can-system-basis-chip:UJA1169ATK)
 
-  ![UJA1169AT_DIAGRAM](./UJA1169ATK-BD2.jpg)
+  <img src="./UJA1169ATK-BD2.jpg" alt="UJA1169AT_DIAGRAM" style="zoom:25%;" />
 
 2. [TJA1043: High-speed CAN transceiver](https://www.nxp.com/products/interfaces/can-transceivers/can-with-flexible-data-rate/high-speed-can-transceiver:TJA1043)
 
-  ![TJA1043_DIAGRAM](./TJA1043-BD.jpg)
+  <img src="./TJA1043-BD.jpg" alt="TJA1043_DIAGRAM" style="zoom:25%;" />
 
 3. [UJA1166ATK: self-supplied high-speed CAN transceiver with Sleep mode](https://www.nxp.com/part/UJA1166ATK#/)
 
-  ![UJA1166ATK_DB](./UJA1166ATK_BD.JPG)
+  <img src="./UJA1166ATK_BD.JPG" alt="UJA1166ATK_DB" style="zoom:25%;" />
 
 4. [AH138 Application Hints - Standalone high-speed CAN transceivers Mantis
 TJA1044/TJA1057 and Dual-Mantis TJA1046](https://www.nxp.com.cn/docs/en/supporting-information/AH1308_Application_Hints_Mantis.pdf)
@@ -118,7 +118,7 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 11. DB9 for CAN
 
-  ![dsub_for_can](./dsub-connector.png)
+  <img src="./dsub-connector.png" alt="dsub_for_can" style="zoom:33%;" />
 
 12. [CiA for CAN FD](https://www.can-cia.org/can-knowledge/can/can-fd/)
 
