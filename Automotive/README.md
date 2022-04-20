@@ -170,6 +170,7 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
     f. [ISO14229](https://github.com/driftregion/iso14229)  
     g. [CAN Resource collection](https://gist.github.com/Semant1ka/59f4ac0dc899e1501d36936188374246)  
     h. [UDS-C](https://github.com/openxc/uds-c)  
+    i. [UDSdemo on freesacle s12g128](https://github.com/da895/UDSDemo)  
 
 30. [ISO15765 part 2](./UDS/ISO15765_study.md)
 
