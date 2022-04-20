@@ -23,7 +23,7 @@ This is where the ISO 15765 protocol comes in.  The protocol is used in  places 
 
 The basics of the 15765 are pretty simple.  A device will send out a  single frame telling another device that it has something it wants to  say.  Now if the thing it wants to say is small in size, it can be all  contained in that one frame.  But often times we need to send more data  so the sender will wait for the receiver to get the data, and then  respond.  In the response the receiver will state how many frames the  sender can send at once, and how much time can be between each frame.  Older CAN devices had a small buffer size, and wouldn't be able to  receive data too fast.  So the sender is supposed to receive this one  frame, known as a flow control, and then send back more data in with the timing specified.  This helps prevent the device receiving the data  from being overloaded, since the sender will only send the specified  number of frames requested.  Once all of the data gets received, the  receiving device will act on it, and then send a reply back.  Just like  the request, the response can also be a single frame, or multiple  frames.  If it is multiple frames then it will send the first frame, and then the original sender device will send back a frame stating how many frames it can receive, and what timing should be between them.  These  steps are a bit confusing so here is a flow diagram explaining it,  generated using the NI [State Diagram Toolkit](https://forums.ni.com/t5/Reference-Design-Content/LabVIEW-State-Diagram-Toolkit/ta-p/3606081).  The state machine starts on the green node, and ends on the red one.
 
-![img](CAN_part8_ISO15765_UDS_Hooovahh_blog.assets/15765 Flow Diagram.png)
+![img](./CAN_part8_ISO15765_UDS_Hooovahh_blog.assets/15765%20Flow%20Diagram.png)
 
 Looking at this flow diagram things might be a bit confusing, so lets  break it down a bit more and talk about the various components and  checks that go into using raw frames for performing 15765 queries.
 
@@ -252,7 +252,7 @@ The NI toolkit [ADCS](http://sine.ni.com/nips/cds/view/p/lang/en/nid/203554) is 
 
 
 
-![img](CAN_part8_ISO15765_UDS_Hooovahh_blog.assets/15765 Palette.png)
+![img](./CAN_part8_ISO15765_UDS_Hooovahh_blog.assets/15765%20Palette.png)
 
 
 
@@ -260,7 +260,7 @@ So with this newly created G code and palette, what steps are needed to  read th
 
 
 
-[![img](CAN_part8_ISO15765_UDS_Hooovahh_blog.assets/Example_VI_BD.png)](https://4.bp.blogspot.com/-gRNZ8U-sYqI/WVhAvzLMIwI/AAAAAAAA7yY/R6K_EfdGJ9E9vq6gPORv9zO1i4MVWzV4gCLcBGAs/s1600/Example_VI_BD.png)
+![img](./CAN_part8_ISO15765_UDS_Hooovahh_blog.assets/Example_VI_BD.png)
 
 
 
