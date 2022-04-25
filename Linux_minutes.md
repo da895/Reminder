@@ -96,6 +96,13 @@ Table of Contents
 
 <!-- vim-markdown-toc -->
 
+## [python for vscode](https://code.visualstudio.com/docs/python/environments)  
+ * activate venv
+```ps
+Set-ExecutionPolicy Unrestricted -Scope Process
+ & d:/python/tk/.venv/Scripts/Activate.ps1
+```
+
 ## lsf
 * [IBM Platform LSF Documentation](https://www.bsc.es/support/LSF/9.1.2/)
 * [bhist](https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=reference-bhist#bhist_ref3495__timeformat273684)
