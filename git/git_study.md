@@ -65,3 +65,18 @@ And then , push changes to remote repo
     ```sh
     git init --bare git_name.git
     ```
+    
+## [How do I clone a subdirectory only of a Git repository?](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository)
+
+```
+mkdir <repo>
+cd <repo>
+git init
+git remote add -f origin <url>
+git config core.sparseCheckout true
+echo "some/dir/" >> .git/info/sparse-checkout
+echo "another/sub/tree" >> .git/info/sparse-checkout
+git pull origin master
+//git pull --depth=1 origin master
+```
+
