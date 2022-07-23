@@ -23,6 +23,8 @@
    * [Proxy server support](https://code.visualstudio.com/docs/setup/network)
    
         start the program with `--proxy-server=http://myproxy.example.com:3128`
+        
+   * [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
    
    * [pip timeout](https://stackoverflow.com/questions/50305112/pip-install-timeout-issue)
 
