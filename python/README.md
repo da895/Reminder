@@ -26,6 +26,8 @@
         
    * [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
    
+        1. submodule location: `D:\python\tk\.venv\lib\site-packages\`
+   
    * [无法加载文件venv\Scripts\Activate.ps1 ](https://blog.csdn.net/ayiya_Oese/article/details/119864185)
    
         1. powershell at administrate mode : `set-executionpolicy remotesigned`
