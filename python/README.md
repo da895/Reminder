@@ -27,6 +27,8 @@
    * [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
    
         1. submodule location: `D:\python\tk\.venv\lib\site-packages\`
+
+   * [Python in Visual Studio Code](https://code.visualstudio.com/docs/languages/python)
    
    * [无法加载文件venv\Scripts\Activate.ps1 ](https://blog.csdn.net/ayiya_Oese/article/details/119864185)
    
