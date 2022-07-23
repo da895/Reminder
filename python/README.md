@@ -26,6 +26,11 @@
         
    * [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
    
+   * [无法加载文件venv\Scripts\Activate.ps1 ](https://blog.csdn.net/ayiya_Oese/article/details/119864185)
+   
+        1. powershell at administrate mode : `set-executionpolicy remotesigned`
+        2. powershell within vscode : `& d:/python/tk/.venv/Scripts/Activate.ps1` 
+   
    * [pip timeout](https://stackoverflow.com/questions/50305112/pip-install-timeout-issue)
 
         `PIP` has a default timeout of 15 sec. `Pandas` is a relatively big file, at 10MB, and it's dependant `Numpy`, at 20MB could still be needed (if it is not installed already.). In addition, your network connection may be slow. Therefore, set `PIP` to take longer time by, for example, giving it 1000 sec:
