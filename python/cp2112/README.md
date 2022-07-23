@@ -5,3 +5,5 @@
 ## [hid](https://pypi.org/project/hid/)
 
 ## [CP210xControl](https://github.com/ajongbloets/CP210xControl)
+
+## [ConfigCP2102](https://github.com/tangyunzhu/ConfigCP2102)
