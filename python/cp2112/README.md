@@ -12,6 +12,10 @@
 
 ## [CP2102N SetConfig / GetConfig Array Structure](https://community.silabs.com/s/article/cp2102n-setconfig-getconfig-array-structure?language=en_US)
 
-## AN976
+## AN976 from silabs
 
-## AN978
+## AN978 from silabs
+
+## [python xmodem](https://pythonhosted.org/xmodem/xmodem.html)
+
+## [pyserial](https://pyserial.readthedocs.io/en/latest/pyserial.html)
