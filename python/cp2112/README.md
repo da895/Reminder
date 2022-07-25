@@ -19,3 +19,5 @@
 ## [python xmodem](https://pythonhosted.org/xmodem/xmodem.html)
 
 ## [pyserial](https://pyserial.readthedocs.io/en/latest/pyserial.html)
+
+## [pyserial 实现串口log过滤](https://blog.csdn.net/cai472861/article/details/105913658)
