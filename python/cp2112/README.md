@@ -21,3 +21,7 @@
 ## [pyserial](https://pyserial.readthedocs.io/en/latest/pyserial.html)
 
 ## [pyserial 实现串口log过滤](https://blog.csdn.net/cai472861/article/details/105913658)
+
+## [Python Datalogger - Using pySerial to Read Serial Data Output from Arduino](https://makersportal.com/blog/2018/2/25/python-datalogger-reading-the-serial-output-from-arduino-to-analyze-data-using-pyserial)
+
+## [](https://github.com/diegoherranz/serial-logger/blob/master/serial_logger.py)
