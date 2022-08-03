@@ -7,6 +7,8 @@ Collection for Misc information
 
 - [P82B715 - I2C-bus extender](https://www.nxp.com/docs/en/data-sheet/P82B715.pdf)
 
+- [RISCV platform supported by zephyrproject](https://docs.zephyrproject.org/3.1.0/boards/riscv/index.html)
+
 - **HuangPu, Shanghai**
   - [Education](https://www.hpe.cn/index.jsp)
   - [Pulic rental Housing](http://www.jcq365.com/)
