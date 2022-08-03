@@ -10,6 +10,10 @@
 
 <!-- vim-markdown-toc -->
 
+## [keyoscacquire is a Python package for acquiring traces from Keysight oscilloscopes through a VISA interface.](https://keyoscacquire.readthedocs.io/en/stable/index.html)
+
+[gitlab](https://github.com/asvela/keyoscacquire)
+
 ## vscode
 
     The folder locations will vary depending on your platform:
