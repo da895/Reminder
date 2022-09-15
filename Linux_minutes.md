@@ -1327,6 +1327,21 @@ You must delete any edited configuration files manually.
     docker load -i file_name
 ```
 
+11. [Share folder between host and container](https://forums.docker.com/t/share-folder-between-host-and-container/97370)
+
+
+>> Docker has the ability to keep data on the host even during restarts and upgrades. This is called bind mounts. You can read about it here: https://docs.docker.com/storage/bind-mounts/. Using the example in the documentation you could use the following command to bind the app directory to a subdirectory target in current local directory where you run this command. Any data in the subdirectory gets automatically added to the container at startup and any changes in the running container gets added to your directory. I believe this is what you are looking for.
+>> Ex:
+>> 
+```
+docker run -d \
+  -it \
+  --name devtest \
+  -v "$(pwd)"/target:/app \
+  nginx:latest
+
+```
+
 ### [How to move docker data directory to another location on Ubuntu](https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/)
 
 1. stop the docker daemon
