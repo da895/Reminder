@@ -10,6 +10,8 @@
 
 <!-- vim-markdown-toc -->
 
+## [upgrade python](python\ upgrade.md)
+
 ## [keyoscacquire is a Python package for acquiring traces from Keysight oscilloscopes through a VISA interface.](https://keyoscacquire.readthedocs.io/en/stable/index.html)
 
 [gitlab](https://github.com/asvela/keyoscacquire)
