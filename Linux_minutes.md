@@ -5,8 +5,10 @@ Table of Contents
 
 <!-- vim-markdown-toc GFM -->
 
+* [python for vscode](#python-for-vscode)
 * [lsf](#lsf)
 * [ubuntu sync time to ntp to solve clock skew issue](#ubuntu-sync-time-to-ntp-to-solve-clock-skew-issue)
+* [Excel with Regex (VBA)](#excel-with-regex-vba)
 * [print all windows enviroment variables](#print-all-windows-enviroment-variables)
 * [JLink Script](#jlink-script)
 * [Typora and Diagram](#typora-and-diagram)

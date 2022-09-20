@@ -1,5 +1,23 @@
 # GIT
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [Git locally](#git-locally)
+* [Branch out](#branch-out)
+* [Merge branches](#merge-branches)
+* [Git remote](#git-remote)
+* [Git config list](#git-config-list)
+* [Misc](#misc)
+* [Discard local change](#discard-local-change)
+* [Git OpenSSL SSL_read: Connection was reset, errno 10054](#git-openssl-ssl_read-connection-was-reset-errno-10054)
+* [Git rm](#git-rm)
+* [Generial Config within .gitconfig](#generial-config-within-gitconfig)
+* [Reference](#reference)
+* [How do I clone a subdirectory only of a Git repository?](#how-do-i-clone-a-subdirectory-only-of-a-git-repository)
+
+<!-- vim-markdown-toc -->
+
 ## Git locally
 - `git init`                : create repo at local directory
 - `git add file_name`       : add file_name to repo
