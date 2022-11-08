@@ -1300,7 +1300,7 @@ You must delete any edited configuration files manually.
 
 5. use a container
 
-    `docker exec -it xxx /bin/bash`
+    `docker exec -it -w directory_after_enter_container container_name /bin/bash`
 
 6. list container
 
