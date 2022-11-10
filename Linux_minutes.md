@@ -1347,6 +1347,21 @@ docker run -d \
 
 ```
 
+12. [Downloading Docker Images from Docker Hub without using Docker](https://devops.stackexchange.com/questions/2731/downloading-docker-images-from-docker-hub-without-using-docker)
+
+It turned out that the [Moby Project](https://mobyproject.org/) has a shell script on the [Moby Github](https://github.com/moby/moby/) which can download images from Docker Hub in a format that can be imported into Docker:
+
+    [download-frozen-image-v2.sh](https://raw.githubusercontent.com/moby/moby/master/contrib/download-frozen-image-v2.sh)
+
+The usage syntax for the script is given by the following:
+
+`download-frozen-image-v2.sh target_dir image[:tag][@digest] ...`
+
+The image can then be imported with tar and docker load:
+
+`tar -cC 'target_dir' . | docker load`
+
+
 ### [How to move docker data directory to another location on Ubuntu](https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/)
 
 1. stop the docker daemon
