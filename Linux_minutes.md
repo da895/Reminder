@@ -42,7 +42,7 @@ Table of Contents
 * [markdown convert to pdf within command line](#markdown-convert-to-pdf-within-command-line)
 * [How to connect to Cisco AnyConnect VPN via GUI in Ubuntu 18.04](#how-to-connect-to-cisco-anyconnect-vpn-via-gui-in-ubuntu-1804)
 * [Connecting to Cisco VPN from Ubuntu 18.04 without a Group Password](#connecting-to-cisco-vpn-from-ubuntu-1804-without-a-group-password)
-* [linux samba](#linux-samba)
+* [linux samba](#linux-a)
 * [How do I boot directly to tty1 in ubuntu?](#how-do-i-boot-directly-to-tty1-in-ubuntu)
 * [Make a Bash alias that takes a parameter](#make-a-bash-alias-that-takes-a-parameter)
 * [How to unzip a multipart (spanned) ZIP on Linux](#how-to-unzip-a-multipart-spanned-zip-on-linux)
@@ -588,6 +588,9 @@ After restarting, if you do not have any other credentials except a username, pa
 * `sudo chmod 777 /home/linuxidc/linuxidc.com/share` create share directory
 * `sudo smbpasswd -a usr_name`  create user_name and password
 * `sudo vim /etc/samba/smb.conf`   configuration 
+* `pdbedit -L -v`   list all samba user
+* `sudo service smbd restart`  restart samba service
+* `sudo ufw allow samba`  Update the firewall rules to allow Samba traffic
 
 ```sh
 [share]
