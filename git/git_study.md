@@ -49,6 +49,14 @@
 ## Git OpenSSL SSL_read: Connection was reset, errno 10054
 - `git config --global http.sslVerfiy "false"`
 
+## Git HTTP w/o passworld
+- `git config --global credential.helper store`
+
+if error found  as `remote: The project you were looking for could not be found or you don't have permission to view it.
+fatal: repository 'xxx' not found`
+- `git config credential.username "xxx"`
+- `git config --global credential.username "xxx"`
+
 ## Git rm
 
 * remove the file from the Git repository and the filesystem
