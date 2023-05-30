@@ -21,6 +21,10 @@
   [ODrive](https://odriverobotics.com/)    
   [VESC](https://vesc-project.com/)    
   [zhihui](https://www.bilibili.com/video/BV11V41127pq/?spm_id_from=888.80997.embed_other.whitelist)  
+  
+## Dyson's Motor
+
+  [local file](./Digital_motors_software_and_the_rise_of_the_internet_of_things.md)
 
 ## CAN Bus
 
