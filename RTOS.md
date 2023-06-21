@@ -5,4 +5,4 @@
 *  The RTOS **interrupt nesting** scheme splits the available interrupt priorities into two groups - those that will get masked by RTOS critical sections, and those that are never masked by RTOS critical sections and are therefore always enabled. The *configMAX_SYSCALL_INTERRUPT_PRIORITY* setting in FreeRTOSConfig.h defines the boundary between the two groups.
 *  The **preempt priority** defines whether an interrupt can preempt an already executing interrupt.
 *  The **sub priority** determines which interrupt will execute first when two interrupts of the same preempt priority occur at the same time
-*  
+*  Therefore, any interrupt service routine that uses an RTOS API function must have its priority manually set to a value that is numerically **equal to or greater than** the *configMAX_SYSCALL_INTERRUPT_PRIORITY* setting. This ensures the interrupt's logical priority is equal to or less than the configMAX_SYSCALL_INTERRUPT_PRIORITY setting. 
