@@ -1,3 +1,10 @@
+## Tips
+
+*  essential RTOS port specific information
+*  how to write FreeRTOS compatible interrupt service routines
+*  **Special note to ARM Cortex-M users**: ARM Cortex-M3, ARM Cortex-M4 and ARM Cortex-M4F ports need FreeRTOS handlers to be installed on the SysTick, PendSV and SVCCall interrupt vectors. 
+*  The ARM Cortex-M port performs all task context switches in the **PendSV** interrupt
+
 ## [Running the RTOS on a ARM Cortex-M Core](https://www.freertos.org/RTOS-Cortex-M3-M4.html)
 
 ``` The information regarding interrupt nesting on this page applies when using a Cortex-M3, Cortex-M4, Cortex-M4F, Cortex-M7, and Cortex-M33. It does not apply to Cortex-M23, Cortex-M0 or Cortex-M0+ cores, which do not include a BASEPRI register. ```
@@ -9,3 +16,10 @@
 
 
 ## [Debugging Hard Fault & Other Exceptions on ARM Cortex-M3 and ARM Cortex-M4 microcontrollers ](https://www.freertos.org/Debugging-Hard-Faults-On-Cortex-M-Microcontrollers.html)
+
+## configASSERT
+
+ * An assertion is triggered if the parameter passed into configASSERT() is zero. 
+ * Note defining configASSERT() will increase both the application code size and execution time. When the application is **stable** the additional overhead can be removed by simply commenting out the configASSERT() definition in FreeRTOSConfig.h. 
+
+
