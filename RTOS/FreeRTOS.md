@@ -13,6 +13,7 @@
 ## [GNU Static Stack Usage Analysis](https://mcuoneclipse.com/2015/08/21/gnu-static-stack-usage-analysis/)
 
 * -fstack-usage  -Wstack-usage=256
+* Notice the INTERRUPT entry: it is the level of stack needed by the interrupts. The tool assumes non-nested interrupts: it counts the worst case Interrupt Vector (IV) stack usage to the peak execution
 
 ## [Running the RTOS on a ARM Cortex-M Core](https://www.freertos.org/RTOS-Cortex-M3-M4.html)
 
