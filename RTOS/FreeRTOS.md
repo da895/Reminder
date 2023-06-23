@@ -5,9 +5,10 @@
 *  **Special note to ARM Cortex-M users**: ARM Cortex-M3, ARM Cortex-M4 and ARM Cortex-M4F ports need FreeRTOS handlers to be installed on the SysTick, PendSV and SVCCall interrupt vectors. 
 *  The ARM Cortex-M port performs all task context switches in the **PendSV** interrupt
 *  Use the *uxTaskGetStackHighWaterMark()* function to see which tasks can be allocated a smaller stack.
+*  the *uxTaskGetStackHighWaterMark()* API function can be used to see how much stack has actually been used, allowing the stack size to be reduced if more was allocated than necessary, and the stack overflow detection features can be used to determine if a stack is too small.
 *  Use the xPortGetFreeHeapSize() and (where available) the xPortGetMinimumEverFreeHeapSize() API functions to see how much FreeRTOS heap is being allocated but never used, and adjust accordingly. 
 *  If heap_1.c, heap_2.c, heap_4.c or heap_5.c are being used, and nothing in your application is ever calling malloc() directly (as opposed to pvPortMalloc()), then ensure the linker is not allocated a heap to the C library because it will never get used.
-*  
+
 
 ## [Running the RTOS on a ARM Cortex-M Core](https://www.freertos.org/RTOS-Cortex-M3-M4.html)
 
