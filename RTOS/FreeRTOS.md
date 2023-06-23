@@ -12,6 +12,8 @@
 
 ## [GNU Static Stack Usage Analysis](https://mcuoneclipse.com/2015/08/21/gnu-static-stack-usage-analysis/)
 
+* -fstack-usage  -Wstack-usage=256
+
 ## [Running the RTOS on a ARM Cortex-M Core](https://www.freertos.org/RTOS-Cortex-M3-M4.html)
 
 ``` The information regarding interrupt nesting on this page applies when using a Cortex-M3, Cortex-M4, Cortex-M4F, Cortex-M7, and Cortex-M33. It does not apply to Cortex-M23, Cortex-M0 or Cortex-M0+ cores, which do not include a BASEPRI register. ```
