@@ -1,3 +1,9 @@
+
+## TODO
+
+* RTOS Task Notifications 
+
+
 ## Tips
 
 *  essential RTOS port specific information
@@ -11,6 +17,7 @@
 *  Low priority numbers denote low priority tasks. The idle task has priority zero (tskIDLE_PRIORITY).
 *  Binary semaphores and mutexes are very similar but have some subtle differences: Mutexes include a priority inheritance mechanism, binary semaphores do not.  Whereas binary semaphores are the better choice for implementing synchronisation (between tasks or between tasks and an interrupt), mutexes are the better choice for implementing simple mutual exclusion (hence 'MUT'ual 'EX'clusion).
 *  Mutexes should not be used from an interrupt
+*  FreeRTOS Stream and Message Buffers use the task notification at array index 0
 
 
 ## [GNU Static Stack Usage Analysis](https://mcuoneclipse.com/2015/08/21/gnu-static-stack-usage-analysis/)
