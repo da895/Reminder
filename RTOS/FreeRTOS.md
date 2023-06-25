@@ -19,6 +19,7 @@
 *  Mutexes should not be used from an interrupt
 *  FreeRTOS Stream and Message Buffers use the task notification at array index 0
 *  heap_1.c for simplicity and determinism often necessary for safety critical applications, heap_4.c for fragmentation protection, heap_5.c to split the heap across multiple RAM regions
+*  A full interrupt nesting model is achieved by setting configMAX_SYSCALL_INTERRUPT_PRIORITY **above** (that is, at a higher priority level) than configKERNEL_INTERRUPT_PRIORITY. **This means the FreeRTOS kernel does not completely disable interrupts, even inside critical sections**.
 
 
 ## [GNU Static Stack Usage Analysis](https://mcuoneclipse.com/2015/08/21/gnu-static-stack-usage-analysis/)
