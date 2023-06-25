@@ -18,6 +18,7 @@
 *  Binary semaphores and mutexes are very similar but have some subtle differences: Mutexes include a priority inheritance mechanism, binary semaphores do not.  Whereas binary semaphores are the better choice for implementing synchronisation (between tasks or between tasks and an interrupt), mutexes are the better choice for implementing simple mutual exclusion (hence 'MUT'ual 'EX'clusion).
 *  Mutexes should not be used from an interrupt
 *  FreeRTOS Stream and Message Buffers use the task notification at array index 0
+*  heap_1.c for simplicity and determinism often necessary for safety critical applications, heap_4.c for fragmentation protection, heap_5.c to split the heap across multiple RAM regions
 
 
 ## [GNU Static Stack Usage Analysis](https://mcuoneclipse.com/2015/08/21/gnu-static-stack-usage-analysis/)
