@@ -14,6 +14,17 @@
 
 <!-- vim-markdown-toc -->
 
+## [ISO Document Stages](https://www.iest.org/Standards-RPs/ISO-Standards/ISO-Document-Stages)
+
+The key stage in the development of an ISO Standard is the **DIS** (Draft International Standard) stage. A **DIS** is the end result of the work produced by a Working Group and approved by a Technical Committee. A document in the DIS stage is more than 95% technically accurate. A DIS goes out for a five-month approval vote by all 89 voting nations of ISO. Any suggested changes offered as a result of this voting process must be addressed by the Technical Committee and may be incorporated or rejected.
+
+The newly modified DIS is sent to the voting nations as an FDIS (Final Draft International Standard) for a final approval vote (yes or no). Approval of the FDIS automatically instructs ISO to issue the document as a formal ISO Standard within 60 days of FDIS approval.
+
+It should be noted that DIS and FDIS documents may be used as trade references per agreement between a buyer and a seller. It should also be noted that the European community, through cooperation between CEN (European Committee for Standardization) and ISO/TC 209, has been developing companion CEN Standards on cleanrooms. The new ISO Standards replace the CEN Standards as soon as ISO Standards are formally published. In addition, six months after the formal publication of an ISO Standard, European nations’ national standards on the same criteria are made obsolete or rescinded.
+
+With the formal publication of ISO 14644, Parts 1 and 2, the U.S. Federal Standard 209E, Airborne Particulate Cleanliness Classes in Cleanrooms and Clean Zones, became both redundant and obsolete. As official technical caretaker of FED-STD-209E, IEST recommended cancellation of FED-STD-209E to the U.S. Government (GSA). The document was canceled in November 2001.
+
+
 ## [In-Vehicle Networking](https://www.nxp.com.cn/docs/en/brochure/BRINVEHICLENET.pdf)
 
   [local file](./Automotive/BRINVEHICLENET.pdf)
