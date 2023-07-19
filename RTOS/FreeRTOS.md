@@ -69,6 +69,11 @@ Like tasks that are in the Blocked state, tasks in the Suspended state cannot be
 ## configASSERT
 
  * An assertion is triggered if the parameter passed into configASSERT() is zero. 
- * Note defining configASSERT() will increase both the application code size and execution time. When the application is **stable** the additional overhead can be removed by simply commenting out the configASSERT() definition in FreeRTOSConfig.h. 
+ * Note defining configASSERT() will increase both the application code size and execution time. When the application is **stable** the additional overhead can be removed by simply commenting out the configASSERT() definition in FreeRTOSConfig.h.
+
+
+## Reference 
+
+* https://bbs.huaweicloud.com/blogs/378545 
 
 
