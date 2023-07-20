@@ -8,6 +8,7 @@
 *  the *uxTaskGetStackHighWaterMark()* API function can be used to see how much stack has actually been used, allowing the stack size to be reduced if more was allocated than necessary, and the stack overflow detection features can be used to determine if a stack is too small.
 *  Use the xPortGetFreeHeapSize() and (where available) the xPortGetMinimumEverFreeHeapSize() API functions to see how much FreeRTOS heap is being allocated but never used, and adjust accordingly. 
 *  If heap_1.c, heap_2.c, heap_4.c or heap_5.c are being used, and nothing in your application is ever calling malloc() directly (as opposed to pvPortMalloc()), then ensure the linker is not allocated a heap to the C library because it will never get used.
+*  A consequence of always running the highest priority task that is able to run is that a high priority task that never enters the [Blocked or Suspended](https://www.freertos.org/RTOS-task-states.html) state will permanently starve all lower priority tasks of any execution time.  it is best to create tasks that are event-driven.
 
 
 ## [GNU Static Stack Usage Analysis](https://mcuoneclipse.com/2015/08/21/gnu-static-stack-usage-analysis/)
@@ -31,5 +32,4 @@
 
  * An assertion is triggered if the parameter passed into configASSERT() is zero. 
  * Note defining configASSERT() will increase both the application code size and execution time. When the application is **stable** the additional overhead can be removed by simply commenting out the configASSERT() definition in FreeRTOSConfig.h. 
-
 
