@@ -19,6 +19,8 @@
 * [CortexM instruction Set Technical manual](http://users.ece.utexas.edu/~valvano/EE345L/Labs/Fall2011/CortexM_InstructionSet.pdf)
 * [ARM programming model](https://www.eng.auburn.edu/~nelson/courses/elec2220/slides/ARM%20prog%20model%201.pdf)
 * [Writing inline assembly code](https://developer.arm.com/documentation/100748/0620/Using-Assembly-and-Intrinsics-in-C-or-C---Code/Writing-inline-assembly-code)
+* [ARM GCC Inline Assembler Cookbook)(http://www.ethernut.de/en/documents/arm-inline-asm.html)
+* [ARM GCC Inline Assembler Cookbook -- Chinese](http://blog.chinaunix.net/uid-20706279-id-1888741.html)
 
 ## [ISO Document Stages](https://www.iest.org/Standards-RPs/ISO-Standards/ISO-Document-Stages)
 
