@@ -14,7 +14,11 @@
 
 <!-- vim-markdown-toc -->
 
-## [CortexM instruction Set Technical manual](http://users.ece.utexas.edu/~valvano/EE345L/Labs/Fall2011/CortexM_InstructionSet.pdf)
+## ARM 
+* [Cortex M4 Processor Technical Reference Manual](https://developer.arm.com/documentation/100166/0001?lang=en)
+* [CortexM instruction Set Technical manual](http://users.ece.utexas.edu/~valvano/EE345L/Labs/Fall2011/CortexM_InstructionSet.pdf)
+* [ARM programming model](https://www.eng.auburn.edu/~nelson/courses/elec2220/slides/ARM%20prog%20model%201.pdf)
+* [Writing inline assembly code](https://developer.arm.com/documentation/100748/0620/Using-Assembly-and-Intrinsics-in-C-or-C---Code/Writing-inline-assembly-code)
 
 ## [ISO Document Stages](https://www.iest.org/Standards-RPs/ISO-Standards/ISO-Document-Stages)
 
