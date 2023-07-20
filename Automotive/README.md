@@ -21,6 +21,7 @@
 * [Writing inline assembly code](https://developer.arm.com/documentation/100748/0620/Using-Assembly-and-Intrinsics-in-C-or-C---Code/Writing-inline-assembly-code)
 * [ARM GCC Inline Assembler Cookbook)(http://www.ethernut.de/en/documents/arm-inline-asm.html)
 * [ARM GCC Inline Assembler Cookbook -- Chinese](http://blog.chinaunix.net/uid-20706279-id-1888741.html)
+* [ARM GCC Inline Assembler Cookbook -- pdf](https://www.ic.unicamp.br/~celio/mc404-s2-2015/docs/ARM-GCC-Inline-Assembler-Cookbook.pdf)
 
 ## [ISO Document Stages](https://www.iest.org/Standards-RPs/ISO-Standards/ISO-Document-Stages)
 
