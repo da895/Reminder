@@ -14,6 +14,8 @@
 
 <!-- vim-markdown-toc -->
 
+## [CortexM instruction Set Technical manual](http://users.ece.utexas.edu/~valvano/EE345L/Labs/Fall2011/CortexM_InstructionSet.pdf)
+
 ## [ISO Document Stages](https://www.iest.org/Standards-RPs/ISO-Standards/ISO-Document-Stages)
 
 The key stage in the development of an ISO Standard is the **DIS** (Draft International Standard) stage. A **DIS** is the end result of the work produced by a Working Group and approved by a Technical Committee. A document in the DIS stage is more than 95% technically accurate. A DIS goes out for a five-month approval vote by all 89 voting nations of ISO. Any suggested changes offered as a result of this voting process must be addressed by the Technical Committee and may be incorporated or rejected.
