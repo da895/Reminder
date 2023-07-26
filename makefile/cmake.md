@@ -1,7 +1,9 @@
 # CMake
 
+* Functions:
+  * [get_filename_component](https://cmake.org/cmake/help/latest/command/get_filename_component.html)
 
-
+* [Linux_Code_test for Cmake](https://github.com/fengbingchun/Linux_Code_Test/tree/master)
 * [modern cmake from gitlab](https://cliutils.gitlab.io/modern-cmake/)
 * [HSF cmake](https://hsf-training.github.io/hsf-training-cmake-webpage/)
 * [official cmake documents ](https://cmake.org/cmake/help/latest/)
