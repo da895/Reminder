@@ -7,6 +7,7 @@
 * [modern cmake from gitlab](https://cliutils.gitlab.io/modern-cmake/)
 * [HSF cmake](https://hsf-training.github.io/hsf-training-cmake-webpage/)
 * [official cmake documents ](https://cmake.org/cmake/help/latest/)
+* **[Mastering CMake](https://cmake.org/cmake/help/book/mastering-cmake/index.html#mastering-cmake)**
 * [step by step example](https://github.com/ttroy50/cmake-examples)
 * [cmake useful variable](https://gitlab.kitware.com/cmake/community/-/wikis/doc/cmake/Useful-Variables)
 
@@ -50,6 +51,93 @@ Support <PRIVATE|PUBLIC|INTERFACE> and transtivity
 | **Sources**                                | target_sources             |
 
 * Avoid unnecessary variables
+
+* [Target-based build systems with CMake](https://coderefinery.github.io/cmake-workshop/targets/#target-based-build-systems-with-cmake)
+
+  ## [Targets](https://coderefinery.github.io/cmake-workshop/targets/#id1)
+
+  A target is declared by either [`add_executable`](https://cmake.org/cmake/help/latest/command/add_executable.html) or [`add_library`](https://cmake.org/cmake/help/latest/command/add_library.html): thus, in broad terms, a target maps to a build artifact in the project.
+
+  You can add custom targets to the build system with [`add_custom_target`](https://cmake.org/cmake/help/latest/command/add_custom_target.html). Custom targets are not necessarily build artifacts.
+
+  Any target has a collection of **properties**, which define *how* the build artifact should be produced **and** *how* it should be used by other dependent targets in the project.
+
+  ![../_images/target.svg](cmake.assets/target.svg)
+
+  A target is the basic element in the CMake DSL. Each target has *properties*, which can be read with [`get_target_property`](https://cmake.org/cmake/help/latest/command/get_target_property.html) and modified with [`set_target_properties`](https://cmake.org/cmake/help/latest/command/set_target_properties.html).  Compile options, definitions, include directories, source files, link libraries, and link options are properties of targets.[](https://coderefinery.github.io/cmake-workshop/targets/#id2)
+
+  The five most used commands used to handle targets are:
+
+  - [`target_sources`](https://cmake.org/cmake/help/latest/command/target_sources.html)
+  - [`target_compile_options`](https://cmake.org/cmake/help/latest/command/target_compile_options.html)
+  - [`target_compile_definitions`](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html)
+  - [`target_include_directories`](https://cmake.org/cmake/help/latest/command/target_include_directories.html)
+  - [`target_link_libraries`](https://cmake.org/cmake/help/latest/command/target_link_libraries.html)
+
+  There are additional commands in the `target_*` family:
+
+  ```
+  cmake --help-command-list | grep "^target_"
+  
+  target_compile_definitions
+  target_compile_features
+  target_compile_options
+  target_include_directories
+  target_link_directories
+  target_link_libraries
+  target_link_options
+  target_precompile_headers
+  target_sources
+  ```
+
+  ## [Properties](https://coderefinery.github.io/cmake-workshop/targets/#properties)
+
+  CMake lets you set properties at many different levels of visibility across the project:
+
+  - **Global scope**. These are equivalent to variables set in the root `CMakeLists.txt`. Their use is, however, more powerful as they can be set from *any* leaf `CMakeLists.txt`.
+  - **Directory scope**. These are equivalent to variables set in a given leaf `CMakeLists.txt`.
+  - **Target**. These are the properties set on targets that we discussed above.
+  - **Test**.
+  - **Source files**. For example, compiler flags.
+  - **Cache entries**.
+  - **Installed files**.
+
+  For a complete list of properties known to CMake:
+
+  ```
+  cmake --help-properties | less
+  ```
+
+  You can get the current value of any property with [`get_property`](https://cmake.org/cmake/help/latest/command/get_property.html) and set the value of any property with [`set_property`](https://cmake.org/cmake/help/latest/command/set_property.html).
+
+  ## [Visibility levels](https://coderefinery.github.io/cmake-workshop/targets/#visibility-levels)
+
+  It is much more robust to use targets and properties than using variables and here we will discuss why.
+
+  ![../_images/target_inheritance.svg](cmake.assets/target_inheritance.svg)
+
+  Properties on targets have **visibility levels**, which determine how CMake should propagate them between interdependent targets.[](https://coderefinery.github.io/cmake-workshop/targets/#id3)
+
+  Visibility levels `PRIVATE`, `PUBLIC`, or `INTERFACE` are very powerful but not easy to describe and imagine in words. Maybe a better approach to demonstrate what visibility levels is to see it in action.
+
+  We will demonstrate this with a hello world example where somebody went a bit too far with modularity and where we have split the code into 3 libraries and the main function (`content/examples/property-visibility/`):
+
+  ```
+  .
+  ├── CMakeLists.txt
+  ├── greeting
+  │   ├── greeting.cpp
+  │   └── greeting.hpp
+  ├── hello_world
+  │   ├── hello_world.cpp
+  │   └── hello_world.hpp
+  ├── main.cpp
+  └── world
+      ├── world.cpp
+      └── world.hpp
+  ```
+
+  Here the main function links to greeting which links to hello_world which links to world.
 
 * Generator Expressions 
 
