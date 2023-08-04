@@ -1,6 +1,8 @@
 # Reminder
 Collection for Misc information 
 
+- [ basic ESD and PAD design ](https://picture.iczhiku.com/resource/eetop/wyiFTUKPwRRZpBnC.pdf)
+
 - [map 51240](https://map.51240.com)
 
 - [JeeLabs](https://jeelabs.org/)
