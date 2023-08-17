@@ -8,3 +8,5 @@
 
 * [usb made simple](https://www.usbmadesimple.co.uk/)
 
+* [no-OS-FatFS-SD-SPI-RPi-Pico](https://github.com/carlk3/no-OS-FatFS-SD-SPI-RPi-Pico)
+
