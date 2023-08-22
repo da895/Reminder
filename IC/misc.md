@@ -16,3 +16,17 @@
 
 ## [Adaptive Techniques for Mixed Signal System on Chip](https://link.springer.com/chapter/10.1007/978-0-387-32155-4_4)
 
+## [Chapter 6 Layout of Resistor](https://picture.iczhiku.com/resource/eetop/sHkfzkOQhKqsKnCb.pdf)
+
+## [LECTURE 07 – RESISTORS AND INDUCTOR](https://aicdesign.org/wp-content/uploads/2018/08/lecture07-140310.pdf)
+
+## maximum resistor values + ic design
+The value of resistor is based on your affordable area.
+
+Diffused resistor: 10-100 ohms/sq  
+Ion Implanted resistor: 0.5-2K ohms/sq  
+Poly Resistor: 30-200 ohms/sq  
+n-well resistor: 1-10k ohms/sq   
+
+another Hi resistor use mos resistor like XTAL invert shunt Mega Ohms for gain stage .. usually use mos switch act as Hi value resistor
+
