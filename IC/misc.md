@@ -1,6 +1,8 @@
 
 ## [Logic Signal Voltage Levels](https://www.allaboutcircuits.com/textbook/digital/chpt-3/logic-signal-voltage-levels/)
 
+## [lecture of VLSI design](https://mrcet.com/downloads/digital_notes/ECE/IV%20Year/31082020/VLSI%20DESIGN.pdf)
+
 ## [Overview and Types of Capacitors in ASIC Design](https://anysilicon.com/overview-and-types-of-capacitors-in-asic-design/)
 * MIM Capacitor (Metal-Insulator-Metal)
 * MOM-Capacitors (Metal-Oxide-Metal)
