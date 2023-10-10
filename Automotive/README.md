@@ -14,6 +14,17 @@
 
 <!-- vim-markdown-toc -->
 
+## Glossary
+
+* ADAS: advanced driver-assistance systems 
+* ADS: autonomous driving systems 
+* IVI: in-vehicle infotainment
+
+## Automotive Serdes
+
+* [ASA](https://auto-serdes.org/)
+* [MIPI A-PHY](https://www.mipi.org/specifications/a-phy)
+
 
 ## [ISO Document Stages](https://www.iest.org/Standards-RPs/ISO-Standards/ISO-Document-Stages)
 
