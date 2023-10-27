@@ -1,5 +1,12 @@
 # Cortex-M4
 
+### ARM instruments
+
+http://www.ee.ic.ac.uk/pcheung/teaching/ee2_computing/
+
+http://www.ee.ic.ac.uk/pcheung/teaching/ee2_computing/Lecture_7.pdf
+https://www.csie.ntu.edu.tw/~cyy/courses/assembly/10fall/lectures/handouts/lec09_ARMisa_4up.pdf
+
 ### Function Description
 
 ![image-20211105155948385](Cortex-M4.assets/image-20211105155948385.png)
