@@ -57,6 +57,17 @@ fatal: repository 'xxx' not found`
 - `git config credential.username "xxx"`
 - `git config --global credential.username "xxx"`
 
+## origin master vs origin/master
+
+origin master : the branch **master** from the remote repository **origin** 
+origin/master : one copy of remote repository， the local branch
+
+## Git Index
+
+Git Index may be defined as the staging area between the workspace and the repository. The major use of Git Index is to set up and combine all changes together before you commit them to your local repository. Let’s understand what this working workspace and local repo mean and functions before getting into deep with Git Index. Below is its pictorial representation.
+![image](https://github.com/da895/Reminder/assets/36041044/2145ea89-e9f4-49bf-bee0-54e478befbae)
+
+
 ## Git rm
 
 * remove the file from the Git repository and the filesystem
