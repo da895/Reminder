@@ -93,10 +93,39 @@ git commit -m "xxx"
 git submodule init
 git submodule update
 ```
+or
+```
+$ git submodule update --init --recursive
+```
 or 
 ```
 git clone URL --recurse-submodules
 ```
+
+* update a git submodule
+```
+$ git submodule update --remote --merge
+```
+* Fetch new submodule commits
+```
+$ cd repository/submodule 
+$ git fetch
+$ git log --oneline origin/master -3
+93360a2 (origin/master, origin/HEAD) Second commit
+88db523 First commit
+43d0813 (HEAD -> master) Initial commit
+$ git checkout -q 93360a2
+
+
+$ cd repository
+
+$ git add .
+
+$ git commit -m "Added new commits from the submodule repository"
+
+$ git push
+```
+  
   
 
 ## Generial Config within .gitconfig
