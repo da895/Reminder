@@ -37,14 +37,25 @@
 
 ## Git config list
 - `git config --list`
-    
+
 ## Misc
 - `git add` must before `git commit`
 
 ## Discard local change
 - `git checkout file`   just discard one file
-- `git reset --hard`   discard all local file
+- `git reset --hard`   discard all local file ,if you want to clear the index and revert all tracked files to their state at the reset commit.
+- `git reset --soft HEAD^`   if you want to purge your commit history but keep your index and filesystem unchanged.
 - `git stash`   discard all local changes, but save them for possible re-use later
+
+## Git stash
+
+- https://git-scm.com/docs/git-stash
+```
+git stash
+git stash list
+git stash apply
+git stash pop
+```
 
 ## Git OpenSSL SSL_read: Connection was reset, errno 10054
 - `git config --global http.sslVerfiy "false"`
