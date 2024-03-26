@@ -2579,3 +2579,13 @@ On executing this code, you get the following result −
 Octal representation = 012
 Hexadecimal representation = 0XA
 ```
+
+
+```
+awk '{
+   if((/^`define/) && (NF == 3))
+	{gsub(/"/,"",$3);print "set_global_assignment -name VERILOG_MACRO \x22"$2"="$3\x22"}
+else if ((/^`define/) && (NF == 2))
+	{print "set_global_assignment -name VERILOG_MACRO \x22"$2"=1\x22"}
+}' file_input > file_output
+```
