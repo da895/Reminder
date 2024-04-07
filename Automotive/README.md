@@ -24,6 +24,8 @@
 
 * [ASA](https://auto-serdes.org/)
 * [MIPI A-PHY](https://www.mipi.org/specifications/a-phy)
+* [The Next Automotive Networks: ASA SerDes Links, 10BASE-T1S and CAN XL](https://www.nxp.com/design/training/the-next-automotive-networks-asa-serdes-links-10base-t1s-and-can-xl:TIP-TD-AUT226)
+* 
 
 
 ## [ISO Document Stages](https://www.iest.org/Standards-RPs/ISO-Standards/ISO-Document-Stages)
