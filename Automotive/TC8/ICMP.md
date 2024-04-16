@@ -1,7 +1,8 @@
-https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol
 
 
-# Internet Control Message Protocol
+
+# [Internet Control Message Protocol](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol)
+[RFC792](https://www.rfc-editor.org/info/rfc792)
 
 
 ## CRC
@@ -28,12 +29,12 @@ Only a single carry addition is ever necessary even for maximum length IPv4 head
 
 The checksum is then the ones' complement (bitwise NOT) of this result: ` NOT 479e = b861`
 
-This checksum value is shown as underlined in the original IP packet header above.
-**Verifying the IPv4 header checksum**
+This checksum value is shown as underlined in the original IP packet header above.  
+**Verifying the IPv4 header checksum**  
 When verifying a checksum, the same procedure is used as above, except that the original header checksum is not omitted.
 `4500 + 0073 + 0000 + 4000 + 4011 + b861 + c0a8 + 0001 + c0a8 + 00c7 = 2fffd`
 Add the carry bits:
-`fffd + 2 = ffff
+`fffd + 2 = ffff`
 Taking the ones' complement (flipping every bit) yields 0000, which indicates that no error is detected. IP header checksum does not check for the correct order of 16 bit values within the header. 
 
 
