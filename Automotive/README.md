@@ -226,6 +226,7 @@ CAN is a very reliable system with multiple error checks ( below is the CAN 2.0 
 
 8. [Impedance/Termination of Marvell PHY](https://electronics.stackexchange.com/questions/524620/impedance-termination-of-marvell-phy)
 9. [RTL8211](./Realtek-Semicon-RTL8211EG-VB-CG_C69264.pdf)
+10. [RFC standard](https://www.rfc-editor.org/)
 
 ## AutoSAR
 
