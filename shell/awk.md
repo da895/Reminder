@@ -2589,3 +2589,28 @@ else if ((/^`define/) && (NF == 2))
 	{print "set_global_assignment -name VERILOG_MACRO \x22"$2"=1\x22"}
 }' file_input > file_output
 ```
+
+## Split a file using a pattern as a delimiterSplit a file using a pattern as a delimiter
+**split file with END**
+```
+ATOM 1
+ATOM 3
+ATOM 25
+END 
+ATOM 2
+ATOM 36
+ATOM 22
+ATOM 12 
+END 
+ATOM 1
+ATOM 87
+END 
+```
+
+**solution**
+```
+$ awk 'BEGIN {f="file."(++c)".txt"} 
+       /END/ {close(f); f="file"(++c)".txt"; next} 
+             {print > f}' file
+```
+
