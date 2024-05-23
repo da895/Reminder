@@ -1332,6 +1332,7 @@ You must delete any edited configuration files manually.
     docker load -i file_name
 ```
 
+
 11. [Share folder between host and container](https://forums.docker.com/t/share-folder-between-host-and-container/97370)
 
 
@@ -1360,6 +1361,12 @@ The usage syntax for the script is given by the following:
 The image can then be imported with tar and docker load:
 
 `tar -cC 'target_dir' . | docker load`
+
+### docker with vnc
+
+1. [How to make a Docker container with VNC access](https://medium.com/@gustav0.lewin/how-to-make-a-docker-container-with-vnc-access-f607958141ae)
+2. create a container   `docker run -d -it --name docker_vnc -p 5901:5901 -v "$(pwd)/docker_vnc":/app/ vnc_ubuntu`
+3. run the container  `docker exec -it -w /app/ docker_vnc /bin/bash`
 
 
 ### [How to move docker data directory to another location on Ubuntu](https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/)
