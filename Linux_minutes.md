@@ -1455,3 +1455,76 @@ Edit the crontab: `crontab -e`, the syntax show as below
     20 7 * * * usr/bin/killall vlc
 ```
 
+## Docker Create for VNC
+
+### Dockerfile
+
+```
+# Use an official Ubuntu base image
+FROM ubuntu:22.04
+
+# Avoid warnings by switching to noninteractive for the build process
+ENV DEBIAN_FRONTEND=noninteractive
+
+ENV USER=root
+
+# Install XFCE, VNC server, dbus-x11, and xfonts-base
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    xfce4 \
+    xfce4-goodies \
+    tightvncserver \
+    vim \
+    vim-gtk3 \
+    dbus-x11 \
+    xfonts-base \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# 
+RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
+	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+ENV LANG en_US.utf8
+
+# Setup VNC server
+RUN mkdir /root/.vnc \
+    && echo "password" | vncpasswd -f > /root/.vnc/passwd \
+    && chmod 600 /root/.vnc/passwd
+
+# Create an .Xauthority file
+RUN touch /root/.Xauthority
+
+# Set display resolution (change as needed)
+ENV RESOLUTION=1920x1080
+
+# Expose VNC port
+EXPOSE 5901
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy a script to start the VNC server
+COPY start-vnc.sh start-vnc.sh
+RUN chmod +x start-vnc.sh
+
+# List the contents of the /app directory
+RUN ls -a /app
+
+```
+
+### create `start-vnc.sh`
+
+```
+#!/bin/bash
+
+echo 'Updating /etc/hosts file...'
+HOSTNAME=$(hostname)
+echo "127.0.1.1\t$HOSTNAME" >> /etc/hosts
+
+echo "Starting VNC server at $RESOLUTION..."
+vncserver -kill :1 || true
+vncserver -geometry $RESOLUTION &
+
+echo "VNC server started at $RESOLUTION! ^-^"
+
+echo "Starting tail -f /dev/null..."
+tail -f /dev/null
+```
