@@ -1,8 +1,10 @@
 # CMake
 
 * [CMake example from cnblog](https://www.cnblogs.com/faithlocus/category/2053737.html)
+* 
 * Functions:
   * [get_filename_component](https://cmake.org/cmake/help/latest/command/get_filename_component.html)
+  * [set](https://www.jianshu.com/p/c2c71d5a09e9)
 * [Linux_Code_test for Cmake](https://github.com/fengbingchun/Linux_Code_Test/tree/master)
 * [Cmake Cookbook -- Chinese](./CMake-CookBook.pdf)
 * [modern cmake from gitlab](https://cliutils.gitlab.io/modern-cmake/)
