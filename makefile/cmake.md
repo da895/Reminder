@@ -1,5 +1,6 @@
 # CMake
 
+* [CMake example from cnblog](https://www.cnblogs.com/faithlocus/category/2053737.html)
 * Functions:
   * [get_filename_component](https://cmake.org/cmake/help/latest/command/get_filename_component.html)
 * [Linux_Code_test for Cmake](https://github.com/fengbingchun/Linux_Code_Test/tree/master)
