@@ -2,6 +2,7 @@
 
 * [CMake example from cnblog](https://www.cnblogs.com/faithlocus/category/2053737.html)
 * [CMake example from fengbingchun](https://github.com/fengbingchun/Linux_Code_Test/tree/master/Samples_CMake)
+* [function vs macro](https://www.cnblogs.com/Braveliu/p/15621973.html)
 * Functions:
   * [get_filename_component](https://cmake.org/cmake/help/latest/command/get_filename_component.html)
   * [set](https://www.jianshu.com/p/c2c71d5a09e9)
