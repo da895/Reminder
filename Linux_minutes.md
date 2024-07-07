@@ -1365,7 +1365,7 @@ The image can then be imported with tar and docker load:
 ### docker with vnc
 
 1. [How to make a Docker container with VNC access](https://medium.com/@gustav0.lewin/how-to-make-a-docker-container-with-vnc-access-f607958141ae)
-2. create a container for ubuntu 22.04  `docker run -d --security-opt seccomp=unconfined -it --name docker_vnc -p 5901:5901 -v "$(pwd)/docker_vnc":/app/ vnc_ubuntu`
+2. create a container for ubuntu 22.04  `docker run -d --security-opt seccomp=unconfined -it --name docker_vnc --privileged -v /dev/bus/usb:/dev/bus/usb -p 5901:5901 -v "$(pwd)/docker_vnc":/app/ vnc_ubuntu`
 3. run the container  `docker exec -it -w /app/ docker_vnc /bin/bash`
 
 
