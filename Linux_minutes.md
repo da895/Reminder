@@ -98,6 +98,9 @@ Table of Contents
 
 <!-- vim-markdown-toc -->
 
+
+## [cfg windows env ](https://sysin.org/blog/windows-env/)
+
 ## [python for vscode](https://code.visualstudio.com/docs/python/environments)  
  * activate venv
 ```ps
