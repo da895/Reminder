@@ -10,11 +10,21 @@
 * [Git config list](#git-config-list)
 * [Misc](#misc)
 * [Discard local change](#discard-local-change)
+* [Git stash](#git-stash)
 * [Git OpenSSL SSL_read: Connection was reset, errno 10054](#git-openssl-ssl_read-connection-was-reset-errno-10054)
+* [Git HTTP w/o passworld](#git-http-wo-passworld)
+* [origin master vs origin/master](#origin-master-vs-originmaster)
+* [Git Index](#git-index)
 * [Git rm](#git-rm)
+* [Git submodule](#git-submodule)
 * [Generial Config within .gitconfig](#generial-config-within-gitconfig)
 * [Reference](#reference)
 * [How do I clone a subdirectory only of a Git repository?](#how-do-i-clone-a-subdirectory-only-of-a-git-repository)
+* [How to Shrink a Git Repository](#how-to-shrink-a-git-repository)
+  * [Cleaning the files](#cleaning-the-files)
+  * [Push the cleaned repository](#push-the-cleaned-repository)
+  * [Tell your teammates](#tell-your-teammates)
+* [git拆仓(原Git库拆分子目录作为新仓库,并保留log记录)](#git拆仓原git库拆分子目录作为新仓库并保留log记录)
 
 <!-- vim-markdown-toc -->
 

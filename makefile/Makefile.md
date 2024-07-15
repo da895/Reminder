@@ -1,5 +1,21 @@
 # Makefile
 
+
+<!-- vim-markdown-toc GitLab -->
+
+* [Recursive make in subdirectories](#recursive-make-in-subdirectories)
+* [CFLAGS of -MD, -MMD or -MT](#cflags-of-md-mmd-or-mt)
+* [Options controlling the preprocessor for GCC](#options-controlling-the-preprocessor-for-gcc)
+* [Properly using GNU-Make](#properly-using-gnu-make)
+* [GNU make](#gnu-make)
+* [makfile tutorial](#makfile-tutorial)
+* [Is there a logical OR operator for the 'ifneq'](#is-there-a-logical-or-operator-for-the-ifneq)
+* [Makefile variable is empty](#makefile-variable-is-empty)
+* [makefile cheatsheet](#makefile-cheatsheet)
+* [ isaacs/Makefile ](#-isaacsmakefile-)
+
+<!-- vim-markdown-toc -->
+
 ## Recursive make in subdirectories
     
     * Read [Recursive Use of Make](http://www.gnu.org/software/make/manual/make.html#Recursion)chapter of GNU Make

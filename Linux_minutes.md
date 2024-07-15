@@ -3,8 +3,9 @@
 Table of Contents
 =================
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc GitLab -->
 
+* [cfg windows env ](#cfg-windows-env-)
 * [python for vscode](#python-for-vscode)
 * [lsf](#lsf)
 * [ubuntu sync time to ntp to solve clock skew issue](#ubuntu-sync-time-to-ntp-to-solve-clock-skew-issue)
@@ -19,7 +20,7 @@ Table of Contents
 * [ubuntu autostart for your own script](#ubuntu-autostart-for-your-own-script)
 * [linux generate UUID](#linux-generate-uuid)
 * [change the __File Permission__ as below](#change-the-__file-permission__-as-below)
-* [SSH Passworldless Login Using SSH  Keygen in 5 Easy Steps](#ssh-passworldless-login-using-ssh--keygen-in-5-easy-steps)
+* [SSH Passworldless Login Using SSH  Keygen in 5 Easy Steps](#ssh-passworldless-login-using-ssh-keygen-in-5-easy-steps)
 * [Ubuntu User Management](#ubuntu-user-management)
   * [Where is root?](#where-is-root)
   * [Adding and Deleting Users](#adding-and-deleting-users)
@@ -42,7 +43,7 @@ Table of Contents
 * [markdown convert to pdf within command line](#markdown-convert-to-pdf-within-command-line)
 * [How to connect to Cisco AnyConnect VPN via GUI in Ubuntu 18.04](#how-to-connect-to-cisco-anyconnect-vpn-via-gui-in-ubuntu-1804)
 * [Connecting to Cisco VPN from Ubuntu 18.04 without a Group Password](#connecting-to-cisco-vpn-from-ubuntu-1804-without-a-group-password)
-* [linux samba](#linux-a)
+* [linux samba](#linux-samba)
 * [How do I boot directly to tty1 in ubuntu?](#how-do-i-boot-directly-to-tty1-in-ubuntu)
 * [Make a Bash alias that takes a parameter](#make-a-bash-alias-that-takes-a-parameter)
 * [How to unzip a multipart (spanned) ZIP on Linux](#how-to-unzip-a-multipart-spanned-zip-on-linux)
@@ -51,7 +52,7 @@ Table of Contents
 * [Check Perl Library](#check-perl-library)
 * [install perl lib via local::lib](#install-perl-lib-via-locallib)
 * [9 simple ways to find the PID of a Program Running on Linux](#9-simple-ways-to-find-the-pid-of-a-program-running-on-linux)
-* [High Performance & Multi-threaded SCP Using RSYNC](#high-performance--multi-threaded-scp-using-rsync)
+* [High Performance & Multi-threaded SCP Using RSYNC](#high-performance-multi-threaded-scp-using-rsync)
 * [copy files and directories recursively with tar](#copy-files-and-directories-recursively-with-tar)
 * [DataRecovery](#datarecovery)
 * [check the Linux OS](#check-the-linux-os)
@@ -93,8 +94,12 @@ Table of Contents
   * [install](#install)
   * [Manage Docker as a non-root user](#manage-docker-as-a-non-root-user)
   * [Usage](#usage)
+  * [docker with vnc](#docker-with-vnc)
   * [How to move docker data directory to another location on Ubuntu](#how-to-move-docker-data-directory-to-another-location-on-ubuntu)
 * [crontab](#crontab)
+* [Docker Create for VNC](#docker-create-for-vnc)
+  * [Dockerfile](#dockerfile)
+  * [create `start-vnc.sh`](#create-start-vncsh)
 
 <!-- vim-markdown-toc -->
 

@@ -1,5 +1,23 @@
 # Batch User Prompt
 
+
+<!-- vim-markdown-toc GitLab -->
+
+* [SET /P in batch file - Default value after timeout for user prompt](#set-p-in-batch-file-default-value-after-timeout-for-user-prompt)
+* [[How to ask for batch file user input with a timeout}(https://stackoverflow.com/questions/12331428/how-to-ask-for-batch-file-user-input-with-a-timeout)](#how-to-ask-for-batch-file-user-input-with-a-timeouthttpsstackoverflowcomquestions12331428how-to-ask-for-batch-file-user-input-with-a-timeout)
+* [Wndows Batch Files for Fun and profite](#wndows-batch-files-for-fun-and-profite)
+* [How to add a timeout or pause in a Batch file](#how-to-add-a-timeout-or-pause-in-a-batch-file)
+* [recent file created in a folder to another destination automatically](#recent-file-created-in-a-folder-to-another-destination-automatically)
+* [iterate all files in a dir](#iterate-all-files-in-a-dir)
+* [In batch, how do i create space at the beginning of string](#in-batch-how-do-i-create-space-at-the-beginning-of-string)
+* [create list or arrays in batch](#create-list-or-arrays-in-batch)
+* [[SCHTASK] create schedule task for windows](#schtask-create-schedule-task-for-windows)
+* [schtasks example](#schtasks-example)
+* [how to execute a scheduled task with "schtasks" wo opening a new window](#how-to-execute-a-scheduled-task-with-schtasks-wo-opening-a-new-window)
+* [have a task that runs every day and repeats every hour](#have-a-task-that-runs-every-day-and-repeats-every-hour)
+
+<!-- vim-markdown-toc -->
+
 ## [SET /P in batch file - Default value after timeout for user prompt](https://groups.google.com/forum/#!topic/alt.msdos.batch.nt/u1MmJ1vp_pE)
 
 Can anyone help please? I have a problem with something that used to

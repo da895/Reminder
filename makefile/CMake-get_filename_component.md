@@ -20,14 +20,22 @@ cmake函数: get_filename_component
 ```
 
 
-
-
-
 目录
 
-    get_filename_component(<var> <Filename> <mode> [CACHE])
-    get_filename_component(<var> <FileName> <mode> [BASE_DIR <dir>] [CACHE])
-    get_filename_component(<var> <FileNae> PROGRAM [PROGRAM_ARGS <arg_var>] [CACHE])
+
+<!-- vim-markdown-toc GitLab -->
+
+* [get_filename_component:获取完整文件名的特定部分](#get_filename_component获取完整文件名的特定部分)
+* [get_filename_component(<var> <FileName> <mode> [BASE_DIR <dir>] [CACHE])  指定路径与文件名进行拼接](#get_filename_componentvar-filename-mode-base_dir-dir-cache-指定路径与文件名进行拼接)
+* [get_filename_component(<var> <FileNae> PROGRAM [PROGRAM_ARGS <arg_var>] [CACHE]) 获取应用程序的名称和参数](#get_filename_componentvar-filenae-program-program_args-arg_var-cache-获取应用程序的名称和参数)
+
+<!-- vim-markdown-toc -->
+
+```
+get_filename_component(<var> <Filename> <mode> [CACHE])
+get_filename_component(<var> <FileName> <mode> [BASE_DIR <dir>] [CACHE])
+get_filename_component(<var> <FileNae> PROGRAM [PROGRAM_ARGS <arg_var>] [CACHE])
+```    
 
 ## get_filename_component:获取完整文件名的特定部分
 get_filename_component(<var> <Filename> <mode> [CACHE]) 字符串解析处理

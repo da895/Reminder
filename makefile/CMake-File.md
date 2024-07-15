@@ -1,5 +1,19 @@
 # file文件操作命令
 
+
+<!-- vim-markdown-toc GitLab -->
+
+* [目录](#目录)
+* [Reading：读文件](#reading读文件)
+* [Writing：写文件](#writing写文件)
+* [Filesystem：文件系统操作](#filesystem文件系统操作)
+* [Path Conversion：路径转换](#path-conversion路径转换)
+* [Transfer：下载与上传](#transfer下载与上传)
+* [Locking：同步锁](#locking同步锁)
+
+<!-- vim-markdown-toc -->
+
+
 ## 目录
 
     Reading：读文件
