@@ -1,5 +1,9 @@
 # UVM and SV minutes
 
+## [corev-verfi-environment](https://github.com/openhwgroup/core-v-verif/tree/master/mk#required-corev-environment-variables)
+
+## [dsim install](https://help.metrics.ca/support/solutions/articles/154000141162-install-dsim-desktop)
+
 ## [UVM 1.2 Class Reference](https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.2/html/index.html)
 
 ## [Using SystemVerilog Assertions in RTL Code](https://www.design-reuse.com/articles/10907/using-systemverilog-assertions-in-rtl-code.html)
