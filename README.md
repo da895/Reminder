@@ -2,6 +2,8 @@
 Collection for Misc information 
 
 - [ basic ESD and PAD design ](https://picture.iczhiku.com/resource/eetop/wyiFTUKPwRRZpBnC.pdf)
+- [FX3+FPGA](https://www.ztex.de/)
+- [SmartGiant](https://www.smartgiant.com.cn/)
 - [ latch up from TI ](https://www.ti.com/lit/wp/scaa124/scaa124.pdf)
 - [ latch up from Youtube](https://www.google.com.hk/search?q=latch+up+youtube&newwindow=1&client=firefox-b-d&sxsrf=AB5stBgseUaJ_LkNrephmCwDcceC2W67tA%3A1691115042377&ei=Il7MZPKrFtTC4-EP44-96Aw&ved=0ahUKEwjyxP-69sGAAxVU4TgGHeNHD80Q4dUDCA4&uact=5&oq=latch+up+youtube&gs_lp=Egxnd3Mtd2l6LXNlcnAiEGxhdGNoIHVwIHlvdXR1YmUyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIoFGIYDMggQABiKBRiGAzIIEAAYigUYhgNIqFlQ0hNY4VdwAngBkAEAmAGRAaAB0QmqAQMwLjm4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICBxAAGIoFGEPCAgUQABiABMICCBAAGIAEGMsBwgIIEAAYFhgeGArCAggQABgWGB4YD-IDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp#fpstate=ive&vld=cid:2f88e9ef,vid:ihiRHyfndwg)
 - [AN4899 Application note - STM32 microcontroller GPIO hardware settings and low-power consumption](https://www.google.com.hk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj08OWo48KAAxWCumMGHaIAA68QFnoECBEQAQ&url=https%3A%2F%2Fwww.st.com%2Fresource%2Fen%2Fapplication_note%2Fan4899-stm32-microcontroller-gpio-hardware-settings-and-lowpower-consumption-stmicroelectronics.pdf&usg=AOvVaw3Sf7zvhg5x12aHxuwPHgQx&opi=89978449)
