@@ -2,6 +2,8 @@
 
 ## [corev-verfi-environment](https://github.com/openhwgroup/core-v-verif/tree/master/mk#required-corev-environment-variables)
 
+## [Gate level model](https://vlsiverify.com/verilog/gate-level-modeling/)
+
 ## [dsim install](https://help.metrics.ca/support/solutions/articles/154000141162-install-dsim-desktop)
 
 ## [UVM 1.2 Class Reference](https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.2/html/index.html)
