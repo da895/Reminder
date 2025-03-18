@@ -147,6 +147,24 @@ JOBID EXEC_CWD
 * [Jlink for Raspberry](https://mlog.club/article/3483195)  
 `Command line: -if jtag -device Cortex-A53 -endian little -speed auto -port 2331 -swoport 2332 -telnetport 2333 -vd -ir -localhostonly 1 -singlerun -strict -timeout 0 -nogui -jlinkscriptfile /home/piotr/rpi.JLinkScript`
 
+
+## [How to format a USB flash drive](https://askubuntu.com/questions/22381/how-to-format-a-usb-flash-drive)
+
+  
+   * To show the USB drive among all storage partitions and volumes on your computer use:       
+    `lsblk` or `df` or `fdisk -l`    
+   * Suppose it may be `/dev/sdy1`. Unmount it with:       
+    `sudo umount /dev/sdy1`    
+   * To format drive with the FAT32 file system format:  
+    `mkdosfs -F 32 -I /dev/sdxx` or 
+    `sudo mkfs.vfat -F 32 /dev/sdy1`  
+   * To set a file system label for your pen drive in the process:  
+    `sudo mkfs.vfat -F 32 -n 'name_for_your_pendrive' /dev/sdy1`  
+    You must include the `-F 32` part to specify the FAT size, it is not 32 by default in ubuntu 19.10. For more info see man mkfs.fat.  
+   * Eject the device:  
+    `sudo eject /dev/sdb`  
+
+
 ## Typora and Diagram
 
 * [Typora](https://typora.io/)
