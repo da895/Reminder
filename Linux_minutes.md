@@ -15,7 +15,7 @@ Table of Contents
 * [How to format a USB flash drive](#how-to-format-a-usb-flash-drive)
 * [Typora and Diagram](#typora-and-diagram)
 * [vim substitute](#vim-substitute)
-* [[How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)](#how-do-i-resolve-the-following-packages-have-unmet-dependencieshttpsstackoverflowcomquestions26571326how-do-i-resolve-the-following-packages-have-unmet-dependencies)
+* [How do I resolve The following packages have unmet dependencies](#how-do-i-resolve-the-following-packages-have-unmet-dependencies)
 * [How to Install Specific Version of Package using apt-get ](#how-to-install-specific-version-of-package-using-apt-get-)
 * [how to check glic version on linux](#how-to-check-glic-version-on-linux)
 * [ubuntu autostart for your own script](#ubuntu-autostart-for-your-own-script)
@@ -170,12 +170,13 @@ JOBID EXEC_CWD
 ## Typora and Diagram
 
 * [Typora](https://typora.io/)
+* [Typora Beta](https://github.com/HowardWhile/typora-beta)
 * [Diagram by mermaid](https://mermaid-js.github.io/mermaid/#/README)
 
 ## [vim substitute](http://vimregex.com/#substitute)
 
 
-## [How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
+## [How do I resolve The following packages have unmet dependencies](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)  
 
 The command to have Ubuntu fix unmet dependencies and broken packages is 
 
