@@ -12,6 +12,7 @@ Table of Contents
 * [Excel with Regex (VBA)](#excel-with-regex-vba)
 * [print all windows enviroment variables](#print-all-windows-enviroment-variables)
 * [JLink Script](#jlink-script)
+* [How to format a USB flash drive](#how-to-format-a-usb-flash-drive)
 * [Typora and Diagram](#typora-and-diagram)
 * [vim substitute](#vim-substitute)
 * [[How do I resolve \`The following packages have unmet dependencies\`](https://stackoverflow.com/questions/26571326/how-do-i-resolve-the-following-packages-have-unmet-dependencies)](#how-do-i-resolve-the-following-packages-have-unmet-dependencieshttpsstackoverflowcomquestions26571326how-do-i-resolve-the-following-packages-have-unmet-dependencies)
@@ -22,10 +23,10 @@ Table of Contents
 * [change the __File Permission__ as below](#change-the-__file-permission__-as-below)
 * [SSH Passworldless Login Using SSH  Keygen in 5 Easy Steps](#ssh-passworldless-login-using-ssh-keygen-in-5-easy-steps)
 * [Ubuntu User Management](#ubuntu-user-management)
-  * [Where is root?](#where-is-root)
-  * [Adding and Deleting Users](#adding-and-deleting-users)
-  * [Use Profile Security](#use-profile-security)
-  * [Password Policy](#password-policy)
+    * [Where is root?](#where-is-root)
+    * [Adding and Deleting Users](#adding-and-deleting-users)
+    * [Use Profile Security](#use-profile-security)
+    * [Password Policy](#password-policy)
 * [ssh server in Ubuntu](#ssh-server-in-ubuntu)
 * [how to disconnect and connect the wired connection from the command line](#how-to-disconnect-and-connect-the-wired-connection-from-the-command-line)
 * [Partitioning /home /moving](#partitioning-home-moving)
@@ -72,13 +73,13 @@ Table of Contents
 * [Creating a personal access token for Github](#creating-a-personal-access-token-for-github)
 * [Caching your GitHub credentials in Git](#caching-your-github-credentials-in-git)
 * [Create a Github repository](#create-a-github-repository)
-  * [create a new repository on the command line](#create-a-new-repository-on-the-command-line)
-  * [push an existing repository from the command line](#push-an-existing-repository-from-the-command-line)
-  * [push by PAT](#push-by-pat)
+    * [create a new repository on the command line](#create-a-new-repository-on-the-command-line)
+    * [push an existing repository from the command line](#push-an-existing-repository-from-the-command-line)
+    * [push by PAT](#push-by-pat)
 * [Clone A Private Repository Github](#clone-a-private-repository-github)
 * [Github Connect with SSH](#github-connect-with-ssh)
 * [Manage remote repositories](#manage-remote-repositories)
-  * [switching remote URLs from HTTPS to SSH](#switching-remote-urls-from-https-to-ssh)
+    * [switching remote URLs from HTTPS to SSH](#switching-remote-urls-from-https-to-ssh)
 * [Manageing repositories where can i find a list of repositories](#manageing-repositories-where-can-i-find-a-list-of-repositories)
 * [use centos repo for RHEL](#use-centos-repo-for-rhel)
 * [linux list process by user name](#linux-list-process-by-user-name)
@@ -90,16 +91,17 @@ Table of Contents
 * [install 32bits lib for ubuntu](#install-32bits-lib-for-ubuntu)
 * [learn X in Y mininuts](#learn-x-in-y-mininuts)
 * [Docker for Unbuntu](#docker-for-unbuntu)
-  * [uninstall](#uninstall)
-  * [install](#install)
-  * [Manage Docker as a non-root user](#manage-docker-as-a-non-root-user)
-  * [Usage](#usage)
-  * [docker with vnc](#docker-with-vnc)
-  * [How to move docker data directory to another location on Ubuntu](#how-to-move-docker-data-directory-to-another-location-on-ubuntu)
+    * [uninstall](#uninstall)
+    * [install](#install)
+    * [Manage Docker as a non-root user](#manage-docker-as-a-non-root-user)
+    * [Usage](#usage)
+    * [docker with vnc](#docker-with-vnc)
+    * [How to move docker data directory to another location on Ubuntu](#how-to-move-docker-data-directory-to-another-location-on-ubuntu)
 * [crontab](#crontab)
 * [Docker Create for VNC](#docker-create-for-vnc)
-  * [Dockerfile](#dockerfile)
-  * [create `start-vnc.sh`](#create-start-vncsh)
+    * [Dockerfile](#dockerfile)
+    * [create `start-vnc.sh`](#create-start-vncsh)
+* [pip source from aliyun](#pip-source-from-aliyun)
 
 <!-- vim-markdown-toc -->
 
@@ -1554,3 +1556,17 @@ echo "VNC server started at $RESOLUTION! ^-^"
 echo "Starting tail -f /dev/null..."
 tail -f /dev/null
 ```
+
+## pip source from aliyun
+
+```
+[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
+
+[install]
+trusted-host=mirrors.aliyun.com
+```
+
+or
+
+`-i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com`
