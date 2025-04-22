@@ -106,6 +106,23 @@ Table of Contents
 <!-- vim-markdown-toc -->
 
 
+## server.sh
+
+```
+#!/usr/bin/env sh
+#
+# Copyright (c) Microsoft Corporation. All rights reserved.
+#
+
+case "$1" in
+	--inspect*) INSPECT="$1"; shift;;
+esac
+
+ROOT="$(dirname "$0")"
+
+"$ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" --compatibility=1.63 --accept-server-license-terms "$@"
+```
+
 ## [cfg windows env ](https://sysin.org/blog/windows-env/)
 
 ## [python for vscode](https://code.visualstudio.com/docs/python/environments)  
