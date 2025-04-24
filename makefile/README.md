@@ -6,6 +6,8 @@
 
 ## [cmake-example](https://github.com/ttroy50/cmake-examples)
 
+## [cmake static/dynamic lib](https://github.com/atrelinski/CMake-Example)
+
 ## [How to make a binary file length multiple of 16byte](https://community.st.com/s/question/0D53W000006FsdgSAC/how-to-make-a-binary-file-length-multiple-of-16byte)
 
 Normally the solution is to add a small part to the binary at the end to align the entire binary file to 16B.
