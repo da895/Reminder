@@ -1,6 +1,6 @@
 ## [GNU make from mad-scientist](http://make.mad-scientist.net/papers/) 
 
-
+## [modern-cmake tutorial](https://cliutils.gitlab.io/modern-cmake/README.html)
 
 ## [cMake](./cmake.md)
 
