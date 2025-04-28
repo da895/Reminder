@@ -1,10 +1,12 @@
 ## [GNU make from mad-scientist](http://make.mad-scientist.net/papers/) 
 
-
+## [modern-cmake tutorial](https://cliutils.gitlab.io/modern-cmake/README.html)
 
 ## [cMake](./cmake.md)
 
 ## [cmake-example](https://github.com/ttroy50/cmake-examples)
+
+## [cmake static/dynamic lib](https://github.com/atrelinski/CMake-Example)
 
 ## [How to make a binary file length multiple of 16byte](https://community.st.com/s/question/0D53W000006FsdgSAC/how-to-make-a-binary-file-length-multiple-of-16byte)
 
