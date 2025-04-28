@@ -5,6 +5,7 @@ Table of Contents
 
 <!-- vim-markdown-toc GitLab -->
 
+* [server.sh](#serversh)
 * [cfg windows env ](#cfg-windows-env-)
 * [python for vscode](#python-for-vscode)
 * [lsf](#lsf)
