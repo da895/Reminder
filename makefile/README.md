@@ -6,6 +6,15 @@
 
 ## [cmake-example](https://github.com/ttroy50/cmake-examples)
 
+*  [cmake with static and dynamic lib](https://github.com/atrelinski/CMake-Example)
+* [Use CMake to Create and Use Dynamic Libraries](https://batuhankoc.medium.com/use-cmake-to-create-and-use-dynamic-libraries-5f6498417b3c)
+*  [dll linking](https://discourse.cmake.org/t/dll-linking/4805)
+* [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
+* [cmake-examples](https://github.com/ttroy50/cmake-examples)
+* [What is a CMake generator?](https://stackoverflow.com/questions/25941536/what-is-a-cmake-generator)
+* [cmake find_package 原理简介以及使用说明](https://blog.csdn.net/chengde6896383/article/details/86497016)
+* [mraa](https://github.com/eclipse/mraa)
+
 ## [cmake static/dynamic lib](https://github.com/atrelinski/CMake-Example)
 
 ## [How to make a binary file length multiple of 16byte](https://community.st.com/s/question/0D53W000006FsdgSAC/how-to-make-a-binary-file-length-multiple-of-16byte)
