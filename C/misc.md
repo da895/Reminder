@@ -1,11 +1,11 @@
 
 ## Reference
-    * [How to check for DLL dependency?](https://stackoverflow.com/questions/7378959/how-to-check-for-dll-dependency)
-    * [Creating a shared and static library with the gnu compiler \[gcc\]](https://lsi.vc.ehu.eus/pablogn/docencia/ISO/Act5%20Libs/crealibdin.html)
-    * [Mingw gcc, "-shared -static" passing together](https://stackoverflow.com/questions/55218519/mingw-gcc-shared-static-passing-together)
-    * [Is it possible to link a static lib (.a) to a shared object lib (.so)?](https://www.reddit.com/r/linux_programming/comments/sd09kg/is_it_possible_to_link_a_static_lib_a_to_a_shared/?rdt=41488)
-    * [VSCode配置gcc编译工具](https://blog.csdn.net/wangqingchuan92/article/details/108974662)
-    * [windows下 CMake+MinGW 搭建C/C++编译环境](https://blog.csdn.net/dcrmg/article/details/103918543)
+* [How to check for DLL dependency?](https://stackoverflow.com/questions/7378959/how-to-check-for-dll-dependency)
+* [Creating a shared and static library with the gnu compiler \[gcc\]](https://lsi.vc.ehu.eus/pablogn/docencia/ISO/Act5%20Libs/crealibdin.html)
+* [Mingw gcc, "-shared -static" passing together](https://stackoverflow.com/questions/55218519/mingw-gcc-shared-static-passing-together)
+* [Is it possible to link a static lib (.a) to a shared object lib (.so)?](https://www.reddit.com/r/linux_programming/comments/sd09kg/is_it_possible_to_link_a_static_lib_a_to_a_shared/?rdt=41488)
+* [VSCode配置gcc编译工具](https://blog.csdn.net/wangqingchuan92/article/details/108974662)
+* [windows下 CMake+MinGW 搭建C/C++编译环境](https://blog.csdn.net/dcrmg/article/details/103918543)
 
 
 ## Customize Print in C
