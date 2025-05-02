@@ -1,4 +1,28 @@
-## Structures, unions, enumerations, and bitfields
+
+
+
+# Structures, unions, enumerations, and bitfields
+
+
+<!-- vim-markdown-toc GFM -->
+
+* [Unions](#unions)
+* [Enumerations](#enumerations)
+        * [Handling values that are out of range](#handling-values-that-are-out-of-range)
+* [Structures](#structures)
+* [Packed structures](#packed-structures)
+* [Bitfields](#bitfields)
+* [Unions](#unions-1)
+* [Enumerations](#enumerations-1)
+        * [Handling values that are out of range](#handling-values-that-are-out-of-range-1)
+* [Structures](#structures-1)
+* [Packed structures](#packed-structures-1)
+* [Bitfields](#bitfields-1)
+* [Bitfields in packed structures](#bitfields-in-packed-structures)
+* [Bitfields in packed structures](#bitfields-in-packed-structures-1)
+
+<!-- vim-markdown-toc -->
+
 
 This topic describes the implementation of the structured data types union, enum, and struct. It also discusses structure padding and bitfield implementation.
 

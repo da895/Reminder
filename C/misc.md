@@ -1,4 +1,14 @@
 
+# Misc for C
+
+<!-- vim-markdown-toc GFM -->
+
+* [Reference](#reference)
+* [Customize Print in C](#customize-print-in-c)
+* [Print to console](#print-to-console)
+
+<!-- vim-markdown-toc -->
+
 ## Reference
 * [How to check for DLL dependency?](https://stackoverflow.com/questions/7378959/how-to-check-for-dll-dependency)
 * [Creating a shared and static library with the gnu compiler \[gcc\]](https://lsi.vc.ehu.eus/pablogn/docencia/ISO/Act5%20Libs/crealibdin.html)
