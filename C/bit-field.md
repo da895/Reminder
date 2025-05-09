@@ -609,3 +609,6 @@ bitfield-structs come with some limitations:
 5. As far as I understand, bitfields are purely compiler constructs
 6. Things get even more complicated when you throw in larger bit fields on 32 or 64 bit machines, endianness, and padding for fields that cross storage boundaries.
 7.  If you’re interested in portable code, you’re better off with the other method, shift and mask.
+8.  Explicitly declare all padding positions and disable automatic padding
+9.  avoid bit-field to cross byte boundary
+10. Must do bit-field sanity check before using
