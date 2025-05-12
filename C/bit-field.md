@@ -39,21 +39,21 @@ An object of type enum is implemented in the smallest integral type that contain
 In C mode, and in C++ mode without `--enum_is_int`, if an enum contains only positive enumerator values, the storage type of the enum is the first _unsigned_ type from the following list, according to the range of the enumerators in the enum. In other modes, and in cases where an enum contains any negative enumerator values, the storage type of the enum is the first of the following, according to the range of the enumerators in the enum:
 
 - unsigned char if not using `--enum_is_int`
-    
+  
 - signed char if not using `--enum_is_int`
-    
+  
 - unsigned short if not using `--enum_is_int`
-    
+  
 - signed short if not using `--enum_is_int`
-    
+  
 - signed int
-    
+  
 - unsigned int except C with `--strict`
-    
+  
 - signed long long except C with `--strict`
-    
+  
 - unsigned long long except C with `--strict`.
-    
+  
 
 > ### Note
 > 
@@ -97,9 +97,9 @@ armcc --diag_error=66 ...
 The following points apply to:
 
 - all C structures
-    
+  
 - all C++ structures and classes not using virtual functions or base classes.
-    
+  
 
 Structure alignment
 
@@ -110,15 +110,15 @@ Field alignment
 Structures are arranged with the first-named component at the lowest address. Fields are aligned as follows:
 
 - A field with a char type is aligned to the next available byte.
-    
+  
 - A field with a short type is aligned to the next even-addressed byte.
-    
+  
 - In RVCT v2.0 and above, double and long long data types are eight-byte aligned. This enables efficient use of the `LDRD` and `STRD` instructions in ARMv5TE and above.
-    
+  
 - Bitfield alignment depends on how the bitfield is declared. See [_Bitfields in packed structures_](https://developer.arm.com/documentation/dui0491/i/C-and-C---Implementation-Details/Structures--unions--enumerations--and-bitfields?lang=en#Babcgedf "Bitfields in packed structures") for more information.
-    
+  
 - All other types are aligned on word boundaries.
-    
+  
 
 Structures can contain padding to ensure that fields are correctly aligned and that the structure itself is correctly aligned. [Figure 3](https://developer.arm.com/documentation/dui0491/i/C-and-C---Implementation-Details/Structures--unions--enumerations--and-bitfields?lang=en#Babcbhch "Figure 3. Conventional nonpacked structure example") shows an example of a conventional, nonpacked structure. Bytes 1, 2, and 3 are padded to ensure correct field alignment. Bytes 11 and 12 are padded to ensure correct structure alignment. The `sizeof()` function returns the size of the structure including padding.
 
@@ -131,9 +131,9 @@ Structures can contain padding to ensure that fields are correctly aligned and t
 The compiler pads structures in one of the following ways, according to how the structure is defined:
 
 - Structures that are defined as static or extern are padded with zeros.
-    
+  
 - Structures on the stack or heap, such as those defined with `malloc()` or auto, are padded with whatever is previously stored in those memory locations. You cannot use `memcmp()` to compare padded structures defined in this way (see [Figure 3](https://developer.arm.com/documentation/dui0491/i/C-and-C---Implementation-Details/Structures--unions--enumerations--and-bitfields?lang=en#Babcbhch "Figure 3. Conventional nonpacked structure example")).
-    
+  
 
 Use the `--remarks` option to view the messages that are generated when the compiler inserts padding in a struct.
 
@@ -260,7 +260,7 @@ struct X
 ![64756c0b23c4e0c2a34a92a62a30a9e2_MD5](https://github.com/user-attachments/assets/95805949-a3a8-4185-9335-038170103541)
 
 
-  
+
 
 > ### Note
 > 
@@ -307,21 +307,21 @@ An object of type enum is implemented in the smallest integral type that contain
 In C mode, and in C++ mode without `--enum_is_int`, if an enum contains only positive enumerator values, the storage type of the enum is the first _unsigned_ type from the following list, according to the range of the enumerators in the enum. In other modes, and in cases where an enum contains any negative enumerator values, the storage type of the enum is the first of the following, according to the range of the enumerators in the enum:
 
 - unsigned char if not using `--enum_is_int`
-    
+  
 - signed char if not using `--enum_is_int`
-    
+  
 - unsigned short if not using `--enum_is_int`
-    
+  
 - signed short if not using `--enum_is_int`
-    
+  
 - signed int
-    
+  
 - unsigned int except C with `--strict`
-    
+  
 - signed long long except C with `--strict`
-    
+  
 - unsigned long long except C with `--strict`.
-    
+  
 
 > ### Note
 > 
@@ -365,9 +365,9 @@ armcc --diag_error=66 ...
 The following points apply to:
 
 - all C structures
-    
+  
 - all C++ structures and classes not using virtual functions or base classes.
-    
+  
 
 Structure alignment
 
@@ -378,15 +378,15 @@ Field alignment
 Structures are arranged with the first-named component at the lowest address. Fields are aligned as follows:
 
 - A field with a char type is aligned to the next available byte.
-    
+  
 - A field with a short type is aligned to the next even-addressed byte.
-    
+  
 - In RVCT v2.0 and above, double and long long data types are eight-byte aligned. This enables efficient use of the `LDRD` and `STRD` instructions in ARMv5TE and above.
-    
+  
 - Bitfield alignment depends on how the bitfield is declared. See [_Bitfields in packed structures_](https://developer.arm.com/documentation/dui0491/i/C-and-C---Implementation-Details/Structures--unions--enumerations--and-bitfields?lang=en#Babcgedf "Bitfields in packed structures") for more information.
-    
+  
 - All other types are aligned on word boundaries.
-    
+  
 
 Structures can contain padding to ensure that fields are correctly aligned and that the structure itself is correctly aligned. [Figure 3](https://developer.arm.com/documentation/dui0491/i/C-and-C---Implementation-Details/Structures--unions--enumerations--and-bitfields?lang=en#Babcbhch "Figure 3. Conventional nonpacked structure example") shows an example of a conventional, nonpacked structure. Bytes 1, 2, and 3 are padded to ensure correct field alignment. Bytes 11 and 12 are padded to ensure correct structure alignment. The `sizeof()` function returns the size of the structure including padding.
 
@@ -399,9 +399,9 @@ Structures can contain padding to ensure that fields are correctly aligned and t
 The compiler pads structures in one of the following ways, according to how the structure is defined:
 
 - Structures that are defined as static or extern are padded with zeros.
-    
+  
 - Structures on the stack or heap, such as those defined with `malloc()` or auto, are padded with whatever is previously stored in those memory locations. You cannot use `memcmp()` to compare padded structures defined in this way (see [Figure 3](https://developer.arm.com/documentation/dui0491/i/C-and-C---Implementation-Details/Structures--unions--enumerations--and-bitfields?lang=en#Babcbhch "Figure 3. Conventional nonpacked structure example")).
-    
+  
 
 Use the `--remarks` option to view the messages that are generated when the compiler inserts padding in a struct.
 
@@ -558,7 +558,7 @@ The compiler allocates an int container starting at the same location as the `in
 ![c7bd13fb3da7285fae54080d1437776f_MD5](https://github.com/user-attachments/assets/f1d3f89f-f738-4064-9886-b698481b91b9)
 
 
-  
+
 
 You can explicitly pad a bitfield container by declaring an unnamed bitfield of size zero. A bitfield of zero size fills the container up to the end if the container is not empty. A subsequent bitfield declaration starts a new empty container.
 
