@@ -96,6 +96,7 @@ Table of Contents
     * [install](#install)
     * [Manage Docker as a non-root user](#manage-docker-as-a-non-root-user)
     * [Usage](#usage)
+    * [docker with the same UID/GID](#docker-with-the-same-uidgid)
     * [docker with vnc](#docker-with-vnc)
     * [How to move docker data directory to another location on Ubuntu](#how-to-move-docker-data-directory-to-another-location-on-ubuntu)
 * [crontab](#crontab)
@@ -1408,6 +1409,10 @@ The usage syntax for the script is given by the following:
 The image can then be imported with tar and docker load:
 
 `tar -cC 'target_dir' . | docker load`
+
+### docker with the same UID/GID
+
+    [create container with the same UID/GID with HOST](./shell/create_container_with_the_same_uidgid.md)
 
 ### docker with vnc
 
