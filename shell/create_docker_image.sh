@@ -101,6 +101,7 @@ RUN apt-get update && apt-get install -y sudo --no-install-recommends\
         vim-gtk3 aria2 curl python-is-python3 vim git universal-ctags zip unzip\
          libc6:i386 libstdc++6:i386 build-essential cmake \
         xfce4 xfce4-goodies tightvncserver dbus-x11 xfonts-base \
+        ca-certificates openssl\
         locales xfonts-intl-chinese\
         fcitx fcitx-config-gtk fcitx-googlepinyin\
         fonts-wqy-zenhei fonts-wqy-microhei\
