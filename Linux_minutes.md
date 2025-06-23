@@ -134,7 +134,24 @@ Set-ExecutionPolicy Unrestricted -Scope Process
  & d:/python/tk/.venv/Scripts/Activate.ps1
 ```
 
+
+
+##  clean ubuntu disk 
+
+1. [clean journal](.misc/lear_systemd_journal_logs.md)
+
+2. clean apt 
+
+   ```
+   sudo apt-get autoremove && sudo apt-get autoclean
+   ```
+
+   
+
+
+
 ## lsf
+
 * [IBM Platform LSF Documentation](https://www.bsc.es/support/LSF/9.1.2/)
 * [bhist](https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=reference-bhist#bhist_ref3495__timeformat273684)
 * [Get CWD of bjobs in LSF environment](https://stackoverflow.com/questions/30816868/get-cwd-of-bjobs-in-lsf-environment)
