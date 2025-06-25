@@ -134,7 +134,9 @@ Set-ExecutionPolicy Unrestricted -Scope Process
  & d:/python/tk/.venv/Scripts/Activate.ps1
 ```
 
+## Pulseview
 
+sudo apt-get install libboost-all-dev  libqt5svg5-dev qttools5-dev qtbase5-dev qtchooser qt5-qmake libgtkmm-3.0-dev  autoconf-archive libsigrok-dev libglibmm-2.4-dev  qt5-qmake libsigrokcxx-dev libsigrok-dev
 
 ##  clean ubuntu disk 
 
