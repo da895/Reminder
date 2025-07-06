@@ -10,6 +10,8 @@ CONTAINER_CFG=container_cfg
 ENTRYPOINT_FILE=entrypoint.sh
 TOOLCHAIN_ENV=custom.sh
 FILE_VIMRC=vimrc.local
+TMP_DIR=$PWD/test  
+container_name=mex-test
 
 
 print_err ()
@@ -137,6 +139,7 @@ RUN groupadd -r mygroup --gid 9999 && \
     echo "sigrok-mxe ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 COPY entrypoint.sh /etc/entrypoint.sh
+RUN chmod +x /etc/entrypoint.sh
 COPY $FILE_VIMRC /etc/vim/
 
 WORKDIR #BASE_DIR
@@ -238,7 +241,6 @@ echo "$DOC_XSTARTUP" | sed -e "s/#/\$/g" > $FILE_XSTARTUP
 BUILD_CONTAINER ()
 {
   
-  TMP_DIR=$PWD/test  
   rm -rf $TMP_DIR
   mkdir -p $TMP_DIR
   cp -f $CONTAINER_CFG $TMP_DIR/dockerfile
@@ -247,7 +249,7 @@ BUILD_CONTAINER ()
   cp -f .env $TMP_DIR
   cp -f $FILE_VIMRC $TMP_DIR
 
-  docker build -t $IMAGE_NAME $TMP_DIR
+  docker build --network=host -t $IMAGE_NAME $TMP_DIR
 }
 
 RUN_CONTAINER()
@@ -265,10 +267,10 @@ RUN_CONTAINER_DAEMON()
   docker exec -it -u sigrok-mxe $container_name /bin/bash
 }
 
-GEN_HOST_INFO
-GEN_VIMRC
-GEN_ENTRYPOINT
-GEN_DOCKERFILES
-BUILD_CONTAINER
-#RUN_CONTAINER
+#GEN_HOST_INFO
+#GEN_VIMRC
+#GEN_ENTRYPOINT
+#GEN_DOCKERFILES
+#BUILD_CONTAINER
+RUN_CONTAINER
 
