@@ -6,6 +6,7 @@
 * [Reference](#reference)
 * [Customize Print in C](#customize-print-in-c)
 * [Print to console](#print-to-console)
+* [ucOS doxygen guide](https://micro-os-plus.github.io/develop/doxygen-style-guide/)
 
 <!-- vim-markdown-toc -->
 
