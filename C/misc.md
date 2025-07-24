@@ -18,6 +18,22 @@
 * [VSCode配置gcc编译工具](https://blog.csdn.net/wangqingchuan92/article/details/108974662)
 * [windows下 CMake+MinGW 搭建C/C++编译环境](https://blog.csdn.net/dcrmg/article/details/103918543)
 
+## memory
+* MinGW 环境下无法通过`SetupDiGetClassDevs`获取所有USB设备，原因是"***MinGW 默认使用 ANSI 版本，但可通过定义强制使用 Unicode***"
+```
+#define UNICODE
+#define _UNICODE
+#include <windows.h>
+#include <setupapi.h>
+
+// 现在 SetupDiGetClassDevs 将使用宽字符版本
+HDEVINFO hDevInfo = SetupDiGetClassDevs(
+    &GUID_DEVINTERFACE_USB_DEVICE,
+    NULL,
+    NULL,
+    DIGCF_PRESENT | DIGCF_DEVICEINTERFACE);
+```
+* libtool CPP 程序调用C函数相当复杂，两者编译FLAGS也不一样，TODO
 
 ## Customize Print in C
 
