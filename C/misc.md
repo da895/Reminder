@@ -4,13 +4,15 @@
 <!-- vim-markdown-toc GFM -->
 
 * [Reference](#reference)
+* [memory](#memory)
 * [Customize Print in C](#customize-print-in-c)
 * [Print to console](#print-to-console)
-* [ucOS doxygen guide](https://micro-os-plus.github.io/develop/doxygen-style-guide/)
+* [**自定义Qt重定向标准输出**](#自定义qt重定向标准输出)
 
 <!-- vim-markdown-toc -->
 
 ## Reference
+* [Linux中的额动态库和静态库(.a/.la/.so/.o)](https://hokkaitao.github.io/linux-lib)  
 * [How to check for DLL dependency?](https://stackoverflow.com/questions/7378959/how-to-check-for-dll-dependency)
 * [Creating a shared and static library with the gnu compiler \[gcc\]](https://lsi.vc.ehu.eus/pablogn/docencia/ISO/Act5%20Libs/crealibdin.html)
 * [Mingw gcc, "-shared -static" passing together](https://stackoverflow.com/questions/55218519/mingw-gcc-shared-static-passing-together)
@@ -82,5 +84,34 @@ void dllPrintf(const char* fmt, ...) {
         NULL                    // 保留参数（必须为 NULL）
     );                          
     //FreeConsole();
+}
+```
+
+
+
+## **自定义Qt重定向标准输出**
+
+纯粹的 GUI 程序默认不显示控制台窗口，因此 `std::cout` 的输出会被系统丢弃或无法查看
+
+
+
+通过代码将 `std::cout` 重定向到文件或 Qt 日志系统：
+
+```C
+cppCopy Code#include <iostream>
+#include <fstream>
+#include <QDebug>
+
+void redirectStdout() {
+    std::freopen("output.log", "a", stdout);  // 输出到文件
+    // 或重定向到 qDebug()
+    std::cout.rdbuf(qDebug().stream().rdbuf()); 
+}
+
+int main(int argc, char *argv[]) {
+    redirectStdout();
+    QApplication app(argc, argv);
+    std::cout << "Hello from std::cout!";  // 输出到文件或 qDebug()
+    return app.exec();
 }
 ```
