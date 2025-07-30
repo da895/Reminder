@@ -115,3 +115,15 @@ int main(int argc, char *argv[]) {
     return app.exec();
 }
 ```
+alternative
+```c
+void logToFile(const QString &message)
+{
+    QFile file("application.log");
+    if (file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
+        QTextStream stream(&file);
+        stream << QDateTime::currentDateTime().toString() << " - " << message << "\n";
+        file.close();
+    }
+}
+```
