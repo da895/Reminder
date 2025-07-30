@@ -8,6 +8,9 @@ Table of Contents
 * [server.sh](#serversh)
 * [cfg windows env ](#cfg-windows-env-)
 * [python for vscode](#python-for-vscode)
+* [offline download the package from PPA](#offline-download-the-package-from-ppa)
+* [Pulseview](#pulseview)
+* [clean ubuntu disk](#clean-ubuntu-disk)
 * [lsf](#lsf)
 * [ubuntu sync time to ntp to solve clock skew issue](#ubuntu-sync-time-to-ntp-to-solve-clock-skew-issue)
 * [Excel with Regex (VBA)](#excel-with-regex-vba)
@@ -133,6 +136,17 @@ ROOT="$(dirname "$0")"
 Set-ExecutionPolicy Unrestricted -Scope Process
  & d:/python/tk/.venv/Scripts/Activate.ps1
 ```
+
+## offline download the package from PPA
+
+1. found your os `cat /etc/os-release`
+2. If you want to get a specific .deb file for a package from a PPA, you can download it directly from the PPA's page on Launchpad. 
+
+    * Find the PPA on Launchpad: Use the PPA's identifier to navigate to its Launchpad page. For instance, the KiCad 8.0 releases PPA is at https://launchpad.net/~kicad/+archive/ubuntu/kicad-8.0-releases.
+    * View Package Details: On the PPA's page, click on "View package details".
+    * Select your Ubuntu Version: You'll see a list of packages available for different Ubuntu releases. Choose the one that matches your system.
+    * Download the .deb: Find the package you want (e.g., kicad) and click the link to download the .deb file for your architecture (e.g., _amd64.deb). 
+3. copy the \*.deb to `/var/cache/apt/archives`
 
 ## Pulseview
 
