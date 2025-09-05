@@ -30,6 +30,17 @@
     * [场景二：交互式 Rebase（整理提交历史）](#场景二交互式-rebase整理提交历史)
     * [场景三：解决“黄金法则”被打破后的问题](#场景三解决黄金法则被打破后的问题)
     * [总结](#总结-1)
+* [理解与解决 Git Detached HEAD 状态](#理解与解决-git-detached-head-状态)
+    * [为什么会发生 Detached HEAD？](#为什么会发生-detached-head)
+    * [如何识别 Detached HEAD 状态](#如何识别-detached-head-状态)
+    * [解决方案](#解决方案)
+        * [情况一：你没有做任何提交（只是想回到分支）](#情况一你没有做任何提交只是想回到分支)
+        * [情况二：你做了提交并想保留它们](#情况二你做了提交并想保留它们)
+            * [选项 A：创建新分支保留更改](#选项-a创建新分支保留更改)
+            * [选项 B：直接使用 checkout 创建并切换到新分支](#选项-b直接使用-checkout-创建并切换到新分支)
+        * [情况三：你做了提交但想丢弃它们](#情况三你做了提交但想丢弃它们)
+    * [预防 Detached HEAD](#预防-detached-head)
+    * [总结](#总结-2)
 
 <!-- vim-markdown-toc -->
 
@@ -529,3 +540,164 @@ git push origin feature --force-with-lease
 
 - **Rebase**：追求干净、线性的提交历史。**更适合整理本地分支的提交**。
 - **Merge**：保留所有的历史上下文和实际发生的事件流。**更适合集成公共分支的更新**（例如将 `feature` 合并回 `main`）。
+
+
+
+## 理解与解决 Git Detached HEAD 状态
+
+当 Git 显示 "HEAD detached from..." 时，表示你处于"分离头指针"状态。这是一种特殊状态，意味着 HEAD 指针没有指向任何分支引用，而是直接指向了某个具体的提交。
+
+### 为什么会发生 Detached HEAD？
+
+通常发生在以下情况：
+
+1. 直接检出一个特定的提交哈希值：`git checkout a1b2c3d`
+2. 检出一个标签：`git checkout v1.0.0`
+3. 检出远程分支而没有创建本地分支：`git checkout origin/feature`
+4. 使用相对引用检出一个提交：`git checkout HEAD~3`
+
+### 如何识别 Detached HEAD 状态
+
+1. 运行 `git status`，你会看到类似这样的提示：
+
+
+```text
+HEAD detached at a1b2c3d
+```
+
+
+
+运行 `git branch`，当前分支前不会有星号标记，或者你会看到类似：
+
+```text
+* (HEAD detached at a1b2c3d)
+  main
+  feature
+```
+
+
+
+### 解决方案
+
+根据你是否在分离状态下做了提交，有不同的解决方法：
+
+#### 情况一：你没有做任何提交（只是想回到分支）
+
+如果你只是查看历史版本，没有做任何修改，直接切换回分支即可：
+
+
+```bash
+# 切换到主分支（或任何其他分支）
+git checkout main
+
+# 或者使用更新的 git switch 命令
+git switch main
+```
+
+
+
+#### 情况二：你做了提交并想保留它们
+
+如果你在分离状态下做了提交并想保留这些工作：
+
+##### 选项 A：创建新分支保留更改
+
+1. 从当前分离状态创建一个新分支：
+
+```bash
+git branch new-branch-name
+```
+
+切换到该分支（或直接切换到主分支）：
+
+
+```bash
+git checkout new-branch-name
+# 或
+git checkout main
+```
+
+（可选）如果你希望将新分支合并到主分支：
+
+
+```bash
+git checkout main
+git merge new-branch-name
+```
+
+##### 选项 B：直接使用 checkout 创建并切换到新分支
+
+更简洁的方式是一步完成创建和切换：
+
+
+```bash
+git checkout -b new-branch-name
+```
+
+
+
+#### 情况三：你做了提交但想丢弃它们
+
+如果你在分离状态下做了提交但不想要这些更改：
+
+
+```bash
+# 直接切换回主分支，丢弃所有分离状态下做的提交
+git checkout main
+```
+
+
+
+Git 会警告你正在离开未链接的提交，这些提交最终会被垃圾回收机制删除。
+
+### 预防 Detached HEAD
+
+1. 当检出远程分支时，总是创建本地跟踪分支：
+
+
+```bash
+# 不要这样做（会导致分离头指针）：
+git checkout origin/feature
+
+# 应该这样做：
+git checkout -t origin/feature
+# 或
+git checkout -b feature origin/feature
+```
+
+
+
+使用相对引用时，确保最终会回到分支：
+
+
+```bash
+# 查看前一个提交但不保持分离状态
+git checkout HEAD~1
+# 然后立即回到分支
+git checkout -
+```
+
+
+
+使用 `git switch` 命令（Git 2.23+），它比 `git checkout` 更明确，能减少意外进入分离状态的可能：
+
+
+```bash
+# 切换分支
+git switch main
+
+# 创建并切换新分支
+git switch -c new-branch
+```
+
+
+
+### 总结
+
+Detached HEAD 状态是 Git 的正常功能，用于查看历史提交。要解决它：
+
+- 如果没有重要更改，直接切换回分支
+- 如果有要保留的更改，创建新分支保存它们
+- 使用 `git switch` 命令可以减少意外进入此状态的概率
+
+记住黄金法则：**只对尚未共享的本地提交进行这类操作**。如果你已经将分支推送到远程仓库，避免使用可能重写历史的方法。
