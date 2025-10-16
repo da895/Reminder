@@ -275,7 +275,7 @@ sudo apt install samba
 Samba 账户必须基于一个现有的系统用户。如果还没有合适的系统用户，请先创建：
 
 ```bash
-sudo useradd -m username  # 创建用户并生成家目录
+sudo useradd -m -s /bin/bash username  # 创建用户并生成家目录
 sudo passwd username      # 为该用户设置系统登录密码
 ```
 
